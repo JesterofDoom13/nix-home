@@ -1,10 +1,10 @@
-# Nix Home-Manager setup for Bazzite
+# Nix Home-Manager Setup for Bazzite
 
-## Initial setup
+## Initial Setup
 
-### Allowing changes being made to root directory
+### Allowing Changes Being Made to Root Directory
 
-Following the instructions I found at [Nix package manager on Fedore Silverblue](https://gist.github.com/queeup/1666bc0a5558464817494037d612f094)
+Following the instructions I found at [Nix package manager on Fedora Silverblue](https://gist.github.com/queeup/1666bc0a5558464817494037d612f094)
 I went with the root.transient method:
 
 ```bash
@@ -49,6 +49,7 @@ extra-experimental-features = flakes nix-command
 
 ```bash
 nix run home-manager/master -- init --switch
+home-manager switch
 ```
 
 > [!NOTE]
@@ -61,4 +62,4 @@ nix run home-manager/master -- init --switch
   - [ ] Script to make nix.conf in nix config directory
 - [ ] Start in a fresh install
 - [ ] Get ghostty running
-- [ ] Get nixCats set up
+- [ ] Get nixCats-nvim set up
