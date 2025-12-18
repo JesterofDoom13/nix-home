@@ -41,8 +41,10 @@ echo "Defaults  secure_path = /nix/var/nix/profiles/default/bin:/nix/var/nix/pro
 Pull this repository into ~/.config/home-manager/ and add a nix.conf in
 ~/.config/nix/ with this inside:
 
-```nix
-extra-experimental-features = flakes nix-command
+```bash
+git clone git@github.com:JesterofDoom13/nix-home.git ~/.config/home-manager/
+mkdir -p ~/.config/nix/
+echo "extra-experimental-features = flakes nix-command" > ~/.config/nix/nix.conf
 ```
 
 ### Initial Home-Manager Run
@@ -57,9 +59,9 @@ home-manager switch
 
 ## Things to Add in the Future
 
-- [ ] First run to pull repository
-  - [ ] nix command to run git and pull this repository in one shot
-  - [ ] Script to make nix.conf in nix config directory
+- [x] First run to pull repository
+  - [x] nix command to run git and pull this repository in one shot
+  - [x] Script to make nix.conf in nix config directory
 - [ ] Start in a fresh install
 - [ ] Get ghostty running
 - [ ] Get nixCats-nvim set up
