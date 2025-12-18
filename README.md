@@ -50,6 +50,9 @@ echo "extra-experimental-features = flakes nix-command" > ~/.config/nix/nix.conf
 ### Initial Home-Manager Run
 
 ```bash
+## Not sure if I need this first line but I'll leave it here if the first run
+## Failes
+# nix run "https://flakehub.com/f/DeterminateSystems/fh/*" -- init
 nix run home-manager/master -- init --switch
 home-manager switch
 ```
