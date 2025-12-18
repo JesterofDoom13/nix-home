@@ -53,3 +53,12 @@ nix run home-manager/master -- init --switch
 
 > [!NOTE]
 > Don't try to fix the space between _--_ and _init_
+
+## Things to Add in the Future
+
+- [ ] First run to pull repository
+  - [ ] nix command to run git and pull this repository in one shot
+  - [ ] Script to make nix.conf in nix config directory
+- [ ] Start in a fresh install
+- [ ] Get ghostty running
+- [ ] Get nixCats set up
