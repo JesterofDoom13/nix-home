@@ -15,7 +15,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixgl.url = "github:nix-community/nixgl/main";
-    # ghostty.url = "github:ghostty-org/ghostty";
+    # ghostty-hm-module.url = "github:clo4/ghostty-hm-module";
+    ghostty.url = "github:ghostty-org/ghostty";
   };
 
   outputs = {
@@ -24,7 +25,7 @@
     home-manager, 
     plasma-manager, 
     zen-browser, 
-    # ghostty, 
+    ghostty, 
     nixgl, 
     ... } @ inputs :
   let

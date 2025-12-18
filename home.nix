@@ -43,7 +43,10 @@
   # ];
   # Install of fonts. All for now I suppose.
   fonts.fontconfig.enable = true;
-
+  home.keyboard = {
+    layout = "us";
+    options = [ "caps:swapescape" ];
+  };
   home.file = {
     # ... (your home.file config)
   };
@@ -54,17 +57,17 @@
   ];
   programs.zen-browser.enable = true;
 
-  # # ghostty
-  # programs.ghostty = {
-  #     enable = true;
-  #     settings = {
-  #       keybind = [ "global:super+semicolon=toggle_quick_terminal" ];
-  #       quick-terminal-size = "75%,90%";
-  #       background-opacity = .85;
-  #
-  #       command = "~/.local/bin/ghostty-tmux.sh";
-  #       };
-  #   };
+  # ghostty
+  programs.ghostty = {
+      enable = true;
+      settings = {
+        keybind = [ "global:super+semicolon=toggle_quick_terminal" ];
+        quick-terminal-size = "75%,90%";
+        background-opacity = .85;
+
+        command = "~/.local/bin/ghostty-tmux.sh";
+        };
+    };
   home.sessionVariables = {
     EDITOR = "nvim";
   };
