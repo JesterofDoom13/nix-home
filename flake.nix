@@ -30,6 +30,7 @@
       nixpkgs,
       home-manager,
       my-nvim,
+      nixgl,
       ...
     }@inputs:
     let
@@ -38,6 +39,7 @@
       pkgs = import nixpkgs {
         localSystem = system;
         config.allowUnfree = true;
+        overlays = [ nixgl.overlay ];
       };
     in
     {

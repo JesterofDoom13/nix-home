@@ -1,43 +1,58 @@
-# Example `nixCats` Configuration
+# LazyVim Template for nixCats
 
-This directory contains an example of the suggested, idiomatic way to manage a neovim configuration using `nixCats`. It leverages [`lze`](https://github.com/BirdeeHub/lze) for lazy loading, although [`lz.n`](https://github.com/nvim-neorocks/lz.n) can be used instead to similar effect. It also includes a fallback mechanism using `paq` and `mason`, allowing you to load the directory without `nix` if needed.
+How to get the [LazyVim](http://www.lazyvim.org/) distribution up and running
 
-This setup serves as a strong starting point for a `Neovim` configuration—think of it as `kickstart.nvim`, but using `nixCats` **instead of** `lazy.nvim` and `mason`, rather than in addition to them. It also follows a modular approach, spreading the configuration across multiple files rather than consolidating everything into one.
+see the [kickstart-nvim template](../kickstart-nvim) for more info on the lazy wrapper or other utilities used.
 
-While this is not a "perfect" configuration, nor does it claim to be, it is **a well-structured, recommended way to use `nixCats`**. You are encouraged to customize it to fit your needs. `nixCats` itself is just the `nix`-based package manager, along with its associated [Lua plugin](https://nixcats.org/nixCats_plugin.html).
+## Important Considerations
 
-## Why Use This Approach?
+This template provides a way to use LazyVim with nixCats, but there are several limitations and caveats to be aware of.
 
-Using `nixCats` in this way provides a **simpler, more transparent** experience compared to solutions like `lazy.nvim`, which hijack normal plugin loading.
+When running LazyVim in any Nix-based environment, unless the wrapper you use has already included all dependencies mason may need to install all LazyVim extras, every nix-based neovim solution will have similar limitations.
 
-It leverages the normal packpath methods of loading plugins both at startup and lazily, allowing you to know what is going on behind the scenes.
+### 1. Mason Compatibility Issues
+LazyVim is designed with the assumption that you are using `mason.nvim` to manage LSP servers and other dependencies. However, Mason installs precompiled binaries that may not be compatible with NixOS or other Nix-based systems. This can lead to missing or non-functional LSP servers unless handled properly.
 
-It avoids duplicating functionality between nix and other nvim based download managers, avoiding compatibility issues.
+#### Solutions:
 
-You can still have a config that works without nix using this method if desired without undue difficulty.
+- **Preferred:** Install LSP servers and dependencies via Nix. Add them to `lspsAndRuntimeDeps` to ensure they are properly available in your environment. In most cases, LazyVim will then load it correctly from your `PATH` via `nvim-lspconfig`, although it may still give a warning about missing `mason.nvim` or require some manual configuration.
 
-## Directory Structure
+- **Alternative:** If you are on a NixOS system and want to use Mason, you must manually ensure that all dependencies required by Mason-installed binaries are available. This can be difficult, but in situations where LazyVim only accepts mason, it can be the easier option.
+- If you want to enable Mason, you will need to **uncomment the lines that disable it in your LazyVim configuration** and optionally add it to your startup plugins list in Nix.
+- Then, if the lsp doesn't install correctly via mason, add dependencies to the `lspsAndRuntimeDeps` and `sharedLibraries` sections of your `categoryDefinitions` until it does.
 
-This configuration primarily uses the following directory structure:
+If you AREN'T using NixOS, there is a reasonable chance that `mason.nvim` will not pose any issues for you.
 
-- The `lua/` directory for core configurations.
-- The `after/plugin/` directory to demonstrate compatibility.
+So if you don't plan to use NixOS, you are fine to enable mason and leave it like that, although at that point, you should probably just be using LazyVim as-is.
 
-While this structure works well, you are encouraged to further modularize your setup by utilizing any of the runtime directories checked by Neovim:
+### 2. LSP and Completion Issues
+If LSPs and autocompletion do not work, verify the following:
+- Run `:LspInfo` in Neovim to check if your LSP servers are detected and running.
+- Ensure that all required LSP servers are installed via Nix or Mason (if enabled).
+- Mason is either correctly enabled (if used) or completely disabled with all dependencies handled via Nix.
+- If you are configuring LazyVim through `lazyvim.json`, try moving your extra plugin imports to your `lua` configuration instead.
+  ```lua
+  { 'LazyVim/LazyVim', import = 'lazyvim.plugins' },
+  { import = "lazyvim.plugins.extras.lang.svelte" },
+  { import = "lazyvim.plugins.extras.lang.tailwind" },
+  ```
 
-- `ftplugin/` for file-type-specific configurations.
-- `plugin/` for global plugin configurations.
-- Even `pack/*/{start,opt}/` work if you want to make a plugin inside your configuration.
-- And so on...
+- Or make sure to set the location of the json file to your `nixCats.settings.unwrappedCfgPath` so that it can find and edit it (pointing it to the store would prevent lazy from editing it while using its UI extras interface).
 
-If you are unfamiliar with the above, refer to the [Neovim runtime path documentation](https://neovim.io/doc/user/options.html#'rtp').
+### 3. LazyVim as a "Second-Class Citizen" in Nix
+LazyVim is heavily integrated with `mason.nvim` and does not fully align with the Nix philosophy of declarative package management.
 
----
+LazyVim also, obviously uses `lazy.nvim`. `lazy.nvim` technically works fine on with nix, HOWEVER it will block any other plugin manager, including nix, from installing anything on its own without also making a lazy.nvim plugin spec and making sure the names match. So, that is also less than ideal.
 
-> "Idiomatic" here means:
->
-> - This configuration does **not** use `lazy.nvim`, and does not use `mason.nvim` when nix is involved.
-> - `nixCats` is responsible for downloading all plugins.
-> - Plugins are only loaded if their respective category is enabled.
-> - The [Lua utilities template](https://github.com/BirdeeHub/nixCats-nvim/tree/main/templates/luaUtils/lua/nixCatsUtils) is used (see [`:h nixCats.luaUtils`](https://nixcats.org/nixCats_luaUtils.html)).
-> - [`lze`](https://github.com/BirdeeHub/lze) or [`lz.n`](https://github.com/nvim-neorocks/lz.n) is used for lazy loading.
+### 4. Alternative Approaches
+If you find LazyVim too cumbersome to use with Nix, consider alternative configurations:
+such as the one shown in the [example](../example) template using `lze`
+
+If you wish to keep using `lazy.nvim` creating your own config based on the [kickstart-nvim](../kickstart-nvim) template will work better as you will have more control over whether mason is used.
+
+However, again, `lazy.nvim` is not recommended for use with other package managers, including nix.
+
+You will have a better experience using `lze` or `lz.n` to manage lazy loading with nix while making your own configuration.
+
+## Conclusion
+Using `LazyVim` with nix means you are prepared to debug potential compatibility issues due to LazyVim's reliance on Mason.

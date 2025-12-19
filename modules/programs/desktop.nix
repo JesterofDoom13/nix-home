@@ -1,9 +1,16 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
+{
   xdg.enable = true;
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-kde pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = [ "kde" "gtk" ];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-kde
+      pkgs.xdg-desktop-portal-gtk
+    ];
+    config.common.default = [
+      "kde"
+      "gtk"
+    ];
   };
 
   programs.zen-browser.enable = true;
@@ -18,6 +25,6 @@
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
+    nixgl.nixGLDefault
   ];
 }
-
