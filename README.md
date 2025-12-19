@@ -24,6 +24,7 @@ Then after the reboot I installed Nix:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \
+
     sh -s -- install ostree --no-confirm --persistence=/var/lib/nix
 ```
 
@@ -47,11 +48,17 @@ mkdir -p ~/.config/nix/
 echo "extra-experimental-features = flakes nix-command" > ~/.config/nix/nix.conf
 ```
 
+### Setup git to pull private repository
+
+> [!NOTE]
+> [Github PAT Generator](https://github.com/settings/tokens)
+
+Get a token set up so you can pull your repo. Be ready to use the PAT you generate with the next step.
+
 ### Initial Home-Manager Run
 
 ```bash
-## Not sure if I need this first line but I'll leave it here if the first run
-## Failes
+# Don't think you need this but keep it around as a troubleshoot.
 # nix run "https://flakehub.com/f/DeterminateSystems/fh/*" -- init
 nix run home-manager/master -- init --switch
 home-manager switch
