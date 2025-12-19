@@ -1,16 +1,15 @@
 {
-  description = "Home Manager configuration";
+  description = "Jester's 2025 Home Manager Configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # Or a specific release channel
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs"; # Ensure Home Manager uses the same Nixpkgs
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
     };
     stylix = {
       url = "github:nix-community/stylix";
@@ -22,6 +21,7 @@
     };
     ghostty.url = "github:ghostty-org/ghostty";
     nixgl.url = "github:nix-community/nixGL";
+    my-nvim.url = "path:./nvim";
   };
 
   outputs =
@@ -29,41 +29,26 @@
       self,
       nixpkgs,
       home-manager,
-      plasma-manager,
-      zen-browser,
-      ghostty,
-      nixgl,
-      stylix,
+      my-nvim,
       ...
     }@inputs:
     let
       user = "Jester";
-      username = "${user}";
       system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        localSystem = system;
+        config.allowUnfree = true;
+      };
     in
     {
-      # home-manager.backupFileExtension = "backup";
       homeConfigurations."${user}" = home-manager.lib.homeManagerConfiguration {
-        pkgs = import nixpkgs { localSystem = system; };
-        extraSpecialArgs = {
-          inherit
-            nixgl
-            inputs
-            user
-            zen-browser
-	    stylix
-            ;
-        };
+        inherit pkgs;
+        extraSpecialArgs = { inherit inputs user; };
         modules = [
-          plasma-manager.homeModules.plasma-manager
           ./home.nix
-	  stylix.homeModules.stylix
-          {
-            home = {
-              inherit username;
-              homeDirectory = "/home/${username}";
-            };
-          }
+          inputs.plasma-manager.homeModules.plasma-manager
+          inputs.stylix.homeModules.stylix
+          inputs.zen-browser.homeModules.beta
         ];
       };
     };
