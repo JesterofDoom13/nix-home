@@ -65,6 +65,6 @@ home-manager switch
 - [x] First run to pull repository
   - [x] nix command to run git and pull this repository in one shot
   - [x] Script to make nix.conf in nix config directory
-- [ ] Start in a fresh install
-- [ ] Get ghostty running
-- [ ] Get nixCats-nvim set up
+- [x] Start in a fresh install
+- [x] Get ghostty running
+- [x] Get nixCats-nvim set up
