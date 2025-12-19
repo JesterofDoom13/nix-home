@@ -6,8 +6,10 @@
   ...
 }:
 {
+  targets.genericLinux.nixGL.packages = inputs.nixgl.packages;
   imports = [
     inputs.my-nvim.homeModule
+    ./modules/programs
   ];
 
   nvim = {
@@ -20,8 +22,6 @@
     homeDirectory = "/home/${user}";
     stateVersion = "25.05";
     shellAliases = {
-      v = "nixGL nvim";
-      nvim = "nixGL nvim";
     };
   };
 
