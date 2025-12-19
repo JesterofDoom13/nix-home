@@ -1,15 +1,26 @@
 { config, nixgl, zen-browser, pkgs, lib, inputs, ...}:
 let
-	ghostty-tmux = pkgs.writeShellScriptBin "ghostty-tmux" ''
-	SESSION="main"
-	${pkgs.tmux}/bin/tmux new-session -A -s "$SESSION" ${pkgs.fish}/bin/fish
-	'';
-	wrappedGhostty = config.lib.nixGL.wrap inputs.ghostty.packages.${pkgs.system}.default;
+  ghostty-tmux = pkgs.writeShellScriptBin "ghostty-tmux" ''
+  SESSION="main"
+  ${pkgs.tmux}/bin/tmux new-session -A -s "$SESSION" ${pkgs.fish}/bin/fish
+  '';
+  wrappedGhostty = config.lib.nixGL.wrap inputs.ghostty.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 {
   # enable quirks (e.g. set $XDG_DATA_DIRS environment variable) for non NixOS operating systems
   targets.genericLinux.enable = true;
   home.extraOutputsToInstall = [ "man" "share" "icons" ];
+  xdg.enable = true;
+	#  xdg.portal = {
+	#  	enable = true;
+	# config.common.default = "*";
+	# extraPortals = with pkgs; [
+	# 	xdg-desktop-portal-kde
+	# 	xdg-desktop-portal-gtk
+	# ];
+	#  };
+
+
 
   # enable for nixGL wrapper
   targets.genericLinux.nixGL.packages = nixgl.packages;
@@ -92,10 +103,30 @@ in
 	quit-after-last-window-closed = false;
 	initial-window = false;
 
+	# Look
+	theme = "Gruvbox Material";
+	# custom-shader = "~/.config/ghostty/plugins/ghostty-shaders/sparks-from-fire.glsl";
+	# custom-shader = "~/.config/ghostty/shaders/cursor_tail.glsl";
+	# custom-shader = "~/.config/ghostty/shaders/sonic_boom_cursor.glsl";
+	# alpha-blending = "native";
+
+
+	# Fonts
+	font-family = "Fira Code SemiBold";
+	font-size = 9;
+	# font-family = "Fira Code";
+	font-family-bold = "Fira Code";
+	font-family-italic = "Maple Mono";
+	font-family-bold-italic = "Maple Mono";
+	# font-family = "Symbols Nerd Font Mono";
+	adjust-underline-position = 4;
+	window-padding-x = 2;
+
+	# Command to run at startup
         command = "${ghostty-tmux}/bin/ghostty-tmux";
         };
     };
-	home.file.".config/autostart/ghostty.desktop".text = ''
+	xdg.configFile."autostart/ghostty.desktop".text = ''
 	  [Desktop Entry]
 	  Type=Application
 	  Exec=${wrappedGhostty}/bin/ghostty
@@ -112,26 +143,5 @@ in
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-#   systemd.user.services.ghostty-daemon = {
-#   Unit = {
-#     Description = "Ghostty terminal daemon";
-#     After = [ "graphical-session-pre.target" ];
-#     Partof = [ "graphical-session.target" ];
-#   };
-#
-#   Service = {
-#     # Use the wrapped package to ensure OpenGL works in the background
-#     ExecStart = "${wrappedGhostty}/bin/ghostty --initial-window=false --gtk-single-instance=true";
-#
-#     Restart = "always";
-#     # Ensures the process has access to your Wayland/X11 display
-#     Environment = [ "PATH=${pkgs.lib.makeBinPath [ pkgs.bash ]}" ];
-#   };
-#
-#   Install = {
-#     WantedBy = [ "graphical-session.target" ];
-#   };
-# };
-
 }
 

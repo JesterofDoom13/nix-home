@@ -35,7 +35,7 @@
   in {
     # home-manager.backupFileExtension = "backup";
     homeConfigurations."${user}" = home-manager.lib.homeManagerConfiguration {
-      pkgs = import nixpkgs { inherit system; };
+      pkgs = import nixpkgs { localSystem = system; };
       extraSpecialArgs = {
           inherit nixgl inputs user zen-browser;
         };
