@@ -14,7 +14,7 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixgl.url = "github:nix-community/nixgl/main";
+    nixgl.url = "github:nix-community/nixGL";
     # ghostty-hm-module.url = "github:clo4/ghostty-hm-module";
     ghostty.url = "github:ghostty-org/ghostty";
   };
