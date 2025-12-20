@@ -26,6 +26,7 @@ in
       background-opacity = 0.85;
       gtk-single-instance = true;
       theme = "Gruvbox Material";
+      ## These next two are VITAL to the quick-terminal working the way I like it.
       initial-window = false;
       quit-after-last-window-closed = false;
       command = "${ghostty-tmux}/bin/ghostty-tmux";

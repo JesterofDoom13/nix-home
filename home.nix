@@ -7,6 +7,7 @@
 }:
 {
   targets.genericLinux.nixGL.packages = inputs.nixgl.packages;
+  targets.genericLinux.enable = true;
   imports = [
     ./modules/programs
   ];
@@ -28,5 +29,4 @@
   ];
 
   programs.home-manager.enable = true;
-  targets.genericLinux.enable = true;
 }

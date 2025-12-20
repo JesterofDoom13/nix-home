@@ -1,6 +1,4 @@
-# features/default.nix
 { ... }:
-
 {
   imports = [
     ./desktop.nix
