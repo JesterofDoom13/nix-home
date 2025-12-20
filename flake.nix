@@ -21,7 +21,7 @@
     };
     ghostty.url = "github:ghostty-org/ghostty";
     nixgl.url = "github:nix-community/nixGL";
-    my-nvim.url = "path:./nvim";
+    nixCats.url = "github:BirdeeHub/nixCats-nvim";
   };
 
   outputs =
@@ -29,12 +29,13 @@
       self,
       nixpkgs,
       home-manager,
-      my-nvim,
       nixgl,
+      nixCats,
       ...
     }@inputs:
     let
       user = "Jester";
+      myColorscheme = "gruvbox-dark-hard";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         localSystem = system;
@@ -45,7 +46,7 @@
     {
       homeConfigurations."${user}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = { inherit inputs user; };
+        extraSpecialArgs = { inherit inputs user myColorscheme; };
         modules = [
           ./home.nix
           inputs.plasma-manager.homeModules.plasma-manager

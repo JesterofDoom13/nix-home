@@ -8,14 +8,8 @@
 {
   targets.genericLinux.nixGL.packages = inputs.nixgl.packages;
   imports = [
-    inputs.my-nvim.homeModule
     ./modules/programs
   ];
-
-  nvim = {
-    enable = true;
-    packageNames = [ "nvim" ];
-  };
 
   home = {
     username = user;

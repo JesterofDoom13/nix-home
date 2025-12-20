@@ -1,14 +1,20 @@
-{ pkgs, config, inputs, ... }:
+{
+  pkgs,
+  config,
+  inputs,
+  ...
+}:
 let
   system = pkgs.stdenv.hostPlatform.system;
   ghostty-pkg = inputs.ghostty.packages.${system}.default;
   wrappedGhostty = config.lib.nixGL.wrap ghostty-pkg;
-  
+
   ghostty-tmux = pkgs.writeShellScriptBin "ghostty-tmux" ''
     SESSION="main"
     ${pkgs.tmux}/bin/tmux new-session -A -s "$SESSION" ${pkgs.fish}/bin/fish
   '';
-in {
+in
+{
   home.packages = [ ghostty-tmux ];
 
   programs.ghostty = {
@@ -20,8 +26,8 @@ in {
       background-opacity = 0.85;
       gtk-single-instance = true;
       theme = "Gruvbox Material";
-      font-family = "Fira Code SemiBold";
-      font-size = 9;
+      initial-window = false;
+      quit-after-last-window-closed = false;
       command = "${ghostty-tmux}/bin/ghostty-tmux";
     };
   };
@@ -34,4 +40,3 @@ in {
     Comment=Start Ghostty on login
   '';
 }
-

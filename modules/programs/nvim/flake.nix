@@ -123,6 +123,7 @@
               lazy-nvim
               LazyVim
               bufferline-nvim
+              base16-nvim
               lazydev-nvim
               conform-nvim
               flash-nvim
@@ -245,6 +246,7 @@
             pkgs,
             name,
             mkPlugin,
+            # myColorscheme,
             ...
           }:
           {
@@ -266,6 +268,7 @@
             categories = {
               general = true;
               test = false;
+              # settings = myColorscheme;
             };
             extra = { };
           };
