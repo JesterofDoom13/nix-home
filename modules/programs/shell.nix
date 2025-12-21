@@ -23,6 +23,10 @@
     # neovim tree-sitter lua51Packages.luarocks black isort
   ];
 
+  home.sessionSearchVariables.XDG_CONFIG_DIRS = [
+    "/home/Jester/.config/kdedefaults"
+    "/etc/xdg"
+  ];
   programs.fish = {
     enable = true;
     interactiveShellInit = "fish_vi_key_bindings";

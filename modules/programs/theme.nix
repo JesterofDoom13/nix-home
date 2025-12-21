@@ -2,6 +2,7 @@
 {
   stylix = {
     enable = true;
+    autoEnable = true;
     polarity = "dark";
     image = ../../assets/imgs/background/anime_skull.png;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/${myColorscheme}.yaml";
@@ -24,6 +25,11 @@
         terminal = 9; # Adjust for your terminal
       };
     };
-    targets.zen-browser.profileNames = [ "default" ];
+    targets = {
+      gtk = {
+        enable = false;
+      };
+      zen-browser.profileNames = [ "default" ];
+    };
   };
 }

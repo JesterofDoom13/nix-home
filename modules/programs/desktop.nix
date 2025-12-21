@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   programs.zen-browser.enable = true;
+  programs.google-chrome.enable = true;
 
   home.file.".config/kxkbrc".text = ''
     [Layout]
