@@ -26,6 +26,9 @@
       };
     };
     targets = {
+      yazi = {
+        enable = true;
+      };
       gtk = {
         enable = false;
       };

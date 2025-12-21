@@ -94,14 +94,15 @@
           # this includes LSPs
           lspsAndRuntimeDeps = with pkgs; {
             general = [
-              universal-ctags
-              statix
-              markdownlint-cli2
               ast-grep
+              curl
+              harper
+              markdownlint-cli2
               markdown-toc
               nixfmt
               prettier
-              curl
+              statix
+              universal-ctags
               # NOTE:
               # lazygit
               # Apparently lazygit when launched via snacks cant create its own config file
@@ -157,6 +158,11 @@
               snacks-nvim
               nvim-treesitter-textobjects
               nvim-treesitter.withAllGrammars
+              tmux-nvim
+              fzf-lua
+              yazi-nvim
+              obsidian-nvim
+              smart-splits-nvim
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (
               #   plugins: with plugins; [
@@ -177,6 +183,10 @@
               {
                 plugin = mini-icons;
                 name = "mini.icons";
+              }
+              {
+                plugin = mini-splitjoin;
+                name = "mini.splitjoin";
               }
               {
                 plugin = mini-pairs;
