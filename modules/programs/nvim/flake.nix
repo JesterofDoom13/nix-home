@@ -97,6 +97,10 @@
               universal-ctags
               statix
               markdownlint-cli2
+              ast-grep
+              markdown-toc
+              nixfmt
+              prettier
               curl
               # NOTE:
               # lazygit

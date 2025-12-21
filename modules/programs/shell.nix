@@ -10,28 +10,47 @@
     python3
     git
     lazygit
-    chezmoi
+    tree-sitter
+    lua51Packages.luarocks
+    black
+    isort
+    marksman
+    markdown-toc
+    markdownlint-cli2
+    nixfmt
+    prettier
+    ruby
+    gem
+    lua5_1
+    shfmt
+    ast-grep
     # CLI Tools
     fzf
+    pandoc
     eza
     ripgrep
     zoxide
     fd
     yazi
     tmux
-    # Neovim dependencies
-    # neovim tree-sitter lua51Packages.luarocks black isort
   ];
 
   home.sessionSearchVariables.XDG_CONFIG_DIRS = [
     "/home/Jester/.config/kdedefaults"
     "/etc/xdg"
   ];
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = "fish_vi_key_bindings";
-  };
+  programs = {
+    fish = {
+      enable = true;
+      interactiveShellInit = "fish_vi_key_bindings";
+    };
 
-  programs.bash.enable = true;
+    bash.enable = true;
+    nh = {
+      enable = true;
+      flake = "/home/Jester/.config/home-manager/";
+    };
+  };
   home.sessionVariables.EDITOR = "nvim";
+
 }
