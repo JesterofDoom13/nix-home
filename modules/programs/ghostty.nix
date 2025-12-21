@@ -9,24 +9,20 @@ let
   ghostty-pkg = inputs.ghostty.packages.${system}.default;
   wrappedGhostty = config.lib.nixGL.wrap ghostty-pkg;
 
-  ghostty-tmux = pkgs.writeShellScriptBin "ghostty-tmux" ''
-    SESSION="main"
-    ${pkgs.tmux}/bin/tmux new-session -A -s "$SESSION" ${pkgs.fish}/bin/fish
-  '';
 in
 {
-  home.packages = [ ghostty-tmux ];
+  # home.packages = [ ghostty-tmux ];
 
   programs.ghostty = {
     enable = true;
     package = wrappedGhostty;
     settings = {
       keybind = [ "global:super+semicolon=toggle_quick_terminal" ];
-      quick-terminal-size = "75%,90%";
+      quick-terminal-size = "72.5%,90%";
       background-opacity = 0.85;
       gtk-single-instance = true;
-      theme = "Gruvbox Material";
-      command = "${ghostty-tmux}/bin/ghostty-tmux";
+      # theme = "Gruvbox Material";
+      command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
       ## These next two are VITAL to the quick-terminal working the way I like it.
       initial-window = false;
       quit-after-last-window-closed = false;

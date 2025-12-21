@@ -31,10 +31,27 @@
         "type": "github"
       }
     },
+    "plugins-foobar": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766343874,
+        "narHash": "sha256-KJ+o4zsRiDcBo+R0Tq0SG+w3IqT+qEdWPqeJZI3ZwRI=",
+        "owner": "yousefhadder",
+        "repo": "markdown-plus.nvim",
+        "rev": "8bee4c4ed20f9b00415cbe5ab443bd69681fccea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yousefhadder",
+        "repo": "markdown-plus.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "nixCats": "nixCats",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "plugins-foobar": "plugins-foobar"
       }
     }
   },

@@ -6,7 +6,14 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-
+    # plugins-markdownplus = {
+    #   url = "github:yousefhadder/markdown-plus.nvim";
+    #   flake = false;
+    # };
+    plugins-foobar = {
+      url = "github:yousefhadder/markdown-plus.nvim";
+      flake = false;
+    };
     # neovim-nightly-overlay = {
     #   url = "github:nix-community/neovim-nightly-overlay";
     # };
@@ -189,9 +196,18 @@
                 name = "mini.splitjoin";
               }
               {
+                plugin = mini-surround;
+                name = "mini.surround";
+              }
+              {
                 plugin = mini-pairs;
                 name = "mini.pairs";
               }
+              # {
+              #   plugin = pkgs.neovimPlugins.markdownplus;
+              #   name = "markdown-plus.nvim";
+              # }
+              # pkgs.neovimPlugins.foobar
               # you could do this within the lazy spec instead if you wanted
               # and get the new names from `:NixCats pawsible` debug command
             ];

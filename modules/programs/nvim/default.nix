@@ -28,4 +28,10 @@ in
         };
     };
   };
+  home = {
+    file."Documents/.vaults/Personal/.templates/daily.md" = {
+      recursive = true;
+      source = ../../../assets/obsidian/templates/daily.md;
+    };
+  };
 }

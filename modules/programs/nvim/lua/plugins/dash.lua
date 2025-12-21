@@ -25,9 +25,7 @@ return {
        keys = {
          { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
          { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
-         -- { icon = "", key = "N", desc = "Neorg Journal", action = ":Neorg journal today" },
-         { icon = "󰙅", key = "C", desc = "Chezmoi Edit", action = function() require("chezmoi.pick").fzf() end,},
-         { icon = "󰇈", key = "O", desc = "Obsidian Today", action = ":ObsidianToday"},
+         { icon = "󰇈", key = "O", desc = "Obsidian Today", action = ":Obsidian today"},
          { icon = " ", key = "g", desc = "Find Text", action = ":lua Snacks.dashboard.pick('live_grep')" },
          { icon = " ", key = "r", desc = "Recent Files", action = ":lua Snacks.dashboard.pick('oldfiles')" },
          { icon = " ", key = "c", desc = "Config", action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})" },
