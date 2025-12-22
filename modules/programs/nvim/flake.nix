@@ -163,7 +163,7 @@
               which-key-nvim
               yazi-nvim
               nerdy-nvim
-              dail-nvim
+              dial-nvim
               # sometimes you have to fix some names
               {
                 plugin = image-nvim;
