@@ -33,7 +33,7 @@
       enable = true;
       enableFishIntegration = true;
       enableBashIntegration = true;
-      enableShellIntergration = true;
+      enableShellIntegration = true;
     };
     nh = {
       enable = true;
