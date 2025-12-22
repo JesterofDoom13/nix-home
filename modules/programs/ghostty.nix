@@ -9,6 +9,7 @@ let
   inherit (pkgs.stdenv.hostPlatform) system;
   ghostty-pkg = inputs.ghostty.packages.${system}.default;
   wrappedGhostty = config.lib.nixGL.wrap ghostty-pkg;
+  ghosttySystemdPath = "${wrappedGhostty}/share/systemd/user/app-com.mitchellh.ghostty.service";
 in
 {
   programs = {
@@ -95,6 +96,12 @@ in
         quick-terminal-size = "72.5%,90%";
         background-opacity = 0.85;
         gtk-single-instance = true;
+        alpha-blending = "native";
+        font-family-bold = "Fira Code";
+        font-family-italic = "Maple Mono";
+        font-family-bold-italic = "Maple Mono";
+        adjust-underline-position = 4;
+        window-padding-x = 2;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
         custom-shader = [
           "${homeDir}/.config/ghostty/shaders/cursor_tail.glsl"
@@ -113,13 +120,36 @@ in
       "ghostty/shaders/cursor_tail.glsl".source = ../../assets/ghostty/shaders/cursor_tail.glsl;
       "ghostty/shaders/sonic_boom_cursor.glsl".source =
         ../../assets/ghostty/shaders/sonic_boom_cursor.glsl;
-      "autostart/ghostty.desktop".text = ''
-        [Desktop Entry]
-        Type=Application
-        Exec=${wrappedGhostty}/bin/ghostty
-        Name=Ghostty
-        Comment=Start Ghostty on login
-      '';
+      # "autostart/ghostty.desktop".text = ''
+      #   [Desktop Entry]
+      #   Type=Application
+      #   Exec=${wrappedGhostty}/bin/ghostty
+      #   Name=Ghostty
+      #   Comment=Start Ghostty on login
+      # '';
+    };
+    dataFile = {
+      "systemd/user/app-com.mitchellh.ghostty.service".source = ghosttySystemdPath;
+    };
+  };
+  systemd.user.services.app-ghostty-service = {
+    Unit = {
+      Description = "Ghostty";
+      After = [
+        "graphical-session.target"
+        "dbus.socket"
+      ];
+    };
+    Service = {
+      ExecStart = "$wrappedGhostty/bin/ghostty";
+      Type = "notify-reload";
+      ReloadSignal = "SIGUSR2";
+      BusName = "com.mitchellh.ghostty";
+    };
+    Install = {
+      WantedBy = [
+        "graphical-session.target"
+      ];
     };
   };
 }
