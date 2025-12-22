@@ -9,7 +9,6 @@ let
   inherit (pkgs.stdenv.hostPlatform) system;
   ghostty-pkg = inputs.ghostty.packages.${system}.default;
   wrappedGhostty = config.lib.nixGL.wrap ghostty-pkg;
-  ghosttySystemdPath = "${wrappedGhostty}/share/systemd/user/app-com.mitchellh.ghostty.service";
 in
 {
   programs = {
@@ -128,9 +127,6 @@ in
       #   Comment=Start Ghostty on login
       # '';
     };
-    dataFile = {
-      "systemd/user/app-com.mitchellh.ghostty.service".source = ghosttySystemdPath;
-    };
   };
   systemd.user.services.app-ghostty-service = {
     Unit = {
@@ -141,7 +137,7 @@ in
       ];
     };
     Service = {
-      ExecStart = "$wrappedGhostty/bin/ghostty";
+      ExecStart = "${wrappedGhostty}/bin/ghostty";
       Type = "notify-reload";
       ReloadSignal = "SIGUSR2";
       BusName = "com.mitchellh.ghostty";

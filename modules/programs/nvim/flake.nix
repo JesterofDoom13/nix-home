@@ -162,14 +162,8 @@
               vim-startuptime
               which-key-nvim
               yazi-nvim
-              # This is for if you only want some of the grammars
-              # (nvim-treesitter.withPlugins (
-              #   plugins: with plugins; [
-              #     nix
-              #     lua
-              #   ]
-              # ))
-
+              nerdy-nvim
+              dail-nvim
               # sometimes you have to fix some names
               {
                 plugin = image-nvim;
