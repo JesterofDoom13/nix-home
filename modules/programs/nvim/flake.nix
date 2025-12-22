@@ -6,7 +6,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-
     # see :help nixCats.flake.inputs
     # If you want your plugin to be loaded by the standard overlay,
     # i.e. if it wasnt on nixpkgs, but doesnt have an extra build step.
@@ -173,12 +172,20 @@
 
               # sometimes you have to fix some names
               {
+                plugin = live-preview-nvim;
+                name = "live-preview.nvim";
+              }
+              {
                 plugin = catppuccin-nvim;
                 name = "catppuccin";
               }
               {
                 plugin = mini-ai;
                 name = "mini.ai";
+              }
+              {
+                plugin = mini-operators;
+                name = "mini.operators";
               }
               {
                 plugin = mini-icons;
@@ -220,7 +227,7 @@
           # variable available to nvim runtime
           sharedLibraries = {
             general = with pkgs; [
-              # libgit2
+              libgit2
             ];
           };
 
