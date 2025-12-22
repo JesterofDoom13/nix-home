@@ -108,9 +108,10 @@ in
   systemd.user.services.app-com.mitchell.ghostty.enable = true;
   xdg = {
     configFile = {
-      "ghostty/shaders/sparks-from-fire.glsl".soruce = ../../assets/ghostty/shaders/cursor_tail.glsl;
-      "ghostty/shaders/cursor_tail.glsl".source = ../../assets/ghostty/shaders/sonic_boom_cursor.glsl;
-      "ghostty/shaders/sonic_boom_cursor.gls".source = ../../assets/ghostty/shaders/starfield.glsl;
+      "ghostty/shaders/sparks-from-fire.glsl".soruce = ../../assets/ghostty/shaders/sparks-from-fire.glsl;
+      "ghostty/shaders/cursor_tail.glsl".source = ../../assets/ghostty/shaders/cursor_tail.glsl;
+      "ghostty/shaders/sonic_boom_cursor.glsl".source =
+        ../../assets/ghostty/shaders/sonic_boom_cursor.glsl;
       "autostart/ghostty.desktop".text = ''
         [Desktop Entry]
         Type=Application
