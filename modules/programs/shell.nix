@@ -33,7 +33,7 @@
       enable = true;
       enableFishIntegration = true;
       enableBashIntegration = true;
-      enableShellIntegration = true;
+      tmux.enableShellIntegration = true;
     };
     nh = {
       enable = true;
