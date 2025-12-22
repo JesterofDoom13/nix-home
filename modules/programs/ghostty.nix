@@ -2,6 +2,7 @@
   pkgs,
   config,
   inputs,
+  homeDir
   ...
 }:
 let
@@ -19,14 +20,12 @@ in
         quick-terminal-size = "72.5%,90%";
         background-opacity = 0.85;
         gtk-single-instance = true;
-        custom-shader = [
-          "~/.config/ghostty/shaders/sparks-from-fire.glsl"
-          "~/.config/ghostty/shaders/cursor_tail.glsl"
-          "~/.config/ghostty/shaders/sonic_boom_cursor.glsl"
-        ];
-        # theme = "Gruvbox Material";
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
-        ## These next two are VITAL to the quick-terminal working the way I like it.
+        custom-shader = [
+          "${homeDir}/.config/ghostty/shaders/cursor_tail.glsl" 
+          "${homeDir}/.config/ghostty/shaders/sonic_boom_cursor.glsl"
+          "${homeDir}/.config/ghostty/shaders/sparks-from-fire.glsl"
+        ];
         initial-window = false;
         quit-after-last-window-closed = false;
       };
@@ -40,14 +39,13 @@ in
       ];
       extraConfig = ''
         set-window-option -g mode-keys vi
-        set -gq allow-passthrough on
-        set -g visual-activity off
 
         set -g  default-terminal "screen-256color"
         # needed for proper nvim/tmux/base16 colors
         set -ga terminal-overrides ",xterm-256color:Tc"
+        set -gq allow-passthrough on
+        set -g visual-activity off
 
-        # Navigating panes
         is_vim="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?\.?(view|n?vim?x?)(-wrapped)?(diff)?$'"
 
         bind-key -n 'C-h' if-shell "$is_vim" 'send-keys C-h' { if -F '#{pane_at_left}' ''$ 'select-pane -L' }
@@ -107,11 +105,11 @@ in
       '';
     };
   };
+  systemd.user.services.app-com.mitchell.ghostty.enable = true;
   xdg = {
     configFile = {
-      "ghostty/shaders/sparks-from-fire.glsl".source = ../../assets/ghostty/shaders/cursor_tail.glsl;
-      "ghostty/shaders/cursor_tail.glsl     ".source =
-        ../../assets/ghostty/shaders/sonic_boom_cursor.glsl;
+      "ghostty/shaders/sparks-from-fire.glsl".soruce = ../../assets/ghostty/shaders/cursor_tail.glsl;
+      "ghostty/shaders/cursor_tail.glsl".source = ../../assets/ghostty/shaders/sonic_boom_cursor.glsl;
       "ghostty/shaders/sonic_boom_cursor.gls".source = ../../assets/ghostty/shaders/starfield.glsl;
       "autostart/ghostty.desktop".text = ''
         [Desktop Entry]

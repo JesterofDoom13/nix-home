@@ -48,12 +48,13 @@ mkdir -p ~/.config/nix/
 echo "extra-experimental-features = flakes nix-command" > ~/.config/nix/nix.conf
 ```
 
-### Setup git to pull private repository
+### Setup Git to Pull Private Repository
 
 > [!NOTE]
-> [Github PAT Generator](https://github.com/settings/tokens)
+> [GitHub PAT Generator](https://github.com/settings/tokens)
 
-Get a token set up so you can pull your repo. Be ready to use the PAT you generate with the next step.
+Get a token set up so you can pull your repo. Be ready to use the PAT you
+generate with the next step.
 
 ### Initial Home-Manager Run
 
@@ -70,8 +71,18 @@ home-manager switch
 ## Things to Add in the Future
 
 - [x] First run to pull repository
-  - [x] nix command to run git and pull this repository in one shot
+  - [x] Nix command to run git and pull this repository in one shot
   - [x] Script to make nix.conf in nix config directory
 - [x] Start in a fresh install
 - [x] Get ghostty running
 - [x] Get nixCats-nvim set up
+- [ ] Have Zen-browser load all my settings
+  - [ ] Bookmarks
+  - [ ] Extensions
+  - [ ] Spaces
+    - [ ] Names
+      - [ ] Default
+      - [ ] Server
+      - [ ] 3D Printing
+      - [ ] Messaging
+  - [ ] Website pins in each Space.
