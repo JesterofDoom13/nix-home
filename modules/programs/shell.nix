@@ -1,12 +1,26 @@
 { pkgs, ... }:
 {
   programs = {
-    bash.enable = true;
+    bash = {
+      enable = true;
+    };
     fish = {
       enable = true;
       interactiveShellInit = "fish_vi_key_bindings";
       shellAbbrs = {
         cd = "z";
+        dock = "fissh root@10.0.0.6";
+        cad = "fissh root@10.0.0.154";
+        klip = "fissh klip@10.0.0.161";
+        prox = "fissh root@bigprox";
+        plex = "fissh root@10.0.0.90";
+        pi = "fissh pi@johnny";
+        head = "fissh root@10.0.0.94";
+      };
+      functions = {
+        fissh = ''
+          SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv
+        '';
       };
     };
     eza = {
@@ -19,6 +33,7 @@
       enable = true;
       enableFishIntegration = true;
       enableBashIntegration = true;
+      enableShellIntergration = true;
     };
     nh = {
       enable = true;
@@ -39,6 +54,7 @@
       enable = true;
       enableFishIntegration = true;
       enableBashIntegration = true;
+      shellWrapperName = "y";
     };
     zoxide = {
       enable = true;

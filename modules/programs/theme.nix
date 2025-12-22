@@ -2,6 +2,7 @@
 {
   stylix = {
     enable = true;
+    # The default but I didn't feel like it was doing it, so just in case
     autoEnable = true;
     polarity = "dark";
     image = ../../assets/imgs/background/anime_skull.png;
@@ -12,17 +13,17 @@
       };
       sansSerif = {
         # Or other generic font
-        name = "Roboto Regular";
+        name = "FiraCode Nerd Font";
       };
       serif = {
         # Or other generic font
-        name = "Roboto Slab";
+        name = "FiraCode Nerd Font";
       };
       sizes = {
-        desktop = 9; # Or your preferred small size, e.g., 9, 10, 11
-        applications = 9;
-        popups = 9;
-        terminal = 9; # Adjust for your terminal
+        desktop = 8;
+        applications = 8;
+        popups = 8;
+        terminal = 8;
       };
     };
     targets = {
@@ -32,7 +33,7 @@
       gtk = {
         enable = false;
       };
-      zen-browser.profileNames = [ "default" ];
+      zen-browser.profileNames = [ "" ];
     };
   };
 }

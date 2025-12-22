@@ -1,28 +1,30 @@
 {
   pkgs,
   user,
+  homeDir,
   config,
   inputs,
   ...
 }:
 {
   targets.genericLinux.nixGL.packages = inputs.nixgl.packages;
-  # targets.genericLinux.enable = true;
+  targets.genericLinux.enable = true;
   imports = [
     ./modules/programs
   ];
 
   home = {
     username = user;
-    homeDirectory = "/home/${user}";
+    homeDirectory = homeDir;
     stateVersion = "25.05";
     shellAliases = {
       du = "dust";
+      q = "exit";
     };
     sessionVariables.EDITOR = "nvim";
 
     sessionSearchVariables.XDG_CONFIG_DIRS = [
-      "/home/Jester/.config/kdedefaults"
+      "${homeDir}/.config/kdedefaults"
       "/etc/xdg"
     ];
   };

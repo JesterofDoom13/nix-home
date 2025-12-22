@@ -45,6 +45,7 @@
     }@inputs:
     let
       user = "Jester";
+      homeDir = "/home/${user}";
       myColorscheme = "woodland";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -61,6 +62,7 @@
             inputs
             user
             myColorscheme
+            homeDir
             ;
         };
         modules = [
