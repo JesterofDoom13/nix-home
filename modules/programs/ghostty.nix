@@ -2,7 +2,7 @@
   pkgs,
   config,
   inputs,
-  homeDir
+  homeDir,
   ...
 }:
 let
@@ -22,7 +22,7 @@ in
         gtk-single-instance = true;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
         custom-shader = [
-          "${homeDir}/.config/ghostty/shaders/cursor_tail.glsl" 
+          "${homeDir}/.config/ghostty/shaders/cursor_tail.glsl"
           "${homeDir}/.config/ghostty/shaders/sonic_boom_cursor.glsl"
           "${homeDir}/.config/ghostty/shaders/sparks-from-fire.glsl"
         ];
