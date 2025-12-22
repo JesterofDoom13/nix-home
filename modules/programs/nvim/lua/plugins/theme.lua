@@ -10,4 +10,9 @@ return {
       colorscheme = 'base16-' .. nixCats.cats.colorscheme,
     },
   },
+  {
+    'tribela/transparent.nvim',
+    event = 'VimEnter',
+    opts = {},
+  },
 }

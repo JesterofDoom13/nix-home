@@ -6,17 +6,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-    # plugins-markdownplus = {
-    #   url = "github:yousefhadder/markdown-plus.nvim";
-    #   flake = false;
-    # };
-    plugins-foobar = {
-      url = "github:yousefhadder/markdown-plus.nvim";
-      flake = false;
-    };
-    # neovim-nightly-overlay = {
-    #   url = "github:nix-community/neovim-nightly-overlay";
-    # };
 
     # see :help nixCats.flake.inputs
     # If you want your plugin to be loaded by the standard overlay,
@@ -103,13 +92,23 @@
             general = [
               ast-grep
               curl
+              fd
               harper
+              lua-language-server
               markdownlint-cli2
               markdown-toc
+              nil # I would go for nixd but lazy chooses this one idk
               nixfmt
+              perl540Packages.NeovimExt
               prettier
+              ripgrep
               statix
+              stdenv.cc.cc
+              stylua
               universal-ctags
+              viu
+              chafa
+              ueberzugpp
               # NOTE:
               # lazygit
               # Apparently lazygit when launched via snacks cant create its own config file
@@ -117,12 +116,6 @@
               (pkgs.writeShellScriptBin "lazygit" ''
                 exec ${pkgs.lazygit}/bin/lazygit --use-config-file ${pkgs.writeText "lazygit_config.yml" ""} "$@"
               '')
-              ripgrep
-              fd
-              stdenv.cc.cc
-              lua-language-server
-              nil # I would go for nixd but lazy chooses this one idk
-              stylua
             ];
           };
 
@@ -134,42 +127,42 @@
               # LazyVim
               lazy-nvim
               LazyVim
-              bufferline-nvim
               base16-nvim
-              lazydev-nvim
+              blink-cmp
+              bufferline-nvim
               conform-nvim
               flash-nvim
               friendly-snippets
+              fzf-lua
               gitsigns-nvim
               grug-far-nvim
-              noice-nvim
+              lazydev-nvim
               lualine-nvim
+              noice-nvim
               nui-nvim
               nvim-lint
               nvim-lspconfig
               nvim-treesitter-textobjects
+              nvim-treesitter-textobjects
+              nvim-treesitter.withAllGrammars
               nvim-ts-autotag
-              ts-comments-nvim
-              blink-cmp
               nvim-web-devicons
+              obsidian-nvim
               persistence-nvim
               plenary-nvim
+              smart-splits-nvim
+              snacks-nvim
               telescope-fzf-native-nvim
               telescope-nvim
+              tmux-nvim
               todo-comments-nvim
               tokyonight-nvim
               trouble-nvim
+              ts-comments-nvim
               vim-illuminate
               vim-startuptime
               which-key-nvim
-              snacks-nvim
-              nvim-treesitter-textobjects
-              nvim-treesitter.withAllGrammars
-              tmux-nvim
-              fzf-lua
               yazi-nvim
-              obsidian-nvim
-              smart-splits-nvim
               # This is for if you only want some of the grammars
               # (nvim-treesitter.withPlugins (
               #   plugins: with plugins; [
@@ -203,10 +196,6 @@
                 plugin = mini-pairs;
                 name = "mini.pairs";
               }
-              # {
-              #   plugin = pkgs.neovimPlugins.markdownplus;
-              #   name = "markdown-plus.nvim";
-              # }
               # pkgs.neovimPlugins.foobar
               # you could do this within the lazy spec instead if you wanted
               # and get the new names from `:NixCats pawsible` debug command
@@ -218,7 +207,14 @@
           # NOTE: this template is using lazy.nvim so, which list you put them in is irrelevant.
           # startupPlugins or optionalPlugins, it doesnt matter, lazy.nvim does the loading.
           # I just put them all in startupPlugins. I could have put them all in here instead.
-          optionalPlugins = { };
+          optionalPlugins = with pkgs.neovimPlugins; {
+            general = [
+              {
+                plugin = markdownplus;
+                name = "markdown-plus.nvim";
+              }
+            ];
+          };
 
           # shared libraries to be added to LD_LIBRARY_PATH
           # variable available to nvim runtime
@@ -276,7 +272,6 @@
             pkgs,
             name,
             mkPlugin,
-            # myColorscheme,
             ...
           }:
           {

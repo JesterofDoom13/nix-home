@@ -26,6 +26,11 @@
       ];
       extraConfig = ''
         set-window-option -g mode-keys vi
+
+        set -g  default-terminal "screen-256color"
+        # needed for proper nvim/tmux/base16 colors
+        set -ga terminal-overrides ",xterm-256color:Tc"
+
         # Navigating panes
         is_vim="ps -o state= -o comm= -t '#{pane_tty}' | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?\.?(view|n?vim?x?)(-wrapped)?(diff)?$'"
 

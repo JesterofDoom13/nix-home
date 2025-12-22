@@ -20,8 +20,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ghostty.url = "github:ghostty-org/ghostty";
+    suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
+
+    ### For NixCats --- NEOVIM
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
+    # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
+    # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
+    # You probably want to add a .lua in your plugins directory for it too.
+    plugins-markdownplus = {
+      url = "github:yousefhadder/markdown-plus.nvim";
+      flake = false;
+    };
   };
 
   outputs =
@@ -46,7 +56,13 @@
     {
       homeConfigurations."${user}" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        extraSpecialArgs = { inherit inputs user myColorscheme; };
+        extraSpecialArgs = {
+          inherit
+            inputs
+            user
+            myColorscheme
+            ;
+        };
         modules = [
           ./home.nix
           inputs.plasma-manager.homeModules.plasma-manager

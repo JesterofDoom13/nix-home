@@ -7,7 +7,12 @@ let
   # Get the home module from the local nvim flake
   nvimFlake = import ./flake.nix;
   nvimFlakeOutputs = nvimFlake.outputs {
-    inherit (inputs) nixpkgs nixCats myColorscheme;
+    inherit (inputs)
+      nixpkgs
+      nixCats
+      myColorscheme
+      plugins-markdownplus
+      ;
     self = nvimFlake;
   };
 in

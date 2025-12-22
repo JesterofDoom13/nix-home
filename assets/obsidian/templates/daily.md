@@ -33,15 +33,15 @@ tags:
 
 ## 📝 Journal Entry & Reflection
 
-### What happened today?
+### What Happened Today?
 
 - [Record key events, meetings, or observations in bullet points or free text]
 
-### One thing I am grateful for
+### One Thing I Am Grateful For
 
 > [Write a sentence or two about something you appreciate]
 
-### How am I feeling today?
+### How Am I Feeling Today?
 
 [Describe your thoughts and emotions to understand them more clearly]
 
