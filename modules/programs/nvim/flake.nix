@@ -172,6 +172,14 @@
 
               # sometimes you have to fix some names
               {
+                plugin = image-nvim;
+                name = "image.nvim";
+              }
+              {
+                plugin = img-clip-nvim;
+                name = "img-clip.nvim";
+              }
+              {
                 plugin = live-preview-nvim;
                 name = "live-preview.nvim";
               }

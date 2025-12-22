@@ -40,6 +40,8 @@ in
       ];
       extraConfig = ''
         set-window-option -g mode-keys vi
+        set -gq allow-passthrough on
+        set -g visual-activity off
 
         set -g  default-terminal "screen-256color"
         # needed for proper nvim/tmux/base16 colors
