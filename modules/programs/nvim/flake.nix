@@ -240,7 +240,7 @@
                 categoryDefinitions
                 packageDefinitions
                 ;
-              inherit dependencyOverlays;
+              dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
               extra = {
                 # This passes the string to Lua as nixCats('extra').colorscheme
                 colorscheme = myColorscheme;
