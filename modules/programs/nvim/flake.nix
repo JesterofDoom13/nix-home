@@ -227,6 +227,7 @@
           config,
           lib,
           pkgs,
+          inputs,
           myColorscheme,
           ...
         }:
