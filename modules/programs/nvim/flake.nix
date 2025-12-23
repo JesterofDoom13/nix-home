@@ -165,7 +165,6 @@
           environmentVariables = {
             test = {
               CATTESTVAR = "It worked!";
-              # COLORSCHEME = myColorScheme; # REMOVED from here, added via homeModule below
             };
           };
           extraWrapperArgs = {
@@ -240,6 +239,7 @@
                 categoryDefinitions
                 packageDefinitions
                 ;
+              inherit dependencyOverlays;
               extra = {
                 # This passes the string to Lua as nixCats('extra').colorscheme
                 colorscheme = myColorscheme;
