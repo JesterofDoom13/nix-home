@@ -4,13 +4,14 @@ return {
   dependencies = {
     'nvim-telescope/telescope.nvim',
   },
+  keys = {
+    { '<leader>mk', '<cmd>KanbanOpen ~/Documents/.vaults/', desc = 'Kanban Primary' },
+  },
 
-  config = function()
-    require('kanban').setup {
-      markdown = {
-        description_folder = '~/Documents/.vaults/tasks/', -- Path to save the file corresponding to the task.
-        list_head = '## ',
-      },
-    }
-  end,
+  opts = {
+    markdown = {
+      description_folder = './.', -- Path to save the file corresponding to the task.
+      list_head = '## ',
+    },
+  },
 }
