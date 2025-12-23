@@ -233,7 +233,7 @@
         }:
         {
           imports = [
-            (utils.mkHomeModule {
+            (utils.mkHomeModules {
               inherit
                 nixpkgs
                 luaPath
