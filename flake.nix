@@ -83,7 +83,7 @@
             }:
             {
               nixCats.enable = true;
-              nixCats.packagesNames = [ "nvim" ];
+              nixCats.packageNames = [ "nvim" ];
 
               xdg.configFile."nvim".source =
                 config.lib.file.mkOutOfStoreSymlink "{$homeDir}/.config/home-manager/modules/programs/nvim/config";
