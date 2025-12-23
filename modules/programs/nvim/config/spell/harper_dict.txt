@@ -1,0 +1,7 @@
+Bazzite
+Silverblue
+conf
+ghostty
+nixCats
+nvim
+sudo

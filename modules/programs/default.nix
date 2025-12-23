@@ -5,6 +5,6 @@
     ./ghostty.nix
     ./shell.nix
     ./theme.nix
-    ./nvim
+    # ./nvim
   ];
 }

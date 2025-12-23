@@ -24,10 +24,9 @@
     nixgl.url = "github:nix-community/nixGL";
 
     ### For NixCats --- NEOVIM
-    nixCats.url = "github:BirdeeHub/nixCats-nvim";
     # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
     # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
-    # You pronbably want to add a .lua in your plugins directory for it too.
+    myNixCats.url = "path:./modules/programs/nvim";
     plugins-kanban-nvim = {
       url = "github:arakkkkk/kanban.nvim";
       flake = false;
@@ -44,7 +43,7 @@
       nixpkgs,
       home-manager,
       nixgl,
-      nixCats,
+      myNixCats,
       ...
     }@inputs:
     let
@@ -65,8 +64,8 @@
           inherit
             inputs
             user
-            myColorscheme
             homeDir
+            myColorscheme
             ;
         };
         modules = [
@@ -74,6 +73,23 @@
           inputs.plasma-manager.homeModules.plasma-manager
           inputs.stylix.homeModules.stylix
           inputs.zen-browser.homeModules.beta
+          myNixCats.homeModule
+          (
+            {
+              config,
+              lib,
+              myColorscheme,
+              ...
+            }:
+            {
+              nixCats.enable = true;
+              nixCats.packagesNames = [ "nvim" ];
+
+              xdg.configFile."nvim".source =
+                config.lib.file.mkOutOfStoreSymlink "{$homeDir}/.config/home-manager/modules/programs/nvim/config";
+
+            }
+          )
         ];
       };
     };
