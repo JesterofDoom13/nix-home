@@ -27,7 +27,11 @@
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
     # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
     # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
-    # You probably want to add a .lua in your plugins directory for it too.
+    # You pronbably want to add a .lua in your plugins directory for it too.
+    plugins-kanban-nvim = {
+      url = "github:arakkkkk/kanban.nvim";
+      flake = false;
+    };
     plugins-markdownplus = {
       url = "github:yousefhadder/markdown-plus.nvim";
       flake = false;

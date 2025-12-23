@@ -165,6 +165,7 @@
               nerdy-nvim
               dial-nvim
               lazygit-nvim
+              kanban-nvim
               # sometimes you have to fix some names
               {
                 plugin = image-nvim;
