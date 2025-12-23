@@ -165,7 +165,6 @@
               nerdy-nvim
               dial-nvim
               lazygit-nvim
-              kanban-nvim
               # sometimes you have to fix some names
               {
                 plugin = image-nvim;
@@ -220,6 +219,7 @@
           # I just put them all in startupPlugins. I could have put them all in here instead.
           optionalPlugins = with pkgs.neovimPlugins; {
             general = [
+              kanban-nvim
               {
                 plugin = markdownplus;
                 name = "markdown-plus.nvim";

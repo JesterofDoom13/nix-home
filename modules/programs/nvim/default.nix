@@ -12,6 +12,7 @@ let
       nixCats
       myColorscheme
       plugins-markdownplus
+      plugins-kanban-nvim
       ;
     self = nvimFlake;
   };
