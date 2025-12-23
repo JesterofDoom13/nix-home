@@ -37,10 +37,11 @@
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
     solaar
+    git-sync
   ];
 
-  services.git-sync = {
-    enable = true;
-  };
+  # services.git-sync = {
+  #   enable = true;
+  # };
 
 }
