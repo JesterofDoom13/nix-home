@@ -36,34 +36,33 @@ let
         lazy-nvim LazyVim base16-nvim blink-cmp bufferline-nvim conform-nvim flash-nvim friendly-snippets fzf-lua gitsigns-nvim grug-far-nvim lazydev-nvim lualine-nvim noice-nvim nui-nvim nvim-lint nvim-lspconfig nvim-treesitter-textobjects nvim-treesitter.withAllGrammars nvim-ts-autotag nvim-web-devicons obsidian-nvim persistence-nvim plenary-nvim smart-splits-nvim snacks-nvim telescope-fzf-native-nvim telescope-nvim tmux-nvim todo-comments-nvim tokyonight-nvim trouble-nvim ts-comments-nvim vim-illuminate vim-startuptime which-key-nvim yazi-nvim nerdy-nvim dial-nvim lazygit-nvim { plugin = image-nvim; name = "image.nvim"; } { plugin = img-clip-nvim; name = "img-clip.nvim"; } { plugin = live-preview-nvim; name = "live-preview.nvim"; } { plugin = catppuccin-nvim; name = "catppuccin"; } { plugin = mini-ai; name = "mini.ai"; } { plugin = mini-operators; name = "mini.operators"; } { plugin = mini-icons; name = "mini.icons"; } { plugin = mini-splitjoin; name = "mini.splitjoin"; } { plugin = mini-surround; name = "mini.surround"; } { plugin = mini-pairs; name = "mini.pairs"; }
       ];
     };
-          optionalPlugins = with pkgs.neovimPlugins; {
-            general = [
-              kanban-nvim
-              {
-                plugin = markdownplus;
-                name = "markdown-plus.nvim";
-              }
-            ];
-          };
-          sharedLibraries = {
-            general = with pkgs; [ libgit2 ];
-          };
-          environmentVariables = {
-            sytlix = "woodland";
-            test = {
-              CATTESTVAR = "It worked!";
-            };
-          };
-          extraWrapperArgs = {
-            test = [ ''--set CATTESTVAR2 "It worked again!"'' ];
-          };
-          python3.libraries = {
-            test = [ (_: [ ]) ];
-          };
-          extraLuaPackages = {
-            test = [ (_: [ ]) ];
-          };
-        };
+    optionalPlugins = with pkgs.neovimPlugins; {
+      general = [
+        kanban-nvim
+        {
+          plugin = markdownplus;
+          name = "markdown-plus.nvim";
+        }
+      ];
+    };
+    sharedLibraries = {
+      general = with pkgs; [ libgit2 ];
+    };
+    environmentVariables = {
+      sytlix = "woodland";
+      test = {
+        CATTESTVAR = "It worked!";
+      };
+    };
+    extraWrapperArgs = {
+      test = [ ''--set CATTESTVAR2 "It worked again!"'' ];
+    };
+    python3.libraries = {
+      test = [ (_: [ ]) ];
+    };
+    extraLuaPackages = {
+      test = [ (_: [ ]) ];
+    };
   };
 
   packageDefinitions = {
@@ -93,12 +92,13 @@ let
             extra = { };
           };
   };
+  moduleNamespace = ["nvim"];
   defaultPackageName = "nvim";
 in
 {
   imports = [
     # Generate the nixCats Home Manager module on the fly
-    (utils.mkHomeModule {
+    (utils.mkHomeModules {
       inherit (inputs) nixpkgs;
       inherit luaPath categoryDefinitions packageDefinitions;
       # Re-adds your plugin overlays if you have them
@@ -107,6 +107,6 @@ in
   ];
 config = {
     nvim.enable = true;
-    nvim.packageNames = ["nvim" "testnvim"]
+    nvim.packageNames = ["nvim" "testnvim"];
   };
 }
