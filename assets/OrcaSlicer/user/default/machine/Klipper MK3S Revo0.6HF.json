@@ -1,0 +1,36 @@
+{
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\nTIMELAPSE_TAKE_FRAME\n_MMU_UPDATE_HEIGHT\n\n",
+    "change_filament_gcode": "T[next_extruder]",
+    "cooling_tube_length": "0",
+    "cooling_tube_retraction": "0",
+    "enable_filament_ramming": "0",
+    "extra_loading_move": "0",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "host_type": "octoprint",
+    "inherits": "Prusa MK3S 0.6 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "PRINT_END",
+    "machine_start_gcode": "MMU_START_SETUP INITIAL_TOOL={initial_tool} TOTAL_TOOLCHANGES=!total_toolchanges! REFERENCED_TOOLS=!referenced_tools! TOOL_COLORS=!colors! TOOL_TEMPS=!temperatures! TOOL_MATERIALS=!materials! FILAMENT_NAMES=!filament_names! PURGE_VOLUMES=!purge_volumes!\n\n{if curr_bed_type==\"Cool Plate\"}\n  ;Cool Plate Offset  \n  SET_GCODE_OFFSET Z=-0.085\n{else}\n  {if curr_bed_type==\"Textured Cool Plate\"}\n    ;Cool Plate Offset  \n    SET_GCODE_OFFSET Z=-0.240\n  {else}\n    SET_GCODE_OFFSET Z=0.0\n  {endif}\n{endif}\n\nPRINT_START HOTEND=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] CHAMBER=[chamber_temperature]  ",
+    "max_layer_height": [
+        "0.48"
+    ],
+    "name": "Klipper MK3S Revo0.6HF",
+    "nozzle_type": "brass",
+    "parking_pos_retraction": "0",
+    "printable_area": [
+        "0x0",
+        "240x0",
+        "240x210",
+        "0x210"
+    ],
+    "printer_settings_id": "Klipper MK3S Revo0.6HF",
+    "retract_length_toolchange": [
+        "0"
+    ],
+    "retraction_length": [
+        "0"
+    ],
+    "support_multi_bed_types": "1",
+    "version": "2.3.0.5"
+}

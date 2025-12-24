@@ -1,0 +1,31 @@
+{
+    "compatible_printers": [
+        "Prusa MK3S 0.6 nozzle"
+    ],
+    "filament_loading_speed": [
+        "0"
+    ],
+    "filament_loading_speed_start": [
+        "0"
+    ],
+    "filament_settings_id": [
+        "Generic PLA @MMU"
+    ],
+    "filament_unloading_speed": [
+        "0"
+    ],
+    "filament_unloading_speed_start": [
+        "0"
+    ],
+    "from": "User",
+    "inherits": "Generic PLA @System",
+    "is_custom_defined": "0",
+    "name": "Generic PLA @MMU",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "240"
+    ],
+    "version": "2.3.1.0"
+}

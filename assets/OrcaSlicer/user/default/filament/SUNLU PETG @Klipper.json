@@ -1,0 +1,31 @@
+{
+    "compatible_printers": [
+        "Prusa MK3S 0.6 nozzle"
+    ],
+    "filament_settings_id": [
+        "SUNLU PETG @Klipper"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "65"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "65"
+    ],
+    "inherits": "SUNLU PETG @System",
+    "is_custom_defined": "0",
+    "name": "SUNLU PETG @Klipper",
+    "nozzle_temperature": [
+        "260"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "265"
+    ],
+    "textured_cool_plate_temp": [
+        "65"
+    ],
+    "textured_cool_plate_temp_initial_layer": [
+        "65"
+    ],
+    "version": "2.3.1.10"
+}

@@ -1,0 +1,29 @@
+{
+    "cooling_tube_length": "0",
+    "cooling_tube_retraction": "0",
+    "emit_machine_limits_to_gcode": "0",
+    "enable_filament_ramming": "0",
+    "extra_loading_move": "0",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "host_type": "octoprint",
+    "inherits": "Prusa MK3S 0.4 nozzle",
+    "is_custom_defined": "0",
+    "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\n_MMU_UPDATE_HEIGHT",
+    "machine_end_gcode": "PRINT_END",
+    "machine_start_gcode": "MMU_START_SETUP INITIAL_TOOL={initial_tool} TOTAL_TOOLCHANGES=!total_toolchanges! REFERENCED_TOOLS=!referenced_tools! TOOL_COLORS=!colors! TOOL_TEMPS=!temperatures! TOOL_MATERIALS=!materials! FILAMENT_NAMES=!filament_names! PURGE_VOLUMES=!purge_volumes!\n\n;MMU_START_CHECK\n\n\nPRINT_START HOTEND=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] CHAMBER=[chamber_temperature]  \n\n; MMU_START_LOAD_INITIAL_TOOL",
+    "name": "Klipper GECO 0.4HF MMU",
+    "nozzle_type": "brass",
+    "parking_pos_retraction": "0",
+    "printer_settings_id": "Klipper GECO 0.4HF MMU",
+    "retract_length_toolchange": [
+        "0"
+    ],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "version": "2.3.0.5",
+    "wipe": [
+        "0"
+    ]
+}

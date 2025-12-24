@@ -1,0 +1,21 @@
+{
+    "emit_machine_limits_to_gcode": "0",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "host_type": "octoprint",
+    "inherits": "Prusa MK3S 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "PRINT_END",
+    "machine_start_gcode": "PRINT_START HOTEND=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] CHAMBER=[chamber_temperature]",
+    "name": "Klipper MK3S 0.4 nozzle",
+    "nozzle_type": "brass",
+    "printer_settings_id": "Klipper MK3S 0.4 nozzle",
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "use_firmware_retraction": "1",
+    "version": "2.3.0.5",
+    "wipe": [
+        "0"
+    ]
+}

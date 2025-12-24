@@ -1,0 +1,52 @@
+return {
+	"obsidian-nvim/obsidian.nvim",
+	version = "*", -- recommended, use latest release instead of latest commit
+	ft = "markdown",
+	---@module 'obsidian'
+	---@diagnostic disable-next-line: undefined-doc-name
+	---@type obsidian.config
+	---@diagnostic disable-next-line: assign-type-mismatch
+	cmd = "Obsidian",
+	keys = {
+		{ "<leader>on", "<cmd>Obsidian new<cr>", desc = "New Obsidian note" },
+		{ "<leader>oS", "<cmd>Obsidian search<cr>", desc = "Search Obsidian notes" },
+		{ "<leader>os", "<cmd>Obsidian quick_switch<cr>", desc = "Quick Switch" },
+		{ "<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Show location list of backlinks" },
+		{ "<leader>ot", "<cmd>Obsidian template<cr>", desc = "Open templates" },
+		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste imate from clipboard under cursor" },
+	},
+	opts = {
+		legacy_commands = false, -- this will be removed in the next major release
+		ui = {
+			enable = false,
+		},
+		workspaces = {
+			{
+				name = "Personal",
+				path = "~/.config/home-manager/assets/obsidian/",
+			},
+		},
+		templates = {
+			folder = "templates",
+			date_format = "%Y-%m-%d-%a",
+			time_format = "%H:%M",
+			substitutions = {
+				yesterday = function()
+					return os.date("%Y-%m-%d", os.time() - 86400)
+				end,
+				substitutions = {
+					tomorrow = function()
+						return os.date("%Y-%m-%d", os.time() + 86400)
+					end,
+				},
+			},
+		},
+		daily_notes = {
+			folder = "Journal",
+			date_format = "%Y-%m-%d",
+			alias_format = "%B %-d, %Y",
+			default_tags = { "daily-notes" },
+			template = "daily.md",
+		},
+	},
+}

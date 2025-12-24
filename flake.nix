@@ -22,7 +22,7 @@
     ghostty.url = "github:ghostty-org/ghostty";
     suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
-    
+
     ### For NixCats --- NEOVIM
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
     # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
@@ -48,7 +48,7 @@
     let
       user = "Jester";
       homeDir = "/home/${user}";
-      myStylix = "gruvbox-material-dark-hard";
+      myStylix = "gruvbox-dark-hard";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         localSystem = system;
@@ -72,7 +72,6 @@
           inputs.plasma-manager.homeModules.plasma-manager
           inputs.stylix.homeModules.stylix
           inputs.zen-browser.homeModules.beta
-          ./modules/programs/nvim/nixCats.nix
         ];
       };
     };

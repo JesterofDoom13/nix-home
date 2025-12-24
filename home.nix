@@ -2,7 +2,6 @@
   pkgs,
   user,
   homeDir,
-  config,
   inputs,
   ...
 }:
@@ -10,7 +9,7 @@
   targets.genericLinux.nixGL.packages = inputs.nixgl.packages;
   targets.genericLinux.enable = true;
   imports = [
-    ./modules/programs
+    ./modules
   ];
 
   home = {
@@ -34,7 +33,6 @@
     wget
     btop
     coreutils
-    (config.lib.nixGL.wrap orca-slicer)
   ];
 
   programs.home-manager.enable = true;
