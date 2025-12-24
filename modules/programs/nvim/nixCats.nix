@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, myStylix, inputs, ... }:
 let
   inherit (inputs.nixCats) utils;
   # Points to your local lua folder for the builder
@@ -71,7 +71,14 @@ let
         wrapRc = true; # Required for editable symlink
         aliases = [ "vim" "nv" ];
       };
-      categories = { general = true; };
+      categories = {
+        general = true;
+        test = false;
+        gitPlugins = true;
+        colorscheme = {
+            stylix = "base16-${myStylix}";
+          };
+      };
     };
         testnvim =
           { pkgs, mkPlugin, ... }@misc:
@@ -106,7 +113,7 @@ in
     })
   ];
 config = {
-    nvim.enable = true;
-    nvim.packageNames = ["nvim" "testnvim"];
+    nixCats.enable = true;
+    nixCats.packageNames = ["nvim" "testnvim"];
   };
 }
