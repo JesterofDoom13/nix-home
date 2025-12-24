@@ -1,4 +1,4 @@
-{ pkgs, myColorscheme, ... }:
+{ pkgs, myStylix, ... }:
 {
   stylix = {
     enable = true;
@@ -6,7 +6,7 @@
     autoEnable = true;
     polarity = "dark";
     image = ../../assets/imgs/background/anime_skull.png;
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/${myColorscheme}.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/${myStylix}.yaml";
     fonts = {
       monospace = {
         name = "FiraCode Nerd Font"; # Or "FiraCodeNF"

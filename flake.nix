@@ -49,7 +49,7 @@
     let
       user = "Jester";
       homeDir = "/home/${user}";
-      myColorscheme = "woodland";
+      myStylix = "woodland";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         localSystem = system;
@@ -65,7 +65,7 @@
             inputs
             user
             homeDir
-            myColorscheme
+            myStylix
             ;
         };
         modules = [
@@ -78,14 +78,14 @@
             {
               config,
               lib,
-              myColorscheme,
+              myStylix,
               ...
             }:
             {
               nixCats.enable = true;
               nixCats.packageNames = [ "nvim" ];
 
-              xdg.configFile."nvim"= {
+              xdg.configFile."nvim/"= {
 	      	source =
                 config.lib.file.mkOutOfStoreSymlink "{$homeDir}/.config/home-manager/modules/programs/nvim/config";
 		recursive = true;

@@ -18,6 +18,7 @@
     let
       inherit (nixCats) utils;
       luaPath = "${./config}";
+
       forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
       extra_pkg_config = {
         # allowUnfree = true;
@@ -188,7 +189,7 @@
           }:
           {
             settings = {
-              wrapRc = false; # REQUIRED for symlinking
+              wrapRc = true;
               aliases = [
                 "vim"
                 "nv"
@@ -201,18 +202,21 @@
               test = false;
               gitPlugins = true;
             };
-            # extra = { colorscheme = myColorscheme; }; # This is moved to the homeModule in Part 3
           };
         testnvim =
           { pkgs, mkPlugin, ... }:
           {
             settings = {
               wrapRc = false;
-              unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. '/some/path/to/your/config'";
+              aliases = [
+              "ntvim"
+              ];
+              unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. './config/nvim'";
             };
             categories = {
               general = true;
               test = false;
+              gitPlugins = true;
             };
             extra = { };
           };
@@ -220,15 +224,12 @@
       defaultPackageName = "nvim";
     in
     {
-      # --- THIS IS THE CUSTOM BRIDGE FOR YOUR VARIABLE ---
-      # It takes 'myColorscheme' from your master flake and passes it to Lua
       homeModule =
         {
           config,
           lib,
-          pkgs,
           inputs,
-          myColorscheme,
+          pkgs,
           ...
         }:
         {
@@ -240,10 +241,8 @@
                 categoryDefinitions
                 packageDefinitions
                 ;
-              dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
+               dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
               extra = {
-                # This passes the string to Lua as nixCats('extra').colorscheme
-                colorscheme = myColorscheme;
               };
             })
           ];
