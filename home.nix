@@ -2,6 +2,7 @@
   pkgs,
   user,
   homeDir,
+  config,
   inputs,
   ...
 }:
@@ -33,6 +34,7 @@
     wget
     btop
     coreutils
+    (config.lib.nixGL.wrap orca-slicer)
   ];
 
   programs.home-manager.enable = true;

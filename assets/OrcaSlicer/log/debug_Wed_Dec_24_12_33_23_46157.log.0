@@ -1,0 +1,4 @@
+[error]	2025-12-24 12:33:26.120872[Thread 0x00007f245c62ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-24 12:33:29.076230[Thread 0x00007f245c62ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-24 12:33:29.114546[Thread 0x00007f245c62ba80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2025-12-24 12:33:48.430118[Thread 0x00007f245c62ba80]:calc_exclude_triangles:Unable to create exclude triangles

@@ -1994,10 +1994,18 @@
                 "intro": "The filament currently loaded in the extruder does not support manual feeding."
             }
         ],
-        "ver": 202512221437
+        "ver": 202512241530
     },
     "device_hms": {
         "en": [
+            {
+                "ecode": "1803220000020025",
+                "intro": "AMS-HT D slot 3 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
+            },
+            {
+                "ecode": "0704230000020025",
+                "intro": "AMS E slot 4 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
+            },
             {
                 "ecode": "1804220000020025",
                 "intro": "AMS-HT E slot 3 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
@@ -3285,6 +3293,10 @@
             {
                 "ecode": "1800940000010002",
                 "intro": "Temperature sensor 1 on the AMS-HT A heater has malfunctioned, resulting in abnormal temperature readings."
+            },
+            {
+                "ecode": "0707130000020004",
+                "intro": "AMS H The brushed motor 4 has no signal, which may be due to poor contact in the motor connector or a motor fault."
             },
             {
                 "ecode": "1800200000030001",
@@ -8469,10 +8481,6 @@
             {
                 "ecode": "1805130000010001",
                 "intro": "The AMS-HT F slot 4 motor has slipped. The extrusion wheel may be malfunctioning, or the filament may be too thin."
-            },
-            {
-                "ecode": "0706700000020002",
-                "intro": "Failed to feed the filament into the toolhead. Possible cause: filament or spool stuck."
             },
             {
                 "ecode": "1800120000010001",
@@ -14807,8 +14815,8 @@
                 "intro": "Failed to get AMS mapping table; please select \"Resume\" to retry."
             },
             {
-                "ecode": "0707130000020004",
-                "intro": "AMS H The brushed motor 4 has no signal, which may be due to poor contact in the motor connector or a motor fault."
+                "ecode": "0706700000020002",
+                "intro": "Failed to feed the filament into the toolhead. Possible cause: filament or spool stuck."
             },
             {
                 "ecode": "0702200000010082",
@@ -17617,17 +17625,9 @@
             {
                 "ecode": "0707200000020025",
                 "intro": "AMS H slot 1 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
-            },
-            {
-                "ecode": "1803220000020025",
-                "intro": "AMS-HT D slot 3 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
-            },
-            {
-                "ecode": "0704230000020025",
-                "intro": "AMS E slot 4 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
             }
         ],
-        "ver": 202512221437
+        "ver": 202512241530
     },
-    "version": "202512221437"
+    "version": "202512241530"
 }
