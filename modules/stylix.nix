@@ -11,11 +11,9 @@
         name = "FiraCode Nerd Font";
       };
       sansSerif = {
-        # Or other generic font
         name = "FiraCode Nerd Font";
       };
       serif = {
-        # Or other generic font
         name = "FiraCode Nerd Font";
       };
       sizes = {

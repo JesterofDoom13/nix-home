@@ -53,9 +53,6 @@ in
         background-opacity = 0.85;
         gtk-single-instance = true;
         alpha-blending = "native";
-        # font-family-bold = "Fira Code";
-        # font-family-italic = "Maple Mono";
-        # font-family-bold-italic = "Maple Mono";
         adjust-underline-position = 4;
         window-padding-x = 2;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";

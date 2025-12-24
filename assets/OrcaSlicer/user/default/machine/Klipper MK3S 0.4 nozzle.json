@@ -9,6 +9,7 @@
     "machine_start_gcode": "PRINT_START HOTEND=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] CHAMBER=[chamber_temperature]",
     "name": "Klipper MK3S 0.4 nozzle",
     "nozzle_type": "brass",
+    "print_host": "https://johnny",
     "printer_settings_id": "Klipper MK3S 0.4 nozzle",
     "retract_when_changing_layer": [
         "0"

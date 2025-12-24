@@ -24,6 +24,11 @@ let
           nixfmt
           perl540Packages.NeovimExt
           prettier
+          mermaid-cli
+          tectonic
+          sqlite
+          perl540Packages.NeovimExt
+          python313Packages.pynvim
           ripgrep
           statix
           stdenv.cc.cc
