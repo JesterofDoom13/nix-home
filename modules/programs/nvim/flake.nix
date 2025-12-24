@@ -16,9 +16,9 @@
       ...
     }@inputs:
     let
+      # inherit myStylix;
       inherit (nixCats) utils;
       luaPath = "${./config}";
-
       forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
       extra_pkg_config = {
         # allowUnfree = true;
@@ -164,6 +164,7 @@
             general = with pkgs; [ libgit2 ];
           };
           environmentVariables = {
+            sytlix = "woodland";
             test = {
               CATTESTVAR = "It worked!";
             };
@@ -185,6 +186,7 @@
             pkgs,
             name,
             mkPlugin,
+            this,
             ...
           }:
           {
@@ -201,13 +203,15 @@
               general = true;
               test = false;
               gitPlugins = true;
+              colorscheme = "woodland";
+              
             };
           };
         testnvim =
-          { pkgs, mkPlugin, ... }:
+          { pkgs, mkPlugin, ... }@misc:
           {
             settings = {
-              wrapRc = false;
+              wrapRc = true;
               aliases = [
               "ntvim"
               ];
@@ -217,6 +221,8 @@
               general = true;
               test = false;
               gitPlugins = true;
+              colorscheme = "wooodland";
+              stylix = myStylix;
             };
             extra = { };
           };
@@ -232,6 +238,8 @@
           pkgs,
           ...
         }:
+        # let 
+        # inherit myStylix;
         {
           imports = [
             (utils.mkHomeModules {
@@ -240,6 +248,8 @@
                 luaPath
                 categoryDefinitions
                 packageDefinitions
+                myStylix
+                # dependencyOverlays
                 ;
                dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
               extra = {
@@ -248,7 +258,6 @@
           ];
         };
 
-      # Standard outputs below (packages, devShells, overlays, etc)
       packages = forEachSystem (
         system:
         let
@@ -257,13 +266,9 @@
         {
           default = utils.mkNvimPackages packageDefinitions.${defaultPackageName} {
             pkgs = nixpkgsFor;
-            inherit categoryDefinitions luaPath;
+            inherit myStylix categoryDefinitions luaPath;
           };
         }
       );
-
-      # (Your other outputs like devShells, overlays can go here if needed,
-      # but they are often simpler when using the homeModule approach above)
-
-    }; # This closes the outputs = { ... }; block
-} # This closes the entire flake.nix file
+    };
+}

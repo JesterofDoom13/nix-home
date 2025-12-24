@@ -83,7 +83,7 @@
             }:
             {
               nixCats.enable = true;
-              nixCats.packageNames = [ "nvim" ];
+              nixCats.packageNames = [ "nvim" "testnvim"];
 
               xdg.configFile."nvim/"= {
 	      	source =
