@@ -16,7 +16,6 @@
       ...
     }@inputs:
     let
-      # inherit myStylix;
       inherit (nixCats) utils;
       luaPath = "${./config}";
       forEachSystem = utils.eachSystem nixpkgs.lib.platforms.all;
@@ -222,7 +221,6 @@
               test = false;
               gitPlugins = true;
               colorscheme = "wooodland";
-              stylix = myStylix;
             };
             extra = { };
           };
@@ -238,8 +236,6 @@
           pkgs,
           ...
         }:
-        # let 
-        # inherit myStylix;
         {
           imports = [
             (utils.mkHomeModules {
@@ -248,7 +244,6 @@
                 luaPath
                 categoryDefinitions
                 packageDefinitions
-                myStylix
                 # dependencyOverlays
                 ;
                dependencyOverlays = [ (utils.standardPluginOverlay inputs) ];
@@ -266,7 +261,7 @@
         {
           default = utils.mkNvimPackages packageDefinitions.${defaultPackageName} {
             pkgs = nixpkgsFor;
-            inherit myStylix categoryDefinitions luaPath;
+            inherit  categoryDefinitions luaPath;
           };
         }
       );

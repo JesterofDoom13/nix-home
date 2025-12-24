@@ -26,7 +26,7 @@
     ### For NixCats --- NEOVIM
     # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
     # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
-    myNixCats.url = "path:./modules/programs/nvim";
+    # myNixCats.url = "path:./modules/programs/nvim";
     plugins-kanban-nvim = {
       url = "github:arakkkkk/kanban.nvim";
       flake = false;
@@ -43,7 +43,7 @@
       nixpkgs,
       home-manager,
       nixgl,
-      myNixCats,
+      # myNixCats,
       ...
     }@inputs:
     let
@@ -73,25 +73,19 @@
           inputs.plasma-manager.homeModules.plasma-manager
           inputs.stylix.homeModules.stylix
           inputs.zen-browser.homeModules.beta
-          myNixCats.homeModule
-          (
-            {
-              config,
-              lib,
-              myStylix,
-              ...
-            }:
-            {
-              nixCats.enable = true;
-              nixCats.packageNames = [ "nvim" "testnvim"];
-
-              xdg.configFile."nvim/"= {
-	      	source =
-                config.lib.file.mkOutOfStoreSymlink "{$homeDir}/.config/home-manager/modules/programs/nvim/config";
-		recursive = true;
-}; 
-            }
-          )
+          ./modules/programs/nvim/nixCats.nix
+          # myNixCats.homeModule
+          # (
+          #   {
+          #     config,
+          #     lib,
+          #     ...
+          #   }:
+          #   {
+          #     nixCats.enable = true;
+          #     nixCats.packageNames = [ "nvim" "testnvim"];
+          #   }
+          # )
         ];
       };
     };
