@@ -22,11 +22,11 @@
     ghostty.url = "github:ghostty-org/ghostty";
     suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
-    nixCats.url = "github:BirdeeHub/nixCats-nvim";
+    
     ### For NixCats --- NEOVIM
+    nixCats.url = "github:BirdeeHub/nixCats-nvim";
     # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
     # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
-    # myNixCats.url = "path:./modules/programs/nvim";
     plugins-kanban-nvim = {
       url = "github:arakkkkk/kanban.nvim";
       flake = false;
@@ -43,7 +43,6 @@
       nixpkgs,
       home-manager,
       nixgl,
-      # myNixCats,
       ...
     }@inputs:
     let
