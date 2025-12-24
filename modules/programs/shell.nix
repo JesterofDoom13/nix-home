@@ -38,6 +38,12 @@
     nh = {
       enable = true;
       flake = "/home/Jester/.config/home-manager/";
+      homeFlake = "/home/Jester/.config/home-manager/";
+      clean = {
+        enable = true;
+        dates = "weekly";
+        extraArgs = "--keep-since 2w";
+      };
     };
     ripgrep = {
       enable = true;
