@@ -183,13 +183,15 @@ let
           aliases = [
             "ntvim"
           ];
-          unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. './config/nvim'";
+          unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. '/.config/home-manager/assets/nvim/config'";
         };
         categories = {
           general = true;
           test = false;
           gitPlugins = true;
-          colorscheme = "wooodland";
+          colorscheme = {
+            stylix = "base16-${myStylix}";
+          };
         };
         extra = { };
       };
