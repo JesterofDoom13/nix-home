@@ -74,18 +74,6 @@
           inputs.stylix.homeModules.stylix
           inputs.zen-browser.homeModules.beta
           ./modules/programs/nvim/nixCats.nix
-          # myNixCats.homeModule
-          # (
-          #   {
-          #     config,
-          #     lib,
-          #     ...
-          #   }:
-          #   {
-          #     nixCats.enable = true;
-          #     nixCats.packageNames = [ "nvim" "testnvim"];
-          #   }
-          # )
         ];
       };
     };
