@@ -3,10 +3,10 @@
   programs = {
     bash = {
       enable = true;
-      interactiveShellInit =
-        -''
-          eval "$(batman --export-env)"
-        '';
+      # interactiveShellInit =
+      #   -''
+      #     eval "$(batman --export-env)"
+      #   '';
     };
     fish = {
       enable = true;
@@ -33,10 +33,10 @@
     };
     bat = {
       enable = true;
-      extraPackages = [
-        "core"
-        "batman"
-        "batgrep"
+      extraPackages = with pkgs.bat-extras; [
+        core
+        batman
+        batgrep
       ];
     };
     eza = {
