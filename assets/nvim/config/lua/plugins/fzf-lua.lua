@@ -1,10 +1,10 @@
 return {
-  'ibhagwan/fzf-lua',
-  -- optional for icon support
-  event = 'VeryLazy',
-  -- priority = 1000,
-  lazy = false,
-  dependencies = { 'nvim-tree/nvim-web-devicons' },
+	"ibhagwan/fzf-lua",
+	-- optional for icon support
+	event = "VeryLazy",
+	-- priority = 1000,
+	lazy = true,
+	dependencies = { "nvim-tree/nvim-web-devicons" },
   -- or if using mini.icons/mini.nvim
   -- dependencies = { "nvim-mini/mini.icons" },
   -- stylua: ignore
@@ -19,9 +19,9 @@ return {
     { "<leader>fW",       function() require("fzf-lua").grep_cWORD() end,   desc = "[F]ind current [W]ord", },
     { "<leader>fo",       function() require("fzf-lua").oldfiles() end,     desc = "[F]ind [o]ldfiles", },
   },
-  ---@module "fzf-lua"
-  ---@type fzf-lua.Config|{}
-  ---@diagnostics disable: missing-fields
-  opts = {},
-  ---@diagnostics enable: missing-fields
+	---@module "fzf-lua"
+	---@type fzf-lua.Config|{}
+	---@diagnostics disable: missing-fields
+	opts = {},
+	---@diagnostics enable: missing-fields
 }
