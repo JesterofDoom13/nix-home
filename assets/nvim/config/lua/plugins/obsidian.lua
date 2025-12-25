@@ -49,5 +49,10 @@ return {
 			template = "daily.md",
 			workdays_only = false,
 		},
+		checkbox = {
+			enabled = true,
+			create_new = true,
+			order = { " ", "x", "~", "!", ">" },
+		},
 	},
 }

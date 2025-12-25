@@ -113,7 +113,12 @@ return {
 					scope_highlight = "@markup.strikethrough",
 				},
 				custom = {
-					-- Pending = { raw = "[~]", rendered = "󰥔 ", highlight = "RenderMarkdownTodo", scope_highlight = nil },
+					Pending = {
+						raw = "[~]",
+						rendered = "󰥔 ",
+						highlight = "RenderMarkdownTodo",
+						scope_highlight = nil,
+					},
 					Important = { raw = "[!]", rendered = " ", highlight = "DiagnosticWarn", scope_highlight = nil },
 					Rescheduled = {
 						raw = "[>]",
