@@ -28,7 +28,7 @@ return {
 		},
 		templates = {
 			folder = "templates",
-			date_format = "%Y-%m-%d-%a",
+			date_format = "%Y-%m-%d",
 			time_format = "%H:%M",
 			substitutions = {
 				yesterday = function()
@@ -43,10 +43,11 @@ return {
 		},
 		daily_notes = {
 			folder = "Journal",
-			date_format = "%Y-%m-%d",
-			alias_format = "%B %-d, %Y",
-			default_tags = { "daily-notes" },
+			-- date_format = "%Y-%m-%d",
+			-- alias_format = "%B %-d, %Y",
+			-- default_tags = { "daily-notes" },
 			template = "daily.md",
+			workdays_only = false,
 		},
 	},
 }
