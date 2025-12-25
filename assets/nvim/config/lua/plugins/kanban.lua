@@ -5,12 +5,16 @@ return {
 		"nvim-telescope/telescope.nvim",
 	},
 	keys = {
-		{ "<leader>mk", "<cmd>KanbanOpen ~/.config/home-manager/assets/obsidian<CR>", desc = "Kanban Primary" },
+		{
+			"<leader>mk",
+			"<cmd>KanbanOpen ~/.config/home-manager/assets/obsidian/kanban/kanban.md<CR>",
+			desc = "Kanban Primary",
+		},
 	},
 
 	opts = {
 		markdown = {
-			description_folder = "./.", -- Path to save the file corresponding to the task.
+			description_folder = "./tasks/", -- Path to save the file corresponding to the task.
 			list_head = "## ",
 		},
 	},

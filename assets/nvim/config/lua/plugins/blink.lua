@@ -1,4 +1,3 @@
-local menu = require("blink.cmp.completion.windows.menu")
 return {
 	{
 		"saghen/blink.cmp",

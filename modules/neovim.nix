@@ -75,6 +75,7 @@ let
           tmux-nvim
           todo-comments-nvim
           tokyonight-nvim
+          transparent-nvim
           trouble-nvim
           ts-comments-nvim
           vim-illuminate

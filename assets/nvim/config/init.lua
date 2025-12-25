@@ -51,5 +51,5 @@ require("nixCatsUtils.lazyCat").setup(nixCats.pawsible({ "allPlugins", "start", 
 	-- import/override with your plugins
 	{ import = "plugins" },
 }, lazyOptions)
-vim.cmd("colorscheme " .. nixCats.cats.colorscheme)
-vim.cmd("let base16colorspace=256")
+-- vim.cmd("colorscheme " .. nixCats.cats.colorscheme.stylix)
+-- vim.cmd("let base16colorspace=256")
