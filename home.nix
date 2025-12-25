@@ -37,5 +37,10 @@
     (config.lib.nixGL.wrap orca-slicer)
   ];
 
+  services.home-manager.autoUpgrade = {
+    enable = true;
+    frequency = "weekly";
+    useFlake = true;
+  };
   programs.home-manager.enable = true;
 }

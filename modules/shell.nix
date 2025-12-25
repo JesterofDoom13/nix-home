@@ -3,10 +3,18 @@
   programs = {
     bash = {
       enable = true;
+      shellInit =
+        -''
+          batman --export-env | source
+        '';
     };
     fish = {
       enable = true;
       interactiveShellInit = "fish_vi_key_bindings";
+      shellInit =
+        -''
+          batman --export-env | source
+        '';
       shellAbbrs = {
         cd = "z";
         dock = "fissh root@10.0.0.6";
@@ -22,6 +30,14 @@
           SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv
         '';
       };
+    };
+    bat = {
+      enable = true;
+      extraPackages = [
+        "core"
+        "batman"
+        "batgrep"
+      ];
     };
     eza = {
       enable = true;
