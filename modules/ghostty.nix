@@ -19,6 +19,10 @@ in
       plugins = with pkgs.tmuxPlugins; [
         sensible
         fingers
+        # Couldn't get this to load from here
+        # but I have it installe din neovim so I use
+        # the run-shell command on it and that does the
+        # trick.
         # pkgs.vimPlugins.tmux-nvim
       ];
       extraConfig = ''
@@ -45,6 +49,8 @@ in
     };
     ghostty = {
       enable = true;
+      # can't run this version since I'm using the wrappedGhostty
+      # version and that isn't in the sytemd this provides.
       # systemd.enable = true;
       package = wrappedGhostty;
       settings = {
@@ -54,8 +60,8 @@ in
         gtk-single-instance = true;
         alpha-blending = "native";
         font-thicken = true;
-        adjust-cell-height = -2;
-        adjust-underline-position = 4;
+        adjust-cell-height = 2;
+        adjust-underline-position = 2;
         window-padding-x = 2;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
         custom-shader = [
