@@ -32,7 +32,6 @@
     bat = {
       enable = true;
       extraPackages = with pkgs.bat-extras; [
-        core
         batman
         batgrep
       ];
