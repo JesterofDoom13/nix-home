@@ -3,7 +3,7 @@
   programs = {
     bash = {
       enable = true;
-      interactiveShellInit = ''
+      bashrcExtra = ''
         eval "$(batman --export-env)"
       '';
     };
