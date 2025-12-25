@@ -1994,7 +1994,7 @@
                 "intro": "The filament currently loaded in the extruder does not support manual feeding."
             }
         ],
-        "ver": 202512241530
+        "ver": 202512250844
     },
     "device_hms": {
         "en": [
@@ -17627,7 +17627,7 @@
                 "intro": "AMS H slot 1 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
             }
         ],
-        "ver": 202512241530
+        "ver": 202512250844
     },
-    "version": "202512241530"
+    "version": "202512250844"
 }

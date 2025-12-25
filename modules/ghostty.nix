@@ -45,7 +45,7 @@ in
     };
     ghostty = {
       enable = true;
-      systemd.enable = true;
+      # systemd.enable = true;
       package = wrappedGhostty;
       settings = {
         keybind = [ "global:super+semicolon=toggle_quick_terminal" ];
@@ -68,7 +68,6 @@ in
       };
     };
   };
-  # systemd.user.services.app-com.mitchell.ghostty.enable = true;
   xdg = {
     configFile = {
       "ghostty/shaders/sparks-from-fire.glsl".source = ../assets/ghostty/shaders/sparks-from-fire.glsl;
@@ -85,6 +84,10 @@ in
       # '';
     };
   };
+  # Building my own systemd because the one in programs.ghostty.systemd
+  # doesn't have an option to set it as wrappedGhostty that I cna find
+  # right now. Need the wrappedGhostty or this doesn't work on my bazzite
+  # build. Maybe some day I'll find a better way.
   systemd.user.services.app-ghostty-service = {
     Unit = {
       Description = "Ghostty";
