@@ -3,9 +3,9 @@
   programs = {
     bash = {
       enable = true;
-      shellInit =
+      bashrcExtras =
         -''
-          batman --export-env | source
+          eval "$(batman --export-env)"
         '';
     };
     fish = {
