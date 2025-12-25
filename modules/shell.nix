@@ -3,16 +3,16 @@
   programs = {
     bash = {
       enable = true;
-      bashrcExtras =
+      interactiveShellInit =
         -''
           eval "$(batman --export-env)"
         '';
     };
     fish = {
       enable = true;
-      interactiveShellInit = "fish_vi_key_bindings";
-      shellInit =
+      interactiveShellInit =
         -''
+          fish_vi_key_bindings
           batman --export-env | source
         '';
       shellAbbrs = {
