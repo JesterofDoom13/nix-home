@@ -7,6 +7,7 @@ return {
 	---@type obsidian.config
 	---@diagnostic disable-next-line: assign-type-mismatch
 	cmd = "Obsidian",
+
 	keys = {
 		{ "<leader>on", "<cmd>Obsidian new<cr>", desc = "New Obsidian note" },
 		{ "<leader>oS", "<cmd>Obsidian search<cr>", desc = "Search Obsidian notes" },
@@ -43,9 +44,9 @@ return {
 		},
 		daily_notes = {
 			folder = "Journal",
-			-- date_format = "%Y-%m-%d",
-			-- alias_format = "%B %-d, %Y",
-			-- default_tags = { "daily-notes" },
+			date_format = "%Y-%m-%d",
+			alias_format = "%B %-d, %Y",
+			default_tags = { "daily-notes" },
 			template = "daily.md",
 			workdays_only = false,
 		},

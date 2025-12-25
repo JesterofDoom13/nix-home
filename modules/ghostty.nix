@@ -62,7 +62,7 @@ in
         alpha-blending = "native";
         font-thicken = true;
         adjust-cell-height = -2;
-        adjust-cell-width = "-30%";
+        adjust-cell-width = "-20%";
         adjust-underline-position = 2;
         window-padding-x = 2;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
