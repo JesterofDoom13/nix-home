@@ -48,7 +48,7 @@
     let
       user = "Jester";
       homeDir = "/home/${user}";
-      myStylix = "gruvbox-dark-hard";
+      myStylix = "gruvbox-material-dark-hard";
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         localSystem = system;

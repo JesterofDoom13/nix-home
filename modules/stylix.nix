@@ -27,6 +27,9 @@
       yazi = {
         enable = true;
       };
+      btop = {
+        enable = true;
+      };
       gtk = {
         enable = false;
       };

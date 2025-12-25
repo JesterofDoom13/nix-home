@@ -14,29 +14,38 @@ let
       lspsAndRuntimeDeps = {
         general = with pkgs; [
           ast-grep
+          black
+          chafa
+          cmake-lint
           curl
-          fd
+          gem
           harper
+          isort
+          lua5_1
+          lua51Packages.luarocks
           lua-language-server
           markdownlint-cli2
           markdown-toc
+          marksman
+          mermaid-cli
           nil
           nixfmt
+          nodejs_24
           perl540Packages.NeovimExt
           prettier
-          mermaid-cli
-          tectonic
-          sqlite
-          perl540Packages.NeovimExt
           python313Packages.pynvim
           ripgrep
+          shfmt
+          sqlite
           statix
           stdenv.cc.cc
           stylua
+          tectonic
+          tree-sitter
+          ueberzugpp
           universal-ctags
           viu
-          chafa
-          ueberzugpp
+          zig
           (pkgs.writeShellScriptBin "lazygit" ''
             exec ${pkgs.lazygit}/bin/lazygit --use-config-file ${pkgs.writeText "lazygit_config.yml" ""} "$@"
           '')

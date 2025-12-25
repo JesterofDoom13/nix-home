@@ -39,7 +39,7 @@ return {
 				menu = { border = "single" },
 				documentation = {
 					auto_show = true,
-					window = { border = "shadow" },
+					window = { border = "double" },
 				},
 			},
 

@@ -32,7 +32,6 @@
   # Global packages that don't need their own module
   home.packages = with pkgs; [
     wget
-    btop
     coreutils
     (config.lib.nixGL.wrap orca-slicer)
   ];

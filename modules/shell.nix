@@ -36,6 +36,9 @@
         batgrep
       ];
     };
+    btop = {
+      enable = true;
+    };
     eza = {
       enable = true;
       enableFishIntegration = true;
@@ -85,28 +88,11 @@
   home = {
     packages = with pkgs; [
       # Development
-      ast-grep
-      black
-      cmake-lint
       gcc
-      gem
       git
-      isort
-      lazygit
-      lua5_1
-      lua51Packages.luarocks
-      markdownlint-cli2
-      markdown-toc
-      marksman
-      nixfmt
-      nodejs_24
-      prettier
       python3
       ruby
       rustup
-      shfmt
-      tree-sitter
-      zig
       # CLI Tools
       fd
       dust
