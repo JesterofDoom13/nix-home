@@ -42,6 +42,8 @@ let
           stylua
           tectonic
           tree-sitter
+          tree-sitter-grammars.tree-sitter-norg-meta
+          tree-sitter-grammars.tree-sitter-norg
           ueberzugpp
           universal-ctags
           viu
@@ -149,7 +151,6 @@ let
         general = with pkgs; [ libgit2 ];
       };
       environmentVariables = {
-        sytlix = "woodland";
         test = {
           CATTESTVAR = "It worked!";
         };
