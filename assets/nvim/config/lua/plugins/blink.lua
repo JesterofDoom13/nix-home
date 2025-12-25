@@ -47,13 +47,13 @@ return {
 			-- elsewhere in your config, without redefining it, due to `opts_extend`
 			sources = {
 				default = { "lsp", "path", "snippets", "buffer" },
-			},
-			providers = {
-				kanban = {
-					name = "kanban",
-					module = "kanban.fn.cmp.blink.cmp",
-					score_offset = 15, -- optional: bump priority
-					opts = {}, -- reserved for future options
+				providers = {
+					kanban = {
+						name = "kanban",
+						module = "kanban.fn.cmp.blink.cmp",
+						score_offset = 15, -- optional: bump priority
+						opts = {}, -- reserved for future options
+					},
 				},
 			},
 
