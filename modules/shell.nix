@@ -3,11 +3,15 @@
   programs = {
     bash = {
       enable = true;
-      bashrcExtra = ''eval "$(batman --export-env)" '';
+      bashrcExtra = ''
+        eval "$(batman --export-env)" 
+      '';
     };
     fish = {
       enable = true;
-      interactiveShellInit = ''fish_vi_key_bindings batman --export-env | source '';
+      interactiveShellInit = ''
+        fish_vi_key_bindings 
+        batman --export-env | source '';
       shellAbbrs = {
         cd = "z";
         dock = "fissh root@10.0.0.6";

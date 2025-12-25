@@ -20,6 +20,7 @@
     shellAliases = {
       du = "dust";
       q = "exit";
+      rsg = "systemctl --user daemon-reload && systemctl --user restart app-ghostty-service.service";
     };
     sessionVariables.EDITOR = "nvim";
 

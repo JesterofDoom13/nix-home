@@ -1,4 +1,5 @@
 {
+  config,
   myStylix,
   inputs,
   ...
@@ -222,5 +223,10 @@ in
       "nvim"
       "testnvim"
     ];
+    xdg.configFile."nvim" = {
+      enable = true;
+      recursive = false;
+      source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/home-manager/assets/nvim/config"; # Keep orca with me and allow it to update and pull changes
+    };
   };
 }

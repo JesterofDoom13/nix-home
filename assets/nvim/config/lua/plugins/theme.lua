@@ -23,7 +23,12 @@ return {
 		event = "VimEnter",
     -- stylua: ignore
 		keys = {
-			{"<leader>ut", function() require("transparent").toggle() end, desc = "Toggle transparency",},
+			{
+			  "<leader>ut",
+			  function() require("transparent").toggle() end,
+			  desc = "Toggle transparency",
+			  -- cond = return require("transparent").state.
+			},
 		},
 		opts = {},
 	},

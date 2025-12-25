@@ -57,6 +57,7 @@ in
         keybind = [ "global:super+semicolon=toggle_quick_terminal" ];
         quick-terminal-size = "72.5%,90%";
         background-opacity = 0.85;
+        background-blur = true;
         gtk-single-instance = true;
         alpha-blending = "native";
         font-thicken = true;
