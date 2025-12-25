@@ -53,6 +53,8 @@ in
         background-opacity = 0.85;
         gtk-single-instance = true;
         alpha-blending = "native";
+        font-thicken = true;
+        adjust-cell-height = -2;
         adjust-underline-position = 4;
         window-padding-x = 2;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
