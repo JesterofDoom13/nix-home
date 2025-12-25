@@ -60,14 +60,15 @@ in
         gtk-single-instance = true;
         alpha-blending = "native";
         font-thicken = true;
-        adjust-cell-height = 2;
+        adjust-cell-height = -2;
+        adjust-cell-width = "-20%";
         adjust-underline-position = 2;
         window-padding-x = 2;
         command = "${pkgs.tmux}/bin/tmux new-session -A -s 'main' ${pkgs.fish}/bin/fish";
         custom-shader = [
           "${homeDir}/.config/ghostty/shaders/cursor_tail.glsl"
           "${homeDir}/.config/ghostty/shaders/sonic_boom_cursor.glsl"
-          "${homeDir}/.config/ghostty/shaders/sparks-from-fire.glsl"
+          # "${homeDir}/.config/ghostty/shaders/sparks-from-fire.glsl"
         ];
         initial-window = false;
         quit-after-last-window-closed = false;

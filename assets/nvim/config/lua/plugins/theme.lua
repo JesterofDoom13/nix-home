@@ -21,17 +21,10 @@ return {
 	{
 		"tribela/transparent.nvim",
 		event = "VimEnter",
-		-- keys = {
-		-- 	{
-		-- 		"<leader>ut",
-		-- 		require("transparent").toggle(),
-		-- 		desc = dynamic_toggle_icon(
-		-- 			"require('transparent').state.enabled",
-		-- 			"Disable transparent",
-		-- 			"Enable transparent"
-		-- 		),
-		-- 	},
-		-- },
+    -- stylua: ignore
+		keys = {
+			{"<leader>ut", function() require("transparent").toggle() end, desc = "Toggle transparency",},
+		},
 		opts = {},
 	},
 }
