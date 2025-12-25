@@ -48,6 +48,12 @@
     let
       user = "Jester";
       homeDir = "/home/${user}";
+      # Stylix and base16 seem to share the same names for the same things
+      # All you have to do is find the name of it and add it here.
+      # in nixCats I have it add the "base16-" in front of it and
+      # adding it nixCats.cats.colorscheme.stylix and in stylix
+      # I add it  ${pkgs.base16-schemes}/share/themes/${myStylix}.yaml
+      # Simpler approach and flexible in same ways, but not others.
       myStylix = "gruvbox-material-dark-hard";
       system = "x86_64-linux";
       pkgs = import nixpkgs {

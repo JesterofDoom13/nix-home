@@ -54,5 +54,8 @@ return {
 			create_new = true,
 			order = { " ", "x", "~", "!", ">" },
 		},
+		attachments = {
+			img_folder = "./assets",
+		},
 	},
 }

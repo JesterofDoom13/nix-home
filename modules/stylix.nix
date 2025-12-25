@@ -10,12 +10,12 @@
       monospace = {
         name = "FiraCode Nerd Font";
       };
-      sansSerif = {
-        name = "FiraCode Nerd Font";
-      };
-      serif = {
-        name = "FiraCode Nerd Font";
-      };
+      # sansSerif = {
+      #   name = "FiraCode Nerd Font";
+      # };
+      # serif = {
+      #   name = "FiraCode Nerd Font";
+      # };
       sizes = {
         desktop = 8;
         applications = 8;
@@ -24,6 +24,8 @@
       };
     };
     targets = {
+      # If I enabled them here it's because they probably
+      # weren't enabling with autoEnable = true;
       yazi = {
         enable = true;
       };
