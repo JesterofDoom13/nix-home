@@ -27,6 +27,10 @@
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
     # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
     # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
+    plugins-obsidian-nvim = {
+      url = "github:obsidian-nvim/obsidian.nvim";
+      flake = false;
+    };
     plugins-kanban-nvim = {
       url = "github:arakkkkk/kanban.nvim";
       flake = false;

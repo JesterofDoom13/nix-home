@@ -77,7 +77,6 @@ let
           nvim-treesitter.withAllGrammars
           nvim-ts-autotag
           nvim-web-devicons
-          obsidian-nvim
           persistence-nvim
           plenary-nvim
           smart-splits-nvim
@@ -142,6 +141,7 @@ let
       optionalPlugins = with pkgs.neovimPlugins; {
         general = [
           kanban-nvim
+          obsidian-nvim
           {
             plugin = markdownplus;
             name = "markdown-plus.nvim";
