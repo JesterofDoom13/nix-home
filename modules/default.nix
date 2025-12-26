@@ -7,5 +7,6 @@
     ./orca.nix
     ./shell.nix
     ./stylix.nix
+    ./yazi.nix
   ];
 }

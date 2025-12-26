@@ -69,27 +69,6 @@
       enable = true;
       enableAutoUpdates = true;
     };
-    yazi = {
-      enable = true;
-      enableFishIntegration = true;
-      enableBashIntegration = true;
-      extraPackages = with pkgs; [
-        glow
-        ouch
-
-      ] ++ with pkgs.yaziPlugins; [
-        glow
-        ouch
-        time-travel
-        wl-clipboard
-        relative-motions
-        chmod
-        compress
-        mediainfo
-        jump-to-char
-      ];
-      shellWrapperName = "y";
-    };
     zoxide = {
       enable = true;
       enableFishIntegration = true;

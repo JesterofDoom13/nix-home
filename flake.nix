@@ -22,6 +22,10 @@
     ghostty.url = "github:ghostty-org/ghostty";
     suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
+    nix-yazi-plugins = {
+      url = "github:lordkekz/nix-yazi-plugins?ref=yazi-v0.2.5";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     ### For NixCats --- NEOVIM
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
