@@ -136,6 +136,7 @@ let
       optionalPlugins = with pkgs.neovimPlugins; {
         markdown = [
           kanban-nvim
+          nvim-dap
           obsidian-nvim
           {
             plugin = markdownplus;
