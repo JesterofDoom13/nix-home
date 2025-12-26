@@ -5,7 +5,7 @@
     ./ghostty.nix
     ./neovim.nix
     ./orca.nix
-    ./rust.nix
+    ./rust/rust.nix
     ./shell.nix
     ./stylix.nix
     ./tmux.nix
