@@ -21,7 +21,7 @@
       set -g  default-terminal "screen-256color"
       # needed for proper nvim/tmux/base16 colors
       set -ga terminal-overrides ",xterm-256color:Tc"
-      set -gq allow-passthrough on
+      set -g allow-passthrough on
       set -g visual-activity off
 
       # because I can't install it through the plugins I cheated and know 

@@ -23,7 +23,7 @@
     suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
     nix-yazi-plugins = {
-      url = "github:lordkekz/nix-yazi-plugins?ref=yazi-v0.2.5";
+      url = "github:lordkekz/nix-yazi-plugins";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -50,6 +50,7 @@
       self,
       nixpkgs,
       home-manager,
+      nix-yazi-plugins,
       nixgl,
       ...
     }@inputs:
@@ -64,6 +65,7 @@
       # Simpler approach and flexible in same ways, but not others.
       myStylix = "gruvbox-material-dark-hard";
       system = "x86_64-linux";
+
       pkgs = import nixpkgs {
         localSystem = system;
         config.allowUnfree = true;
@@ -86,6 +88,7 @@
           inputs.plasma-manager.homeModules.plasma-manager
           inputs.stylix.homeModules.stylix
           inputs.zen-browser.homeModules.beta
+          # inputs.nix-yazi-plugins.legacyPackages.${system}.homeModules.default
         ];
       };
     };
