@@ -7,6 +7,7 @@
   "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
   "mini.hipatterns": { "branch": "main", "commit": "add8d8abad602787377ec5d81f6b248605828e0f" },
   "mini.nvim": { "branch": "main", "commit": "7e55c3d2c04da134085a31156196836f80a89982" },
+  "obsidian.nvim": { "branch": "main", "commit": "66af69a357ec1db5fe2d264f83a18db039a1e6f8" },
   "render-markdown.nvim": { "branch": "main", "commit": "07d088bf8bdadd159eb807b90eaee86a4778383f" },
   "rustaceanvim": { "branch": "master", "commit": "01c45937691914ce985a66f22bab34a1098aa26f" },
   "vimtex": { "branch": "master", "commit": "f5c37462c690da9a0d05cd12a7b9595b10b56200" },

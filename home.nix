@@ -2,7 +2,6 @@
   pkgs,
   user,
   homeDir,
-  config,
   inputs,
   ...
 }:
@@ -12,7 +11,6 @@
   imports = [
     ./modules
   ];
-
   home = {
     username = user;
     homeDirectory = homeDir;
@@ -23,20 +21,15 @@
       rsg = "systemctl --user daemon-reload && systemctl --user restart app-ghostty-service.service";
     };
     sessionVariables.EDITOR = "nvim";
-
     sessionSearchVariables.XDG_CONFIG_DIRS = [
       "${homeDir}/.config/kdedefaults"
       "/etc/xdg"
     ];
   };
-
-  # Global packages that don't need their own module
   home.packages = with pkgs; [
     wget
     coreutils
-    (config.lib.nixGL.wrap orca-slicer)
   ];
-
   services.home-manager.autoUpgrade = {
     enable = true;
     frequency = "weekly";

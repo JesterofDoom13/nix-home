@@ -489,6 +489,22 @@
         "type": "github"
       }
     },
+    "plugins-obsidian-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766627603,
+        "narHash": "sha256-dnK9HUg4UdtOtRg9kMV7DYe0WMqaTqU63CG+FvX0JRY=",
+        "owner": "obsidian-nvim",
+        "repo": "obsidian.nvim",
+        "rev": "66af69a357ec1db5fe2d264f83a18db039a1e6f8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "obsidian-nvim",
+        "repo": "obsidian.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "ghostty": "ghostty",
@@ -499,6 +515,7 @@
         "plasma-manager": "plasma-manager",
         "plugins-kanban-nvim": "plugins-kanban-nvim",
         "plugins-markdownplus": "plugins-markdownplus",
+        "plugins-obsidian-nvim": "plugins-obsidian-nvim",
         "stylix": "stylix",
         "suyu": "suyu",
         "zen-browser": "zen-browser"

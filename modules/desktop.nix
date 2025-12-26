@@ -1,13 +1,19 @@
 { pkgs, ... }:
 {
-  programs.zen-browser.enable = true;
-  programs.google-chrome.enable = true;
-
   home.file.".config/kxkbrc".text = ''
     [Layout]
     Options=caps:swapescape
     ResetOldOptions=true
   '';
+  fonts.fontconfig.enable = true;
+  home.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    solaar
+  ];
+  programs.zen-browser.enable = true;
+  programs.google-chrome.enable = true;
+
   # This is from the solaar github
   xdg.configFile."autostart/solaar.desktop".text = ''
     [Desktop Entry]
@@ -31,17 +37,4 @@
     Keywords=logitech;unifying;receiver;mouse;keyboard;
     Categories=Utility;GTK;
   '';
-
-  fonts.fontconfig.enable = true;
-  home.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.fira-code
-    solaar
-    git-sync
-  ];
-
-  # services.git-sync = {
-  #   enable = true;
-  # };
-
 }
