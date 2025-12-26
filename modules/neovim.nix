@@ -15,44 +15,47 @@ let
       lspsAndRuntimeDeps = {
         general = with pkgs; [
           ast-grep
-          black
           chafa
           cmake-lint
           curl
-          gem
-          harper
-          isort
           lua5_1
           lua51Packages.luarocks
           lua-language-server
-          markdownlint-cli2
-          markdown-toc
-          marksman
-          mermaid-cli
           nil
           nixfmt
-          nodejs_24
-          perl540Packages.NeovimExt
-          prettier
-          python313Packages.pynvim
           ripgrep
           shfmt
           sqlite
           statix
           stdenv.cc.cc
           stylua
-          tectonic
           tree-sitter
-          tree-sitter-grammars.tree-sitter-norg-meta
           tree-sitter-grammars.tree-sitter-norg
+          tree-sitter-grammars.tree-sitter-norg-meta
           ueberzugpp
           universal-ctags
           viu
-          zig
-          (pkgs.writeShellScriptBin "lazygit" ''
-            exec ${pkgs.lazygit}/bin/lazygit --use-config-file ${pkgs.writeText "lazygit_config.yml" ""} "$@"
-          '')
+          vscode-json-languageserver
+          (pkgs.writeShellScriptBin "lazygit" ''exec ${pkgs.lazygit}/bin/lazygit --use-config-file ${pkgs.writeText "lazygit_config.yml" ""} "$@" '')
         ];
+        markdown = with pkgs; [
+          harper
+          markdownlint-cli2
+          markdown-toc
+          marksman
+          mermaid-cli
+          prettier
+          tectonic
+        ];
+        node = with pkgs; [ nodejs_24 ];
+        perl = with pkgs; [ perl540Packages.NeovimExt ];
+        python = with pkgs; [
+          black
+          isort
+          python313Packages.pynvim
+        ];
+        ruby = with pkgs; [ gem ];
+        zig = with pkgs; [ zig ];
       };
       startupPlugins = {
         general = with pkgs.vimPlugins; [
@@ -62,13 +65,16 @@ let
           blink-cmp
           bufferline-nvim
           conform-nvim
+          dial-nvim
           flash-nvim
           friendly-snippets
           fzf-lua
           gitsigns-nvim
           grug-far-nvim
           lazydev-nvim
+          lazygit-nvim
           lualine-nvim
+          nerdy-nvim
           noice-nvim
           nui-nvim
           nvim-lint
@@ -93,28 +99,29 @@ let
           vim-startuptime
           which-key-nvim
           yazi-nvim
-          nerdy-nvim
-          dial-nvim
-          lazygit-nvim
-          {
-            plugin = live-preview-nvim;
-            name = "live-preview.nvim";
-          }
           {
             plugin = catppuccin-nvim;
             name = "catppuccin";
+          }
+          {
+            plugin = live-preview-nvim;
+            name = "live-preview.nvim";
           }
           {
             plugin = mini-ai;
             name = "mini.ai";
           }
           {
+            plugin = mini-icons;
+            name = "mini.icons";
+          }
+          {
             plugin = mini-operators;
             name = "mini.operators";
           }
           {
-            plugin = mini-icons;
-            name = "mini.icons";
+            plugin = mini-pairs;
+            name = "mini.pairs";
           }
           {
             plugin = mini-splitjoin;
@@ -124,14 +131,10 @@ let
             plugin = mini-surround;
             name = "mini.surround";
           }
-          {
-            plugin = mini-pairs;
-            name = "mini.pairs";
-          }
         ];
       };
       optionalPlugins = with pkgs.neovimPlugins; {
-        general = [
+        markdown = [
           kanban-nvim
           obsidian-nvim
           {
@@ -172,6 +175,12 @@ let
         };
         categories = {
           general = true;
+          markdown = true;
+          node = true;
+          perl = true;
+          python = true;
+          ruby = true;
+          zig = true;
           test = false;
           gitPlugins = true;
           colorscheme = {
@@ -179,20 +188,25 @@ let
           };
         };
       };
-    testnvim =
+    tvim = # for test nvim or debugging
       { pkgs, mkPlugin, ... }:
       {
         settings = {
           wrapRc = true;
           aliases = [
-            "tvim"
+            "debugnvim"
           ];
           unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. '/.config/home-manager/assets/nvim/config'";
         };
         categories = {
           general = true;
-          test = false;
+          markdown = true;
+          node = true;
+          perl = true;
+          python = true;
+          ruby = true;
           gitPlugins = true;
+          test = false;
           colorscheme = {
             stylix = "base16-${myStylix}";
           };
@@ -213,7 +227,7 @@ in
     nixCats.enable = true;
     nixCats.packageNames = [
       "nvim"
-      "testnvim"
+      "tvim"
     ];
     xdg.configFile."nvim" = {
       enable = true;

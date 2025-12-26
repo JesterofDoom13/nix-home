@@ -7,6 +7,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    rust-overlay.url = "github:oxalica/rust-overlay?ref=stable";
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -51,6 +52,7 @@
       nixpkgs,
       home-manager,
       nix-yazi-plugins,
+      rust-overlay,
       nixgl,
       ...
     }@inputs:
@@ -69,7 +71,10 @@
       pkgs = import nixpkgs {
         localSystem = system;
         config.allowUnfree = true;
-        overlays = [ nixgl.overlay ];
+        overlays = [
+          nixgl.overlay
+          (import rust-overlay)
+        ];
       };
     in
     {

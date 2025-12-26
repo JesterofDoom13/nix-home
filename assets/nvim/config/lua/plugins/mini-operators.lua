@@ -1,6 +1,10 @@
 return {
-  'nvim-mini/mini.operators',
-  version = false,
-  lazy = false,
-  opts = {},
+	"nvim-mini/mini.operators",
+	version = false,
+	event = "VeryLazy",
+	opts = {
+		replace = {
+			prefix = "<leader>r",
+		},
+	},
 }

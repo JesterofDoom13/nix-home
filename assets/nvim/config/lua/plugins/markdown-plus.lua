@@ -1,4 +1,4 @@
 return {
-  'yousefhadder/markdown-plus.nvim',
-  ft = 'markdown',
+	"yousefhadder/markdown-plus.nvim",
+	ft = "markdown",
 }

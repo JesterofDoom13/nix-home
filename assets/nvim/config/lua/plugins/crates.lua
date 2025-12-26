@@ -2,6 +2,7 @@ local crates = require("crates")
 return {
 	{
 		"saecki/crates.nvim",
+		event = "VeryLazy",
     -- stylua: ignore
 		keys = {
 		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste image from clipboard under cursor" },

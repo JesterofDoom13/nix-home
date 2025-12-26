@@ -83,7 +83,7 @@
       git
       python3
       ruby
-      rustup
+      # rustup
       # CLI Tools
       fd
       dust
