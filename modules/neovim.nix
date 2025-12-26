@@ -97,14 +97,6 @@ let
           dial-nvim
           lazygit-nvim
           {
-            plugin = image-nvim;
-            name = "image.nvim";
-          }
-          {
-            plugin = img-clip-nvim;
-            name = "img-clip.nvim";
-          }
-          {
             plugin = live-preview-nvim;
             name = "live-preview.nvim";
           }
@@ -172,7 +164,7 @@ let
       { pkgs, ... }:
       {
         settings = {
-          wrapRc = true;
+          wrapRc = false;
           aliases = [
             "vim"
             "nv"
@@ -191,9 +183,9 @@ let
       { pkgs, mkPlugin, ... }:
       {
         settings = {
-          wrapRc = false;
+          wrapRc = true;
           aliases = [
-            "ntvim"
+            "tvim"
           ];
           unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. '/.config/home-manager/assets/nvim/config'";
         };

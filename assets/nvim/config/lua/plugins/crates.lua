@@ -1,31 +1,32 @@
 local crates = require("crates")
-local opts = { silent = true }
 return {
 	{
 		"saecki/crates.nvim",
+    -- stylua: ignore
 		keys = {
-			{ "n", "<leader>Ct", crates.toggle, opts },
-			{ "n", "<leader>Cr", crates.reload, opts },
+		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste image from clipboard under cursor" },
 
-			{ "n", "<leader>Cv", crates.show_versions_popup, opts },
-			{ "n", "<leader>Cf", crates.show_features_popup, opts },
-			{ "n", "<leader>Cd", crates.show_dependencies_popup, opts },
+			{"<leader>Ct", crates.toggle,  desc = "Toggle Crates"},
+			{"<leader>Cr", crates.reload,  desc = "Reload Crates"},
 
-			{ "n", "<leader>Cu", crates.update_crate, opts },
-			{ "v", "<leader>Cu", crates.update_crates, opts },
-			{ "n", "<leader>Ca", crates.update_all_crates, opts },
-			{ "n", "<leader>CU", crates.upgrade_crate, opts },
-			{ "v", "<leader>CU", crates.upgrade_crates, opts },
-			{ "n", "<leader>CA", crates.upgrade_all_crates, opts },
+			{"<leader>Cv", crates.show_versions_popup,  desc = "Show Version Popup"},
+			{"<leader>Cf", crates.show_features_popup,  desc = "Show Features Popup"},
+			{"<leader>Cd", crates.show_dependencies_popup, desc = "Show Depend Popup" },
 
-			{ "n", "<leader>Cx", crates.expand_plain_crate_to_inline_table, opts },
-			{ "n", "<leader>CX", crates.extract_crate_into_table, opts },
+			{"<leader>Ca", crates.update_all_crates,  desc = "Update all Crates"},
+			{"<leader>CA", crates.upgrade_all_crates,  desc = "Upgrade all Crates"},
 
-			{ "n", "<leader>CH", crates.open_homepage, opts },
-			{ "n", "<leader>CR", crates.open_repository, opts },
-			{ "n", "<leader>CD", crates.open_documentation, opts },
-			{ "n", "<leader>CC", crates.open_crates_io, opts },
-			{ "n", "<leader>CL", crates.open_lib_rs, opts },
+			{"<leader>Cx", crates.expand_plain_crate_to_inline_table,  desc = "Expand Plain"},
+			{"<leader>CX", crates.extract_crate_into_table,  desc = "Extract Crates to table"},
+
+			{"<leader>CH", crates.open_homepage,  desc = "Open Homepage"},
+			{"<leader>CR", crates.open_repository,  desc = "Open Repo"},
+			{"<leader>CD", crates.open_documentation,  desc = "Open Docs"},
+			{"<leader>CC", crates.open_crates_io,  desc = "Open Crates.io"},
+			{"<leader>CL", crates.open_lib_rs,  desc = "Open Lib.rs"},
+
+			{"<leader>Cu", crates.update_crate, mode = {"n", "v"},  desc = "Update Crate"},
+			{"<leader>CU", crates.upgrade_crates, mode = {"n", "v"}, desc = "Upgrade Crates"},
 		},
 		opts = {},
 	},

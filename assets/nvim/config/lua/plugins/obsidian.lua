@@ -57,6 +57,11 @@ return {
 		},
 		attachments = {
 			img_folder = "./assets",
+			img_text_func = function(path)
+				local name = vim.fs.basename(tostring(path))
+				local encoded_name = require("obsidian.util").urlencode(name)
+				return string.format("![%s](./assets/%s)", name, encoded_name)
+			end,
 		},
 	},
 }
