@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
+    freecad
     solaar
   ];
   programs.zen-browser.enable = true;

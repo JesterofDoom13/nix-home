@@ -191,7 +191,7 @@ let
       { pkgs, mkPlugin, ... }:
       {
         settings = {
-          wrapRc = true;
+          wrapRc = false;
           aliases = [
             "ntvim"
           ];

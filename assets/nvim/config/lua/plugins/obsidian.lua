@@ -14,7 +14,7 @@ return {
 		{ "<leader>os", "<cmd>Obsidian quick_switch<cr>", desc = "Quick Switch" },
 		{ "<leader>ob", "<cmd>Obsidian backlinks<cr>", desc = "Show location list of backlinks" },
 		{ "<leader>ot", "<cmd>Obsidian template<cr>", desc = "Open templates" },
-		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste imate from clipboard under cursor" },
+		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste image from clipboard under cursor" },
 	},
 	opts = {
 		legacy_commands = false, -- this will be removed in the next major release
