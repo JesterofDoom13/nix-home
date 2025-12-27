@@ -599,6 +599,22 @@
         "type": "github"
       }
     },
+    "plugins-nvim-dap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1766472621,
+        "narHash": "sha256-D4YqVHXPC5UzXGNGIFHAFlwkyaxlWQekR6nXqMSJCYw=",
+        "owner": "mfussenegger",
+        "repo": "nvim-dap",
+        "rev": "818cd8787a77a97703eb1d9090543a374f79a9ac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mfussenegger",
+        "repo": "nvim-dap",
+        "type": "github"
+      }
+    },
     "plugins-obsidian-nvim": {
       "flake": false,
       "locked": {
@@ -627,6 +643,7 @@
         "plasma-manager": "plasma-manager",
         "plugins-kanban-nvim": "plugins-kanban-nvim",
         "plugins-markdownplus": "plugins-markdownplus",
+        "plugins-nvim-dap": "plugins-nvim-dap",
         "plugins-obsidian-nvim": "plugins-obsidian-nvim",
         "stylix": "stylix",
         "suyu": "suyu",
