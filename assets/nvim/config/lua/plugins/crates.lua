@@ -3,6 +3,8 @@ return {
 	{
 		"saecki/crates.nvim",
 		event = "VeryLazy",
+		lazy = true,
+		ft = { "rust" },
     -- stylua: ignore
 		keys = {
 		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste image from clipboard under cursor" },

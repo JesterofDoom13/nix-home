@@ -21,6 +21,7 @@ let
           lua5_1
           lua51Packages.luarocks
           lua-language-server
+          lldb
           nil
           nixfmt
           ripgrep
@@ -53,6 +54,7 @@ let
           black
           isort
           python313Packages.pynvim
+          python313Packages.debugpy
         ];
         ruby = with pkgs; [ gem ];
         zig = with pkgs; [ zig ];
@@ -77,6 +79,12 @@ let
           nerdy-nvim
           noice-nvim
           nui-nvim
+          nvim-dap
+          nvim-dap-cortex-debug
+          nvim-dap-lldb
+          nvim-dap-python
+          nvim-dap-ui
+          nvim-dap-view
           nvim-lint
           nvim-lspconfig
           nvim-treesitter-textobjects
@@ -136,7 +144,6 @@ let
       optionalPlugins = with pkgs.neovimPlugins; {
         markdown = [
           kanban-nvim
-          nvim-dap
           obsidian-nvim
           {
             plugin = markdownplus;
@@ -187,6 +194,7 @@ let
           colorscheme = {
             stylix = "base16-${myStylix}";
           };
+          lldb.path = "${pkgs.lldb}/bin/lldb";
         };
       };
     tvim = # for test nvim or debugging

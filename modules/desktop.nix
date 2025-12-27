@@ -11,6 +11,7 @@
     nerd-fonts.fira-code
     freecad
     solaar
+    kando
   ];
   programs.zen-browser.enable = true;
   programs.google-chrome.enable = true;

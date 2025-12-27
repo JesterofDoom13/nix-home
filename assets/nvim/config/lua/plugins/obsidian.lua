@@ -63,5 +63,15 @@ return {
 				return string.format("![%s](./assets/%s)", name, encoded_name)
 			end,
 		},
+		---@param id string
+		---@param dir obsidian.Path
+		---@return string
+		note_id_func = function(id, dir)
+			local daily_notes_dir = Obsidian.dir / Obsidian.opts.daily_notes.folder
+			if daily_notes_dir == dir then
+				return id
+			end
+			return require("obsidian.builtin").zettel_id() -- or whatever customizations you did
+		end,
 	},
 }
