@@ -1,7 +1,16 @@
 Bazzite
+Headscale
+LXCs
+Proxmox
 Silverblue
+Tailscale
+Xfinity
 conf
+etc
 ghostty
+lxc
+magicDNS
 nixCats
 nvim
+pve
 sudo
