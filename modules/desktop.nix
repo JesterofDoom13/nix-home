@@ -19,9 +19,20 @@
   xdg.configFile."kando" = {
     enable = true;
     recursive = false;
-    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/kando"; # Keep orca with me and allow it to update and pull changes
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/home-manager/assets/kando"; # Keep orca with me and allow it to update and pull changes
   };
   # This is from the solaar github
+  xdg.configFile."autostart/kando.desktop".text = ''
+    [Desktop Entry]
+    Name=Kando
+    Exec=${pkgs.kando}/bin/kando
+    Icon=kando
+    StartupNotify=true
+    Terminal=false
+    Type=Application
+    Keywords=kando;mouse;
+    Categories=Utility;GTK;
+  '';
   xdg.configFile."autostart/solaar.desktop".text = ''
     [Desktop Entry]
     Name=Solaar
