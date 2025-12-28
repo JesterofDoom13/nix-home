@@ -1,6 +1,7 @@
 Bazzite
 Headscale
 LXCs
+Plex
 Proxmox
 Silverblue
 Tailscale

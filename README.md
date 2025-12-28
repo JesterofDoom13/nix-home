@@ -2,6 +2,49 @@
 
 ## Initial Setup
 
+### Setup Git to Pull Private Repository
+
+#### Setup with SSH Keys
+
+> [!NOTE]
+> Use SSH Key setup if you are using your own personal computer.
+
+Setup new keys on new install:
+
+> [!IMPORTANT]
+> Check your filenames and email address your adding. They should match what you've created and you should be putting in
+> your own email address.
+
+```bash
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+
+Then start ssh-agent and add the new keys:
+
+```bash
+# Starting ssh-agent
+eval "$(ssh-agent -s)"
+# Adding newly created keys
+ssh-add ~/.ssh/id_ed25519
+wl-copy < ~/.ssh/id_ed25519.pub
+```
+
+Now add them to your Github [settings](https://github.com/settings/keys)
+
+Test they work with running this exactly as is
+
+```bash
+ssh -T git@github.com
+```
+
+#### Setup with PAT
+
+> [!NOTE]
+> [GitHub PAT Generator](https://github.com/settings/tokens)
+
+Get a token set up so you can pull your repo. Be ready to use the PAT you
+generate with the next step.
+
 ### Allowing Changes Being Made to Root Directory
 
 Following the instructions I found at [Nix package manager on Fedora Silverblue](https://gist.github.com/queeup/1666bc0a5558464817494037d612f094)
@@ -48,19 +91,9 @@ mkdir -p ~/.config/nix/
 echo "extra-experimental-features = flakes nix-command" > ~/.config/nix/nix.conf
 ```
 
-### Setup Git to Pull Private Repository
-
-> [!NOTE]
-> [GitHub PAT Generator](https://github.com/settings/tokens)
-
-Get a token set up so you can pull your repo. Be ready to use the PAT you
-generate with the next step.
-
 ### Initial Home-Manager Run
 
 ```bash
-# Don't think you need this but keep it around as a troubleshoot.
-# nix run "https://flakehub.com/f/DeterminateSystems/fh/*" -- init
 nix run home-manager/master -- init --switch
 home-manager switch
 ```
