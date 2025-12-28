@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   home.file.".config/kxkbrc".text = ''
     [Layout]
@@ -16,6 +16,11 @@
   programs.zen-browser.enable = true;
   programs.google-chrome.enable = true;
 
+  xdg.configFile."kando" = {
+    enable = true;
+    recursive = false;
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.config/kando"; # Keep orca with me and allow it to update and pull changes
+  };
   # This is from the solaar github
   xdg.configFile."autostart/solaar.desktop".text = ''
     [Desktop Entry]
