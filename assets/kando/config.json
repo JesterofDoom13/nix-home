@@ -2,22 +2,27 @@
   "locale": "auto",
   "showIntroductionDialog": false,
   "menuTheme": "neon-lights",
-  "darkMenuTheme": "default",
-  "menuThemeColors": {},
+  "darkMenuTheme": "neon-lights",
+  "menuThemeColors": {
+    "neon-lights": {
+      "connector-color": "rgb(248 81 117 / 0.75)",
+      "glow-color": "rgb(207 255 140 / 0.7)"
+    }
+  },
   "darkMenuThemeColors": {},
   "enableDarkModeForMenuThemes": false,
   "soundTheme": "simple-clicks",
-  "soundVolume": 0.5,
+  "soundVolume": 1,
   "ignoreWriteProtectedConfigFiles": false,
   "settingsWindowColorScheme": "system",
-  "settingsWindowFlavor": "sakura-system",
-  "trayIconFlavor": "color",
-  "lazyInitialization": false,
+  "settingsWindowFlavor": "sakura-dark",
+  "trayIconFlavor": "dark",
+  "lazyInitialization": true,
   "enableVersionCheck": false,
-  "zoomFactor": 1,
-  "centerDeadZone": 50,
-  "minParentDistance": 150,
-  "dragThreshold": 15,
+  "zoomFactor": 0.9,
+  "centerDeadZone": 20,
+  "minParentDistance": 40,
+  "dragThreshold": 10,
   "fadeInDuration": 150,
   "fadeOutDuration": 200,
   "keepInputFocus": true,
@@ -25,7 +30,7 @@
   "enableTurboMode": true,
   "warpMouse": true,
   "hoverModeNeedsConfirmation": false,
-  "gestureMinStrokeLength": 150,
+  "gestureMinStrokeLength": 80,
   "gestureMinStrokeAngle": 20,
   "gestureJitterThreshold": 10,
   "gesturePauseTimeout": 100,
@@ -37,5 +42,5 @@
   "sameShortcutBehavior": "close",
   "useDefaultOsShowSettingsHotkey": true,
   "hideSettingsButton": false,
-  "settingsButtonPosition": "bottom-right"
+  "settingsButtonPosition": "top-right"
 }

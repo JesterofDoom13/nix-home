@@ -83,11 +83,15 @@
       git
       python3
       ruby
+      autofs5
       # rustup
       # CLI Tools
       fd
       dust
       pandoc
     ];
+  };
+  services.autofs = {
+    enable = true;
   };
 }

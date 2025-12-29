@@ -4,7 +4,7 @@ return {
 		"folke/snacks.nvim",
 	},
 	keys = {
-		{ "<leader>sN", "<cmd>Nerdy<cr>", desc = "Search Nerdy icons" },
+		{ "<leader>sN", "<cmd>Nerdy<cr>", { desc = "Search Nerdy icons", icon = "󰊪 " } },
 	},
 	cmd = "Nerdy",
 	opts = {

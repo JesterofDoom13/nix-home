@@ -21,6 +21,7 @@
       rsg = "systemctl --user daemon-reload && systemctl --user restart app-ghostty-service.service";
     };
     sessionVariables.EDITOR = "nvim";
+    sessionVariables.VISUAL = "nvim";
     sessionSearchVariables.XDG_CONFIG_DIRS = [
       "${homeDir}/.config/kdedefaults"
       "/etc/xdg"
