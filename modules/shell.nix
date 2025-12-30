@@ -26,6 +26,18 @@
         fissh = ''SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv '';
       };
     };
+    # autofs = {
+    #   enable = true;
+    #   mounts = [
+    #     {
+    #       # Mapping to file declared later on.
+    #       map = "/etc/auto.fs";
+    #       mountPoint = "/mnt/bigprox";
+    #       options = [ "timeout=60" ];
+    #
+    #     }
+    #   ];
+    # };
     bat = {
       enable = true;
       extraPackages = with pkgs.bat-extras; [
@@ -83,15 +95,11 @@
       git
       python3
       ruby
-      autofs5
       # rustup
       # CLI Tools
       fd
       dust
       pandoc
     ];
-  };
-  services.autofs = {
-    enable = true;
   };
 }
