@@ -1,9 +1,6 @@
 {
-    "cooling_tube_length": "0",
-    "cooling_tube_retraction": "0",
     "emit_machine_limits_to_gcode": "0",
     "enable_filament_ramming": "0",
-    "extra_loading_move": "0",
     "from": "User",
     "gcode_flavor": "klipper",
     "host_type": "octoprint",
@@ -11,11 +8,11 @@
     "is_custom_defined": "0",
     "layer_change_gcode": ";AFTER_LAYER_CHANGE\n;[layer_z]\n_MMU_UPDATE_HEIGHT",
     "machine_end_gcode": "PRINT_END",
-    "machine_load_filament_time": "53",
+    "machine_load_filament_time": "1.57",
     "machine_start_gcode": "MMU_START_SETUP INITIAL_TOOL={initial_tool} TOTAL_TOOLCHANGES=!total_toolchanges! REFERENCED_TOOLS=!referenced_tools! TOOL_COLORS=!colors! TOOL_TEMPS=!temperatures! TOOL_MATERIALS=!materials! FILAMENT_NAMES=!filament_names! PURGE_VOLUMES=!purge_volumes!\n\n{if curr_bed_type==\"Cool Plate\"}\n  ;Cool Plate Offset  \n  SET_GCODE_OFFSET Z=-0.095\n{else}\n  {if curr_bed_type==\"Textured Cool Plate\"}\n    ;Cool Plate Offset  \n    SET_GCODE_OFFSET Z=-0.260\n  {else}\n    SET_GCODE_OFFSET Z=0.0\n  {endif}\n{endif}\n\nPRINT_START HOTEND=[first_layer_temperature[initial_extruder]] BED=[first_layer_bed_temperature] CHAMBER=[chamber_temperature]  ",
-    "machine_unload_filament_time": "48",
+    "machine_unload_filament_time": "51.6",
     "name": "Klipper MK3S 0.4Obx MMU",
-    "parking_pos_retraction": "0",
+    "print_host": "http://johnny",
     "printable_area": [
         "0x0",
         "245x0",
@@ -23,16 +20,7 @@
         "0x210"
     ],
     "printer_settings_id": "Klipper MK3S 0.4Obx MMU",
-    "retract_length_toolchange": [
-        "0"
-    ],
-    "retract_when_changing_layer": [
-        "0"
-    ],
     "support_multi_bed_types": "1",
     "time_lapse_gcode": "TIMELAPSE_TAKE_FRAME",
-    "version": "2.3.0.5",
-    "wipe": [
-        "0"
-    ]
+    "version": "2.3.0.5"
 }

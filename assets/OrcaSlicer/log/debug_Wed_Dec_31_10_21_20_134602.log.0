@@ -1,0 +1,41 @@
+[error]	2025-12-31 10:21:22.727832[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:21:25.812628[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 10:21:25.859534[Thread 0x00007f2f5728ca80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2025-12-31 10:21:27.448192[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:24:31.870174[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:24:42.071795[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:24:46.099511[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:24:51.220792[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:25:14.998613[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 10:29:07.940863[Thread 0x00007f2f5728ca80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2025-12-31 10:29:07.940885[Thread 0x00007f2f5728ca80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2025-12-31 10:29:07.940888[Thread 0x00007f2f5728ca80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2025-12-31 10:29:07.940892[Thread 0x00007f2f5728ca80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2025-12-31 10:29:08.036940[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:29:21.366920[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:42:56.969763[Thread 0x00007f2f5728ca80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2025-12-31 10:56:20.941446[Thread 0x00007f2ee45fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2025-12-31 10:56:21.068282[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 10:58:06.138849[Thread 0x00007f2f5728ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2025-12-31 10:58:22.479236[Thread 0x00007f2f5728ca80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2025-12-31 10:58:24.811784[Thread 0x00007f2ee45fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2025-12-31 10:59:10.085478[Thread 0x00007f2f5728ca80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2025-12-31 11:02:19.358449[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:02:19.434030[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:02:19.571527[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:02:19.770116[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:02:19.815296[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:02:19.818231[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:03:18.821511[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:03:18.937790[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:03:19.129734[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:03:19.429482[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:03:19.491935[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:03:19.495762[Thread 0x00007f2e3affd6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 11:21:23.519112[Thread 0x00007f2f5728ca80]:11:21:23: Script message received; value = {"sequence_id":1767205284,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 12:21:23.522257[Thread 0x00007f2f5728ca80]:12:21:23: Script message received; value = {"sequence_id":1767208884,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 13:21:23.525151[Thread 0x00007f2f5728ca80]:13:21:23: Script message received; value = {"sequence_id":1767212484,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 14:21:23.528783[Thread 0x00007f2f5728ca80]:14:21:23: Script message received; value = {"sequence_id":1767216084,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 15:21:23.531936[Thread 0x00007f2f5728ca80]:15:21:23: Script message received; value = {"sequence_id":1767219684,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 16:21:23.537506[Thread 0x00007f2f5728ca80]:16:21:23: Script message received; value = {"sequence_id":1767223284,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2025-12-31 16:50:50.945914[Thread 0x00007f2f5728ca80]:calc_exclude_triangles:Unable to create exclude triangles

@@ -1,10 +1,13 @@
 Bazzite
+CultoftheLamb
+DPrinter
 Headscale
 LXCs
 Plex
 Proxmox
 Silverblue
 Tailscale
+Tori
 Xfinity
 conf
 etc

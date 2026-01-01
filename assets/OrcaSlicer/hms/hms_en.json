@@ -1899,19 +1899,19 @@
             },
             {
                 "ecode": "050240A3",
-                "intro": "AMS(or AMS lite) C communication is abnormal. Please reconnect the module cable or restart the printer."
+                "intro": "AMS(or AMS Lite) C communication is abnormal. Please reconnect the module cable or restart the printer."
             },
             {
                 "ecode": "050140A3",
-                "intro": "AMS(or AMS lite) B communication is abnormal. Please reconnect the module cable or restart the printer."
+                "intro": "AMS(or AMS Lite) B communication is abnormal. Please reconnect the module cable or restart the printer."
             },
             {
                 "ecode": "050040A3",
-                "intro": "AMS(or AMS lite) A communication is abnormal. Please reconnect the module cable or restart the printer."
+                "intro": "AMS(or AMS Lite) A communication is abnormal. Please reconnect the module cable or restart the printer."
             },
             {
                 "ecode": "050340A3",
-                "intro": "AMS(or AMS lite) D communication is abnormal. Please reconnect the module cable or restart the printer."
+                "intro": "AMS(or AMS Lite) D communication is abnormal. Please reconnect the module cable or restart the printer."
             },
             {
                 "ecode": "058140A2",
@@ -1994,7 +1994,7 @@
                 "intro": "The filament currently loaded in the extruder does not support manual feeding."
             }
         ],
-        "ver": 202512250844
+        "ver": 202512292154
     },
     "device_hms": {
         "en": [
@@ -3112,7 +3112,7 @@
             },
             {
                 "ecode": "0500040000010049",
-                "intro": "Communication error detected with AMS, AMS lite or AMS HT. Please reconnect the module cable or restart the printer when it is idle."
+                "intro": "Communication error detected with AMS, AMS Lite or AMS HT. Please reconnect the module cable or restart the printer when it is idle."
             },
             {
                 "ecode": "0501040000030001",
@@ -3293,6 +3293,18 @@
             {
                 "ecode": "1800940000010002",
                 "intro": "Temperature sensor 1 on the AMS-HT A heater has malfunctioned, resulting in abnormal temperature readings."
+            },
+            {
+                "ecode": "0500020000020009",
+                "intro": ""
+            },
+            {
+                "ecode": "050002000002000B",
+                "intro": ""
+            },
+            {
+                "ecode": "050002000002000A",
+                "intro": ""
             },
             {
                 "ecode": "0707130000020004",
@@ -17627,7 +17639,7 @@
                 "intro": "AMS H slot 1 feed resistance is too high. Please reduce the feed resistance, decrease the rotation resistance of the spool, and avoid having the filament tube too long and excessively bent."
             }
         ],
-        "ver": 202512250844
+        "ver": 202512292154
     },
-    "version": "202512250844"
+    "version": "202512292154"
 }

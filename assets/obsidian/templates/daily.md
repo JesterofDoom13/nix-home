@@ -5,48 +5,48 @@ tags:
   - daily
 ---
 
-## Daily Journal: {{date}}
+# Daily Journal: {{date}}
 
-### Navigation
+## 📅 Daily Log
 
-### 📅 Daily Log
+### **Sleep:**
 
-#### **Mood:**
+#### **Quality:**
 
-[e.g., 😊 Happy, 😌 Calm, 💡 Reflective]
+#### **Dreams:**
+
+### **Mood:**
+
+> [!QUESTION] [e.g., 😊 Happy, 😌 Calm, 💡 Reflective]
 
 ---
 
 ### 🚀 Today's Priorities
 
 - [ ] Task 1
-- [ ] Task 2
-- [ ] Task 3
 
 ### ✅ Accomplishments
 
 - Completed X
-- Learned Y
-- Helped Z
 
 ---
 
-### 📝 Journal Entry & Reflection
+## 📝 Journal Entry & Reflection
 
-#### What Happened Today?
+### What Happened Today?
 
-- [Record key events, meetings, or observations in bullet points or free text]
+> [!QUESTION] [Record key events or observations in bullet points]
 
 ### One Thing I Am Grateful For
 
-> [Write a sentence or two about something you appreciate]
+> [!QUESTION] [Write a sentence or two about something you appreciate]
 
 ### How Am I Feeling Today?
 
-[Describe your thoughts and emotions to understand them more clearly]
+> [!QUESTION] [Describe your thoughts and emotions to understand them more clearly]
 
 ---
 
-### 🔮 Tomorrow's Focus
+## 🔮 Tomorrow's Focus
 
-- [Brainstorm 1-3 major items for the next day]
+> [!QUESTION] [Brainstorm 1-3 major items for the next day]

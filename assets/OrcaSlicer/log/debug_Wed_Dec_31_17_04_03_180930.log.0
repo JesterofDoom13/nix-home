@@ -1,0 +1,21 @@
+[warning]	2025-12-31 17:04:04.409284[Thread 0x00007f9bd962ba80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2025-12-31 17:04:04.409440[Thread 0x00007f9bd962ba80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2025-12-31 17:04:04.409445[Thread 0x00007f9bd962ba80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2025-12-31 17:04:04.409449[Thread 0x00007f9bd962ba80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2025-12-31 17:04:06.040322[Thread 0x00007f9bd962ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 17:04:06.711346[Thread 0x00007f9bd962ba80]:17:04:06: Navigation request to 'file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2025-12-31 17:04:06.730034[Thread 0x00007f9bd962ba80]:17:04:06: Navigation complete; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2025-12-31 17:04:08.944773[Thread 0x00007f9bd962ba80]:17:04:08: Script message received; value = {"sequence_id":1767225847,"command":"get_login_info"}, handler = 
+[warning]	2025-12-31 17:04:08.944872[Thread 0x00007f9bd962ba80]:17:04:08: Script message received; value = {"sequence_id":1767225847,"command":"get_recent_projects"}, handler = 
+[warning]	2025-12-31 17:04:08.945763[Thread 0x00007f9bd962ba80]:17:04:08: Script message received; value = {"sequence_id":1767225847,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 17:04:08.945862[Thread 0x00007f9bd962ba80]:17:04:08: Document loaded; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2025-12-31 17:04:08.985490[Thread 0x00007f9bd962ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 17:04:09.082694[Thread 0x00007f9bd962ba80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2025-12-31 17:04:11.462999[Thread 0x00007f9bd962ba80]:17:04:11: Script message received; value = {"sequence_id":1767225851,"command":"homepage_open_recentfile","data":{"path":"/var/home/Jester/.config/OrcaSlicer/Prints/Universal Auto Rewind/FullSystem.3mf"}}, handler = 
+[error]	2025-12-31 17:04:11.463853[Thread 0x00007f9bd962ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 17:04:12.202394[Thread 0x00007f9bd962ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 17:04:12.260406[Thread 0x00007f9bd962ba80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 17:04:28.381980[Thread 0x00007f99c4ff96c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 17:04:28.397851[Thread 0x00007f99c4ff96c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 17:04:28.572653[Thread 0x00007f99c4ff96c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[error]	2025-12-31 17:04:43.270291[Thread 0x00007f9bd962ba80]:calc_exclude_triangles:Unable to create exclude triangles
