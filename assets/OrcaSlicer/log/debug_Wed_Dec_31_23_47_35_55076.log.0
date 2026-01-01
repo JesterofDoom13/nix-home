@@ -23,3 +23,39 @@
 [warning]	2025-12-31 23:48:59.435807[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
 [warning]	2025-12-31 23:48:59.611766[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
 [error]	2025-12-31 23:49:05.526282[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2025-12-31 23:49:06.166199[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2025-12-31 23:49:13.251278[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 23:49:13.323329[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 23:49:13.467079[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 23:49:13.653059[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 23:49:13.696098[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 00:47:38.094188[Thread 0x00007f24418afa80]:00:47:38: Script message received; value = {"sequence_id":1767253658,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 01:47:38.096598[Thread 0x00007f24418afa80]:01:47:38: Script message received; value = {"sequence_id":1767257258,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 02:47:38.099005[Thread 0x00007f24418afa80]:02:47:38: Script message received; value = {"sequence_id":1767260858,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 03:47:38.101023[Thread 0x00007f24418afa80]:03:47:38: Script message received; value = {"sequence_id":1767264458,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 04:47:38.102801[Thread 0x00007f24418afa80]:04:47:38: Script message received; value = {"sequence_id":1767268058,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 05:47:38.104544[Thread 0x00007f24418afa80]:05:47:38: Script message received; value = {"sequence_id":1767271658,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 06:47:38.106293[Thread 0x00007f24418afa80]:06:47:38: Script message received; value = {"sequence_id":1767275258,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 07:47:38.108509[Thread 0x00007f24418afa80]:07:47:38: Script message received; value = {"sequence_id":1767278858,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 08:23:57.334386[Thread 0x00007f24418afa80]:08:23:57: Script message received; value = {"sequence_id":1767281037,"command":"homepage_newproject"}, handler = 
+[error]	2026-01-01 08:23:57.375335[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:24:03.303676[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:24:30.161386[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:24:30.740941[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:24:30.778983[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:24:30.815914[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:24:31.341621[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-01 08:24:36.658468[Thread 0x00007f24418afa80]:08:24:36: Script message received; value = {"sequence_id":1767281077,"command":"homepage_newproject"}, handler = 
+[error]	2026-01-01 08:24:36.666536[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:25:00.716110[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:25:05.373297[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:25:05.488132[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:25:05.513868[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:25:07.500900[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:25:07.531680[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:25:19.834490[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:25:23.742538[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-01 08:25:30.367324[Thread 0x00007f23d07fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":1,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2026-01-01 08:25:44.105451[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:25:49.828430[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:26:01.041300[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 

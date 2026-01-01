@@ -88,7 +88,7 @@
                 echo -n ']'
             
                 # Date
-                ${"_nim_prompt_wrapper $retc '' (date +%X)"}
+                _nim_prompt_wrapper $retc ''' (date +%X)
             
                 # Vi-mode
             
@@ -108,7 +108,7 @@
                                         set mode (set_color --bold magenta)V
                         end
                         set mode $mode(set_color normal)
-                        ${"_nim_prompt_wrapper $retc '' $mode"}
+                        _nim_prompt_wrapper $retc ''' $mode
                 end
             
                 # Virtual Environment
