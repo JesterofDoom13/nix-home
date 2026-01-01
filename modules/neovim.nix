@@ -19,7 +19,11 @@ let
           cmake-lint
           curl
           lua5_1
+          lua51Packages.lualine-nvim
           lua51Packages.luarocks
+          lua51Packages.luasnip
+          lua51Packages.neotest
+          lua51Packages.rustaceanvim
           lua-language-server
           lldb
           nil
@@ -66,6 +70,7 @@ let
           base16-nvim
           blink-cmp
           bufferline-nvim
+          catppuccin-nvim
           conform-nvim
           dial-nvim
           flash-nvim
@@ -73,9 +78,12 @@ let
           fzf-lua
           gitsigns-nvim
           grug-far-nvim
+          inc-rename-nvim
           lazydev-nvim
           lazygit-nvim
           lualine-nvim
+          luasnip
+          markdown-preview-nvim
           nerdy-nvim
           noice-nvim
           nui-nvim
@@ -93,6 +101,9 @@ let
           nvim-web-devicons
           persistence-nvim
           plenary-nvim
+          render-markdown-nvim
+          rocks-nvim
+          SchemaStore-nvim
           smart-splits-nvim
           snacks-nvim
           telescope-fzf-native-nvim
@@ -105,8 +116,10 @@ let
           ts-comments-nvim
           vim-illuminate
           vim-startuptime
+          vimtex
           which-key-nvim
           yazi-nvim
+          yanky-nvim
           {
             plugin = catppuccin-nvim;
             name = "catppuccin";
@@ -139,6 +152,13 @@ let
             plugin = mini-surround;
             name = "mini.surround";
           }
+          {
+            plugin = mini-hipatterns;
+            name = "mini.hipatterns";
+          }
+        ];
+        rust = with pkgs.vimPlugins; [
+          rustaceanvim
         ];
       };
       optionalPlugins = with pkgs.neovimPlugins; {
@@ -188,6 +208,7 @@ let
           perl = true;
           python = true;
           ruby = true;
+          rust = true;
           zig = true;
           test = false;
           gitPlugins = true;

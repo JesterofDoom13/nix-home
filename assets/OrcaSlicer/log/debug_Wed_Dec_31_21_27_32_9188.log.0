@@ -1,0 +1,25 @@
+[warning]	2025-12-31 21:27:32.903041[Thread 0x00007f6c33317a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2025-12-31 21:27:32.903146[Thread 0x00007f6c33317a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2025-12-31 21:27:32.903149[Thread 0x00007f6c33317a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2025-12-31 21:27:32.903152[Thread 0x00007f6c33317a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2025-12-31 21:27:34.259601[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 21:27:34.831105[Thread 0x00007f6c33317a80]:21:27:34: Navigation request to 'file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2025-12-31 21:27:34.844302[Thread 0x00007f6c33317a80]:21:27:34: Navigation complete; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2025-12-31 21:27:36.302013[Thread 0x00007f6c33317a80]:21:27:36: Script message received; value = {"sequence_id":1767241655,"command":"get_login_info"}, handler = 
+[warning]	2025-12-31 21:27:36.302075[Thread 0x00007f6c33317a80]:21:27:36: Script message received; value = {"sequence_id":1767241655,"command":"get_recent_projects"}, handler = 
+[warning]	2025-12-31 21:27:36.303073[Thread 0x00007f6c33317a80]:21:27:36: Script message received; value = {"sequence_id":1767241655,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 21:27:36.303154[Thread 0x00007f6c33317a80]:21:27:36: Document loaded; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2025-12-31 21:27:36.346035[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 21:27:36.420400[Thread 0x00007f6c33317a80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2025-12-31 21:27:45.075559[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 21:27:45.610512[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 21:27:45.646973[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2025-12-31 21:28:01.066563[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2025-12-31 21:28:11.205772[Thread 0x00007f6bc07fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":1,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2025-12-31 21:28:25.316581[Thread 0x00007f6c33317a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2025-12-31 21:28:29.036389[Thread 0x00007f6c33317a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2025-12-31 21:29:57.983330[Thread 0x00007f6c33317a80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2025-12-31 21:30:02.203898[Thread 0x00007f6b167fc6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2025-12-31 22:27:34.924311[Thread 0x00007f6c33317a80]:22:27:34: Script message received; value = {"sequence_id":1767245255,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2025-12-31 23:27:34.926886[Thread 0x00007f6c33317a80]:23:27:34: Script message received; value = {"sequence_id":1767248855,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2025-12-31 23:47:33.389854[Thread 0x00007f6c33317a80]:calc_exclude_triangles:Unable to create exclude triangles

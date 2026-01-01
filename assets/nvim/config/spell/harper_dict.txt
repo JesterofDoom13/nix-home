@@ -5,9 +5,11 @@ Headscale
 LXCs
 Plex
 Proxmox
+Samantha
 Silverblue
 Tailscale
 Tori
+Tori's
 Xfinity
 conf
 etc

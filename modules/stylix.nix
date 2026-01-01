@@ -33,7 +33,7 @@
         enable = true;
       };
       gtk = {
-        enable = false;
+        enable = true;
       };
       zen-browser.profileNames = [ "" ];
     };
