@@ -1,0 +1,16 @@
+[warning]	2026-01-01 08:58:16.479809[Thread 0x00007f44fd2afa80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-01-01 08:58:16.479944[Thread 0x00007f44fd2afa80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-01-01 08:58:16.479948[Thread 0x00007f44fd2afa80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-01-01 08:58:16.479951[Thread 0x00007f44fd2afa80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-01-01 08:58:17.857972[Thread 0x00007f44fd2afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-01 08:58:18.479355[Thread 0x00007f44fd2afa80]:08:58:18: Navigation request to 'file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-01-01 08:58:18.512909[Thread 0x00007f44fd2afa80]:08:58:18: Navigation complete; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-01-01 08:58:18.618784[Thread 0x00007f44fd2afa80]:08:58:18: Script message received; value = {"sequence_id":1767283099,"command":"get_login_info"}, handler = 
+[warning]	2026-01-01 08:58:18.618944[Thread 0x00007f44fd2afa80]:08:58:18: Script message received; value = {"sequence_id":1767283099,"command":"get_recent_projects"}, handler = 
+[warning]	2026-01-01 08:58:18.621346[Thread 0x00007f44fd2afa80]:08:58:18: Script message received; value = {"sequence_id":1767283099,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 08:58:18.621461[Thread 0x00007f44fd2afa80]:08:58:18: Document loaded; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-01-01 08:58:20.087469[Thread 0x00007f44fd2afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-01 08:58:20.174203[Thread 0x00007f44fd2afa80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2026-01-01 08:58:21.363001[Thread 0x00007f44fd2afa80]:08:58:21: Script message received; value = {"sequence_id":1767283101,"command":"homepage_newproject"}, handler = 
+[error]	2026-01-01 08:58:21.381074[Thread 0x00007f44fd2afa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 08:58:45.566238[Thread 0x00007f44fd2afa80]:calc_exclude_triangles:Unable to create exclude triangles

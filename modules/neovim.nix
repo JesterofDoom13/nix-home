@@ -69,6 +69,8 @@ let
           LazyVim
           base16-nvim
           blink-cmp
+          blink-emoji-nvim
+          blink-nerdfont-nvim
           bufferline-nvim
           catppuccin-nvim
           conform-nvim

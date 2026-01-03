@@ -1,0 +1,19 @@
+{
+    "compatible_printers": [
+        "Prusa MK3S 0.4 nozzle"
+    ],
+    "filament_settings_id": [
+        "SUNLU PLA+ @ObX0.4"
+    ],
+    "from": "User",
+    "inherits": "SUNLU PLA+ @System",
+    "is_custom_defined": "0",
+    "name": "SUNLU PLA+ @ObX0.4",
+    "nozzle_temperature": [
+        "245"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "245"
+    ],
+    "version": "2.3.1.10"
+}

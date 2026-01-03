@@ -1,4 +1,5 @@
 Bazzite
+ChainsawMan
 CultoftheLamb
 DPrinter
 Headscale
@@ -19,4 +20,5 @@ magicDNS
 nixCats
 nvim
 pve
+stressor
 sudo

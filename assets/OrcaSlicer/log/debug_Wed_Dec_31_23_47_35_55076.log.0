@@ -59,3 +59,14 @@
 [error]	2026-01-01 08:25:44.105451[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
 [error]	2026-01-01 08:25:49.828430[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
 [error]	2026-01-01 08:26:01.041300[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:26:09.870353[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-01 08:26:33.106765[Thread 0x00007f24418afa80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-01 08:26:39.820045[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:26:39.836471[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:26:39.852935[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:26:39.873208[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:26:39.892915[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:26:39.912367[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:26:39.931515[Thread 0x00007f23f95ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-01 08:47:38.112651[Thread 0x00007f24418afa80]:08:47:38: Script message received; value = {"sequence_id":1767282458,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2026-01-01 08:58:13.026372[Thread 0x00007f24418afa80]:calc_exclude_triangles:Unable to create exclude triangles

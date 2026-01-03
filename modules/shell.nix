@@ -9,10 +9,11 @@
     };
     fish = {
       enable = true;
-      interactiveShellInit = ''
+      shellInit = ''
         fish_vi_key_bindings 
-        batman --export-env | source '';
-      promptInit = ''
+        batman --export-env | source 
+      '';
+      interactiveShellInit = ''
         function fish_prompt
                 # This prompt shows:
                 # - green lines if the last return command is OK, red otherwise

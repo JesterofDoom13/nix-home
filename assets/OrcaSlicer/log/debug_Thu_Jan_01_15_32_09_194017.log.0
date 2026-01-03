@@ -1,0 +1,19 @@
+[warning]	2026-01-01 15:32:10.064110[Thread 0x00007f2f82da2a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-01-01 15:32:10.064261[Thread 0x00007f2f82da2a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-01-01 15:32:10.064265[Thread 0x00007f2f82da2a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-01-01 15:32:10.064267[Thread 0x00007f2f82da2a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-01-01 15:32:11.666984[Thread 0x00007f2f82da2a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-01 15:32:12.283046[Thread 0x00007f2f82da2a80]:15:32:12: Navigation request to 'file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-01-01 15:32:12.310990[Thread 0x00007f2f82da2a80]:15:32:12: Navigation complete; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-01-01 15:32:12.402050[Thread 0x00007f2f82da2a80]:15:32:12: Script message received; value = {"sequence_id":1767306732,"command":"get_login_info"}, handler = 
+[warning]	2026-01-01 15:32:12.402210[Thread 0x00007f2f82da2a80]:15:32:12: Script message received; value = {"sequence_id":1767306732,"command":"get_recent_projects"}, handler = 
+[warning]	2026-01-01 15:32:12.404208[Thread 0x00007f2f82da2a80]:15:32:12: Script message received; value = {"sequence_id":1767306732,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-01 15:32:12.404325[Thread 0x00007f2f82da2a80]:15:32:12: Document loaded; url='file:///nix/store/wrarz9z5hs26s6zqcwj9ms3ldrznb9sw-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-01-01 15:32:13.919637[Thread 0x00007f2f82da2a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-01 15:32:14.037792[Thread 0x00007f2f82da2a80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2026-01-01 15:40:59.496236[Thread 0x00007f2f82da2a80]:15:40:59: Script message received; value = {"sequence_id":1767307259,"command":"homepage_open_recentfile","data":{"path":"/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf"}}, handler = 
+[error]	2026-01-01 15:40:59.497893[Thread 0x00007f2f82da2a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 15:41:00.286512[Thread 0x00007f2f82da2a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-01 15:41:54.112365[Thread 0x00007f2f82da2a80]:15:41:54: Script message received; value = {"sequence_id":1767307314,"command":"homepage_newproject"}, handler = 
+[error]	2026-01-01 15:41:56.484509[Thread 0x00007f2f82da2a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-01 15:42:19.220952[Thread 0x00007f2f82da2a80]:calc_exclude_triangles:Unable to create exclude triangles

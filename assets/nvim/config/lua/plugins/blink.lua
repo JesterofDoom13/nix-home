@@ -1,7 +1,11 @@
 return {
 	{
 		"saghen/blink.cmp",
-		dependencies = { "rafamadriz/friendly-snippets" },
+		dependencies = {
+			"moyiz/blink-emoji.nvim",
+			"rafamadriz/friendly-snippets",
+			"MahanRahmati/blink-nerdfont.nvim",
+		},
 		event = "VeryLazy",
 
 		-- use a release tag to download pre-built binaries
@@ -52,6 +56,8 @@ return {
 					"snippets",
 					"buffer",
 					-- My additions.
+					"nerdfont",
+					"emoji",
 					"kanban",
 					"obsidian_new",
 					"obsidian_tags",
@@ -64,6 +70,35 @@ return {
 						module = "kanban.fn.cmp.blink.cmp",
 						score_offset = 15, -- optional: bump priority
 						opts = {}, -- reserved for future options
+					},
+					emoji = {
+						module = "blink-emoji",
+						name = "Emoji",
+						score_offset = 15, -- Tune by preference
+						opts = {
+							insert = true, -- Insert emoji (default) or complete its name
+							---@type string|table|fun():table
+							trigger = function()
+								return { ":" }
+							end,
+						},
+						should_show_items = function()
+							return vim.tbl_contains(
+								-- Enable emoji completion only for git commits and markdown.
+								-- By default, enabled for all file-types.
+								{ "gitcommit", "markdown" },
+								vim.o.filetype
+							)
+						end,
+					},
+					nerdfont = {
+						module = "blink-nerdfont",
+						name = "Nerd Fonts",
+						score_offset = 15, -- Tune by preference
+						opts = {
+							insert = true, -- Insert nerdfont icon (default) or complete its name
+							trigger = ":", -- Customize the trigger. Defaults to ":"
+						},
 					},
 				},
 			},

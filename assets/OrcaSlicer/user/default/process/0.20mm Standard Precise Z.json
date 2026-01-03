@@ -1,0 +1,11 @@
+{
+    "from": "User",
+    "inherits": "0.20mm Standard @MK3S 0.4",
+    "interface_shells": "1",
+    "interlocking_beam": "1",
+    "is_custom_defined": "0",
+    "name": "0.20mm Standard Precise Z",
+    "precise_z_height": "1",
+    "print_settings_id": "0.20mm Standard Precise Z",
+    "version": "2.3.1.10"
+}
