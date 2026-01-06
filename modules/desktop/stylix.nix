@@ -1,5 +1,13 @@
-{ pkgs, myStylix, ... }:
 {
+  pkgs,
+  myStylix,
+  inputs,
+  ...
+}:
+{
+  imports = [
+    inputs.stylix.homeModules.stylix
+  ];
   stylix = {
     enable = true;
     autoEnable = true;
@@ -24,17 +32,6 @@
       };
     };
     targets = {
-      # If I enabled them here it's because they probably
-      # weren't enabling with autoEnable = true;
-      yazi = {
-        enable = true;
-      };
-      btop = {
-        enable = true;
-      };
-      gtk = {
-        enable = true;
-      };
       zen-browser.profileNames = [ "" ];
     };
   };

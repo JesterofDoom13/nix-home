@@ -2,6 +2,7 @@ Bazzite
 ChainsawMan
 CultoftheLamb
 DPrinter
+ERCF
 Headscale
 LXCs
 Plex
@@ -14,6 +15,7 @@ Tori's
 Xfinity
 conf
 etc
+extruder
 ghostty
 lxc
 magicDNS

@@ -126,3 +126,29 @@
 [warning]	2026-01-02 17:07:54.120827[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
 [warning]	2026-01-02 17:07:54.192300[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
 [error]	2026-01-02 17:09:07.603354[Thread 0x00007f0b9f574a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-02 17:09:49.854187[Thread 0x00007f0b9f574a80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-02 17:09:59.216330[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 17:09:59.235181[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 17:09:59.256343[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 17:09:59.331144[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 17:09:59.400666[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 18:03:23.355066[Thread 0x00007f0b9f574a80]:18:03:23: Script message received; value = {"sequence_id":1767402203,"command":"homepage_newproject"}, handler = 
+[error]	2026-01-02 18:03:31.052215[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-02 18:03:46.002733[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-02 18:05:42.792095[Thread 0x00007f0b9f574a80]:18:05:42: Script message received; value = {"sequence_id":1767402343,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-02 18:05:46.441799[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 18:06:56.206077[Thread 0x00007f0b9f574a80]:18:06:56: Script message received; value = {"sequence_id":1767402416,"command":"homepage_newproject"}, handler = 
+[error]	2026-01-02 18:06:57.980788[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-02 18:08:04.256971[Thread 0x00007f0b9f574a80]:18:08:04: Script message received; value = {"sequence_id":1767402484,"command":"homepage_open_recentfile","data":{"path":"/var/home/Jester/.config/OrcaSlicer/Prints/Universal Auto Rewind/FullSystem.3mf"}}, handler = 
+[error]	2026-01-02 18:08:04.258532[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-02 18:08:04.740132[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-02 18:08:04.777671[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-02 18:08:04.814227[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-02 18:08:05.284877[Thread 0x00007f0b9f574a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-02 18:08:51.479617[Thread 0x00007f0b9f574a80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-02 18:09:29.050991[Thread 0x00007f0b2c5f86c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2026-01-02 18:09:30.233947[Thread 0x00007f0b9f574a80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-02 18:09:36.492085[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 18:09:36.508572[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-02 18:09:36.704357[Thread 0x00007f0b573ff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[error]	2026-01-02 18:29:21.244635[Thread 0x00007f0b9f574a80]:calc_exclude_triangles:Unable to create exclude triangles

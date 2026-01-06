@@ -15,6 +15,6 @@ return {
 		"julianolf/nvim-dap-lldb",
 		event = "VeryLazy",
 		dependencies = { "mfussenegger/nvim-dap" },
-		opts = { codelldb_path = nixCats.cats.lldb.path .. "_dap" },
+		opts = { codelldb_path = nixCats.cats.lldb.path },
 	},
 }

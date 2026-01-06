@@ -1,13 +1,10 @@
 { ... }:
 {
   imports = [
-    ./desktop.nix
-    ./ghostty.nix
+    ./desktop
     ./neovim.nix
-    ./orca.nix
     ./rust.nix
     ./shell.nix
-    ./stylix.nix
     ./tmux.nix
     ./yazi.nix
   ];

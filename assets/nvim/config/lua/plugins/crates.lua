@@ -7,8 +7,6 @@ return {
 		ft = { "rust" },
     -- stylua: ignore
 		keys = {
-		{ "<leader>op", "<cmd>Obsidian paste_img<cr>", desc = "Paste image from clipboard under cursor" },
-
 			{"<leader>Ct", crates.toggle,  desc = "Toggle Crates"},
 			{"<leader>Cr", crates.reload,  desc = "Reload Crates"},
 

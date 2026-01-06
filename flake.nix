@@ -94,8 +94,6 @@
         modules = [
           ./home.nix
           inputs.plasma-manager.homeModules.plasma-manager
-          inputs.stylix.homeModules.stylix
-          inputs.zen-browser.homeModules.beta
         ];
       };
     };
