@@ -65,9 +65,10 @@ in
   };
   xdg = {
     configFile = {
-      "ghostty/shaders/sparks-from-fire.glsl".source = ../assets/ghostty/shaders/sparks-from-fire.glsl;
-      "ghostty/shaders/cursor_tail.glsl".source = ../assets/ghostty/shaders/cursor_tail.glsl;
-      "ghostty/shaders/sonic_boom_cursor.glsl".source = ../assets/ghostty/shaders/sonic_boom_cursor.glsl;
+      "ghostty/shaders/sparks-from-fire.glsl".source = ../../assets/ghostty/shaders/sparks-from-fire.glsl;
+      "ghostty/shaders/cursor_tail.glsl".source = ../../assets/ghostty/shaders/cursor_tail.glsl;
+      "ghostty/shaders/sonic_boom_cursor.glsl".source =
+        ../../assets/ghostty/shaders/sonic_boom_cursor.glsl;
       # If systemd doesn't work, you can do this.
       # I went with the systemd so I can check it's status better.
       # "autostart/ghostty.desktop".text = ''

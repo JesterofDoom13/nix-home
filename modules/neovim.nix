@@ -53,7 +53,7 @@ let
           tectonic
         ];
         node = with pkgs; [ nodejs_24 ];
-        perl = with pkgs; [ perl540Packages.NeovimExt ];
+        perl = with pkgs; [ perl5Packages.NeovimExt ];
         python = with pkgs; [
           black
           isort
@@ -97,7 +97,7 @@ let
           nvim-dap-view
           nvim-lint
           nvim-lspconfig
-          nvim-treesitter-textobjects
+          # nvim-treesitter-textobjects
           nvim-treesitter.withAllGrammars
           nvim-ts-autotag
           nvim-web-devicons

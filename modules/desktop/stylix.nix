@@ -12,7 +12,7 @@
     enable = true;
     autoEnable = true;
     polarity = "dark";
-    image = ../assets/imgs/background/brown_city_planet_w.jpg;
+    image = ../../assets/imgs/background/brown_city_planet_w.jpg;
     base16Scheme = "${pkgs.base16-schemes}/share/themes/${myStylix}.yaml";
     fonts = {
       monospace = {
