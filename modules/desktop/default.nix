@@ -1,7 +1,6 @@
 { pkgs, config, ... }:
 {
   imports = [
-    ./desktop.nix
     ./ghostty.nix
     ./orca.nix
     ./stylix.nix
