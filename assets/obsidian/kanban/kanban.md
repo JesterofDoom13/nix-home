@@ -13,13 +13,13 @@ kanban-plugin: basic
 - [ ] Setup Direct Deposit or bring a voide check from USAA
 	@
 	#Retirement
-- [ ] Service Treatment records on a USB Drive
-	#Retirement
 - [ ] SSNs for everyone
 	#Retirement
 
 ## Work in progress
 
+- [ ] Service Treatment records on a USB Drive
+	#Retirement
 - [ ] BirthCeritificates
 	#Retirement
 - [ ] Marriage Certificate
