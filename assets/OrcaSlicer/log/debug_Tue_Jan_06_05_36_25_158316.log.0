@@ -1,0 +1,12 @@
+[warning]	2026-01-06 05:36:26.623528[Thread 0x00007fcf40311a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-01-06 05:36:26.623707[Thread 0x00007fcf40311a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-01-06 05:36:26.623712[Thread 0x00007fcf40311a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-01-06 05:36:26.623714[Thread 0x00007fcf40311a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-01-06 05:36:28.853526[Thread 0x00007fcf40311a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-06 05:36:29.513634[Thread 0x00007fcf40311a80]:05:36:29: Navigation request to 'file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-01-06 05:36:29.537122[Thread 0x00007fcf40311a80]:05:36:29: Navigation complete; url='file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-01-06 05:36:29.647911[Thread 0x00007fcf40311a80]:05:36:29: Script message received; value = {"sequence_id":1767702990,"command":"get_login_info"}, handler = 
+[warning]	2026-01-06 05:36:29.648090[Thread 0x00007fcf40311a80]:05:36:29: Script message received; value = {"sequence_id":1767702990,"command":"get_recent_projects"}, handler = 
+[warning]	2026-01-06 05:36:29.653402[Thread 0x00007fcf40311a80]:05:36:29: Script message received; value = {"sequence_id":1767702990,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-06 05:36:29.653539[Thread 0x00007fcf40311a80]:05:36:29: Document loaded; url='file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-01-06 05:36:31.129241[Thread 0x00007fcf40311a80]:calc_exclude_triangles:Unable to create exclude triangles
