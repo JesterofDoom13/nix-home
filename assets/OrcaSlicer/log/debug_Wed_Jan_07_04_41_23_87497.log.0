@@ -1,0 +1,14 @@
+[warning]	2026-01-07 04:41:24.423979[Thread 0x00007f4b237cda80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-01-07 04:41:24.424093[Thread 0x00007f4b237cda80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-01-07 04:41:24.424096[Thread 0x00007f4b237cda80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-01-07 04:41:24.424099[Thread 0x00007f4b237cda80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-01-07 04:41:25.875254[Thread 0x00007f4b237cda80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-07 04:41:26.458529[Thread 0x00007f4b237cda80]:04:41:26: Navigation request to 'file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-01-07 04:41:26.483303[Thread 0x00007f4b237cda80]:04:41:26: Navigation complete; url='file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-01-07 04:41:27.918682[Thread 0x00007f4b237cda80]:04:41:27: Script message received; value = {"sequence_id":1767786087,"command":"get_login_info"}, handler = 
+[warning]	2026-01-07 04:41:27.918775[Thread 0x00007f4b237cda80]:04:41:27: Script message received; value = {"sequence_id":1767786087,"command":"get_recent_projects"}, handler = 
+[warning]	2026-01-07 04:41:27.922698[Thread 0x00007f4b237cda80]:04:41:27: Script message received; value = {"sequence_id":1767786087,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-07 04:41:27.922802[Thread 0x00007f4b237cda80]:04:41:27: Document loaded; url='file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-01-07 04:41:27.966935[Thread 0x00007f4b237cda80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-07 04:41:28.042991[Thread 0x00007f4b237cda80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2026-01-07 04:41:32.504123[Thread 0x00007f4b237cda80]:calc_exclude_triangles:Unable to create exclude triangles

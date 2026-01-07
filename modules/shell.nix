@@ -191,6 +191,12 @@
       enableBashIntegration = true;
       icons = "auto";
     };
+    direnv = {
+      enable = true;
+      enableBashIntegration = true; # see note on other shells below
+      enableFishIntegration = true;
+      nix-direnv.enable = true;
+    };
     fzf = {
       enable = true;
       enableFishIntegration = true;
@@ -232,7 +238,6 @@
       git
       python3
       ruby
-      # rustup
       # CLI Tools
       fd
       dust

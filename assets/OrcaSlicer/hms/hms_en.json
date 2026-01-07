@@ -1994,7 +1994,7 @@
                 "intro": "The filament currently loaded in the extruder does not support manual feeding."
             }
         ],
-        "ver": 202601060025
+        "ver": 202601071415
     },
     "device_hms": {
         "en": [
@@ -3361,6 +3361,14 @@
             {
                 "ecode": "0500030000020051",
                 "intro": ""
+            },
+            {
+                "ecode": "1806210000010086",
+                "intro": "Failed to read the filament information from AMS-HT G slot 2. The RFID tag cannot rotate due to a jam during the filament loading or unloading. Please pull out the filament and try again."
+            },
+            {
+                "ecode": "0705210000020020",
+                "intro": "AMS F slot 2 assist motor is stalled，due to excessive resistance in the tube near the filament buffer。"
             },
             {
                 "ecode": "0701210000010084",
@@ -8533,14 +8541,6 @@
             {
                 "ecode": "0700800000010001",
                 "intro": "AMS A Heater 1, heater malfunction or abnormal current sensor detected."
-            },
-            {
-                "ecode": "1805210000020017",
-                "intro": "AMS-HT F slot 2 assist motor is stalled，due to excessive resistance in the tube between AMS and the printer."
-            },
-            {
-                "ecode": "0704230000020008",
-                "intro": "AMS E Slot 4 feed-in Hall sensor is disconnected, which may be due to poor connector contact."
             },
             {
                 "ecode": "1800120000010001",
@@ -14791,12 +14791,12 @@
                 "intro": "AMS G slot 3 assist motor is stalled，due to excessive resistance in the tube between AMS and the filament buffer."
             },
             {
-                "ecode": "1806210000010086",
-                "intro": "Failed to read the filament information from AMS-HT G slot 2. The RFID tag cannot rotate due to a jam during the filament loading or unloading. Please pull out the filament and try again."
+                "ecode": "1805210000020017",
+                "intro": "AMS-HT F slot 2 assist motor is stalled，due to excessive resistance in the tube between AMS and the printer."
             },
             {
-                "ecode": "0705210000020020",
-                "intro": "AMS F slot 2 assist motor is stalled，due to excessive resistance in the tube near the filament buffer。"
+                "ecode": "0704230000020008",
+                "intro": "AMS E Slot 4 feed-in Hall sensor is disconnected, which may be due to poor connector contact."
             },
             {
                 "ecode": "0707200000010084",
@@ -17679,7 +17679,7 @@
                 "intro": "AMS-HT A The coil resistance of exhaust valve 1 is abnormal, which may be due to abnormal wiring or damage."
             }
         ],
-        "ver": 202601060025
+        "ver": 202601071415
     },
-    "version": "202601060025"
+    "version": "202601071415"
 }
