@@ -202,6 +202,7 @@ let
             "vim"
             "nv"
           ];
+          unwrappedCfgPath = utils.mkLuaInline "os.getenv('HOME') .. '/.config/home-manager/assets/nvim/config'";
         };
         categories = {
           general = true;
@@ -224,7 +225,7 @@ let
       { pkgs, mkPlugin, ... }:
       {
         settings = {
-          wrapRc = true;
+          wrapRc = false;
           aliases = [
             "debugnvim"
           ];
