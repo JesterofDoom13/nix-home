@@ -52,9 +52,10 @@
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
-    freecad
+    (config.lib.nixGL.wrap freecad)
     solaar
     kando
+    flips
   ];
   programs.google-chrome.enable = true;
 }

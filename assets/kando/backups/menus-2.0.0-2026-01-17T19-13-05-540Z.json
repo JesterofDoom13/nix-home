@@ -1,7 +1,9 @@
 {
-  "version": "2.1.2",
   "menus": [
     {
+      "shortcut": "Control+Space",
+      "shortcutID": "Thumb",
+      "centered": false,
       "root": {
         "type": "submenu",
         "name": "Main",
@@ -297,16 +299,16 @@
           }
         ]
       },
-      "shortcut": "Control+Space",
-      "shortcutID": "Thumb",
-      "centered": false,
-      "anchored": false,
-      "hoverMode": false,
       "tags": [
         "Thumb"
-      ]
+      ],
+      "anchored": false,
+      "hoverMode": false
     },
     {
+      "shortcut": "Control+Space",
+      "shortcutID": "Copy/Paste",
+      "centered": false,
       "root": {
         "type": "submenu",
         "name": "Copy/Paste",
@@ -345,11 +347,6 @@
           }
         ]
       },
-      "shortcut": "Control+Space",
-      "shortcutID": "Copy/Paste",
-      "centered": false,
-      "anchored": false,
-      "hoverMode": false,
       "tags": [
         "2nd Middle"
       ]

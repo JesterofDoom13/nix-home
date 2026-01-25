@@ -1,8 +1,0 @@
-[error]	2025-12-24 13:12:06.198266[Thread 0x00007f794a2eba80]:calc_exclude_triangles:Unable to create exclude triangles
-[error]	2025-12-24 13:12:09.251807[Thread 0x00007f794a2eba80]:calc_exclude_triangles:Unable to create exclude triangles
-[warning]	2025-12-24 13:12:09.290447[Thread 0x00007f794a2eba80]:get_version, get_version not supported,return 00.00.00.00!
-[error]	2025-12-24 13:12:10.277221[Thread 0x00007f794a2eba80]:calc_exclude_triangles:Unable to create exclude triangles
-[error]	2025-12-24 13:15:27.663300[Thread 0x00007f794a2eba80]:OctoPrint: Error getting version: curl:Timeout was reached:
-Connection timed out after 10002 milliseconds
-[Error 28], HTTP 0, body: ``
-[error]	2025-12-24 13:15:53.880601[Thread 0x00007f794a2eba80]:calc_exclude_triangles:Unable to create exclude triangles
