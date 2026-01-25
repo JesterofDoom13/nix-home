@@ -455,7 +455,7 @@
             },
             {
                 "ecode": "03008003",
-                "intro": "Spaghetti defects were detected by the AI Print Monitoring. Please check the quality of the printed model before continuing your print."
+                "intro": "Spaghetti defects were detected by the AI Print Monitoring. Please check the quality of the printed model before continuing your print. Cleaning the build plate or drying the filament can effectively reduce the risk of spaghetti failure."
             },
             {
                 "ecode": "18048010",
@@ -955,7 +955,7 @@
             },
             {
                 "ecode": "0C00C004",
-                "intro": "Possible spaghetti failure was detected."
+                "intro": "Possible spaghetti failure was detected. Cleaning the build plate or drying the filament can effectively reduce the risk of spaghetti failure."
             },
             {
                 "ecode": "05024001",
@@ -2006,7 +2006,7 @@
                 "intro": "File download failed due to missing certificates. Please check the Fleet Hub certificate configuration and restart the printer before trying again"
             }
         ],
-        "ver": 202601161255
+        "ver": 202601252345
     },
     "device_hms": {
         "en": [
@@ -3381,6 +3381,14 @@
             {
                 "ecode": "0300900000010007",
                 "intro": "High chamber temperature detected. If the hotend is overheating or emitting smoke, immediately power off the printer. Please refer to the Wiki for detailed troubleshooting instructions."
+            },
+            {
+                "ecode": "0706910000010002",
+                "intro": "AMS G The coil resistance of exhaust valve 2 is abnormal, which may be due to abnormal wiring or damage."
+            },
+            {
+                "ecode": "1800220000020012",
+                "intro": "AMS-HT A slot 3 feeder unit motor is stalled, cannot rotate the spool."
             },
             {
                 "ecode": "0704210000020007",
@@ -8569,10 +8577,6 @@
             {
                 "ecode": "1807230000010084",
                 "intro": "Failed to read the filament information from AMS-HT H slot 4. The RFID tag may be damaged or positioned at the edge of the RFID detection device. Please remove 5cm filament and try again."
-            },
-            {
-                "ecode": "1806200000020006",
-                "intro": "AMS-HT G has detected a breakage of the PTFE tube during filament loading. Please check whether the PTFE tubes inside and outside the AMS have fallen off or been damaged."
             },
             {
                 "ecode": "1800120000010001",
@@ -14791,12 +14795,8 @@
                 "intro": "Failed to read the filament information from AMS-HT A slot 4. The RFID tag may be damaged or positioned at the edge of the RFID detection device. Please remove 5cm filament and try again."
             },
             {
-                "ecode": "0706910000010002",
-                "intro": "AMS G The coil resistance of exhaust valve 2 is abnormal, which may be due to abnormal wiring or damage."
-            },
-            {
-                "ecode": "1800220000020012",
-                "intro": "AMS-HT A slot 3 feeder unit motor is stalled, cannot rotate the spool."
+                "ecode": "1806200000020006",
+                "intro": "AMS-HT G has detected a breakage of the PTFE tube during filament loading. Please check whether the PTFE tubes inside and outside the AMS have fallen off or been damaged."
             },
             {
                 "ecode": "0707920000020002",
@@ -16120,7 +16120,7 @@
             },
             {
                 "ecode": "0C00030000030008",
-                "intro": "Possible spaghetti defects were detected. Please check the print quality and decide if the job should be stopped."
+                "intro": "A possible spaghetti failure has been detected. Please check the print quality and decide whether to stop the job. Cleaning the build plate or drying the filament can effectively reduce the risk of spaghetti failure."
             },
             {
                 "ecode": "1800230000020012",
@@ -17699,7 +17699,7 @@
                 "intro": "AMS-HT A The coil resistance of exhaust valve 1 is abnormal, which may be due to abnormal wiring or damage."
             }
         ],
-        "ver": 202601161255
+        "ver": 202601252345
     },
-    "version": "202601161255"
+    "version": "202601252345"
 }

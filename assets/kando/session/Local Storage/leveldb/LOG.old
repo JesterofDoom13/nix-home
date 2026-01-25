@@ -1,3 +1,3 @@
-2026/01/20-15:14:42.258 3c4b Reusing MANIFEST /home/Jester/.config/kando/session/Local Storage/leveldb/MANIFEST-000001
-2026/01/20-15:14:42.264 3c4b Recovering log #3
-2026/01/20-15:14:42.264 3c4b Reusing old log /home/Jester/.config/kando/session/Local Storage/leveldb/000003.log 
+2026/01/23-14:03:56.292 202a6 Reusing MANIFEST /home/Jester/.config/kando/session/Local Storage/leveldb/MANIFEST-000001
+2026/01/23-14:03:56.298 202a6 Recovering log #3
+2026/01/23-14:03:56.298 202a6 Reusing old log /home/Jester/.config/kando/session/Local Storage/leveldb/000003.log 

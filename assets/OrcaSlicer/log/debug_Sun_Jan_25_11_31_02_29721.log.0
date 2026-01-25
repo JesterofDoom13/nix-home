@@ -1,0 +1,35 @@
+[warning]	2026-01-25 11:31:03.634323[Thread 0x00007fea0bd0da80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-01-25 11:31:03.634474[Thread 0x00007fea0bd0da80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-01-25 11:31:03.634481[Thread 0x00007fea0bd0da80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-01-25 11:31:03.634484[Thread 0x00007fea0bd0da80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-01-25 11:31:05.291432[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:31:05.362448[Thread 0x00007fe907bfe6c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-01-25 11:31:06.136922[Thread 0x00007fea0bd0da80]:11:31:06: Navigation request to 'file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-01-25 11:31:06.174405[Thread 0x00007fea0bd0da80]:11:31:06: Navigation complete; url='file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-01-25 11:31:06.299278[Thread 0x00007fea0bd0da80]:11:31:06: Script message received; value = {"sequence_id":1769365866,"command":"get_login_info"}, handler = 
+[warning]	2026-01-25 11:31:06.299439[Thread 0x00007fea0bd0da80]:11:31:06: Script message received; value = {"sequence_id":1769365866,"command":"get_recent_projects"}, handler = 
+[warning]	2026-01-25 11:31:06.304804[Thread 0x00007fea0bd0da80]:11:31:06: Script message received; value = {"sequence_id":1769365866,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-01-25 11:31:06.305114[Thread 0x00007fea0bd0da80]:11:31:06: Document loaded; url='file:///nix/store/5b0inbr5n6d5dsd7ja2b0lgn66jsdsgi-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-01-25 11:31:08.063678[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-01-25 11:31:08.170659[Thread 0x00007fea0bd0da80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2026-01-25 11:32:02.229577[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:32:02.559693[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:33:38.265962[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:33:40.693415[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:34:20.303428[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:35:39.839349[Thread 0x00007fea0bd0da80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-25 11:37:06.731586[Thread 0x00007fea0bd0da80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-25 11:37:10.048744[Thread 0x00007fea0bd0da80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-25 11:37:17.194737[Thread 0x00007fe9267ff6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2026-01-25 11:37:19.733568[Thread 0x00007fea0bd0da80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-25 11:38:19.375470[Thread 0x00007fea0bd0da80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-01-25 11:38:22.505966[Thread 0x00007fea0bd0da80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-01-25 11:38:45.028786[Thread 0x00007fe901cad6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-01-25 11:38:45.035742[Thread 0x00007fe901cad6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[error]	2026-01-25 11:39:35.509183[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:39:36.436175[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:39:50.799090[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:39:58.600233[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:40:02.006471[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:40:05.051049[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-01-25 11:40:34.281989[Thread 0x00007fea0bd0da80]:calc_exclude_triangles:Unable to create exclude triangles
