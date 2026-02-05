@@ -101,6 +101,22 @@ home-manager switch
 > [!NOTE]
 > Don't try to fix the space between _--_ and _init_
 
+### CAC Device setup
+
+#### Initial
+
+You have to enable pcscd. Which home-manager doesn't install, but Bazzite has it installed just not enabled.
+
+```bash
+sudo systemctl enable --now pcscd.service
+```
+
+#### After Initial Install and Whenever Chrome Forgets
+
+```bash
+cac-google-setup
+```
+
 ## Things to Add in the Future
 
 - [x] First run to pull repository

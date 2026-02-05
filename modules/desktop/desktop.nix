@@ -1,4 +1,14 @@
 { config, pkgs, ... }:
+let
+  cac-google-setup = pkgs.writeShellScriptBin "cac-google-setup" ''
+    #!/bin/sh
+    NSSDB="''${HOME}/.pki/nssdb"
+    mkdir -p ''${NSSDB}
+
+    ${pkgs.nssTools}/bin/modutil -force -dbdir sql:$NSSDB -add cac-card\
+      -libfile ${pkgs.opensc}/lib/opensc-pkcs11.so
+  '';
+in
 {
   xdg.configFile = {
     ".config/kxkbrc".text = ''
@@ -56,6 +66,7 @@
     solaar
     kando
     flips
+    cac-google-setup
   ];
   programs.google-chrome.enable = true;
 }

@@ -244,6 +244,7 @@
       pandoc
       pcsc-tools
       opensc
+      nssTools
     ];
   };
 }
