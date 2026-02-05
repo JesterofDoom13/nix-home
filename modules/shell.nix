@@ -160,7 +160,7 @@
         head = "fissh root@10.0.0.94";
       };
       functions = {
-        fissh = ''SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv '';
+        fissh = "SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv ";
       };
     };
     # autofs = {
@@ -242,6 +242,8 @@
       fd
       dust
       pandoc
+      pcsc-tools
+      opensc
     ];
   };
 }
