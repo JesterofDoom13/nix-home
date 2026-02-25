@@ -1,0 +1,17 @@
+[warning]	2026-02-12 21:07:56.156464[Thread 0x00007fb3deb96a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-12 21:07:56.156574[Thread 0x00007fb3deb96a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-12 21:07:56.156578[Thread 0x00007fb3deb96a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-12 21:07:56.156580[Thread 0x00007fb3deb96a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-12 21:07:57.305437[Thread 0x00007fb3deb96a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-12 21:07:57.363664[Thread 0x00007fb309ff76c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-12 21:07:57.913699[Thread 0x00007fb3deb96a80]:21:07:57: Navigation request to 'file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-12 21:07:57.939536[Thread 0x00007fb3deb96a80]:21:07:57: Navigation complete; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-12 21:07:59.478090[Thread 0x00007fb3deb96a80]:21:07:59: Script message received; value = {"sequence_id":1770955678,"command":"get_login_info"}, handler = 
+[warning]	2026-02-12 21:07:59.478157[Thread 0x00007fb3deb96a80]:21:07:59: Script message received; value = {"sequence_id":1770955678,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-12 21:07:59.484699[Thread 0x00007fb3deb96a80]:21:07:59: Script message received; value = {"sequence_id":1770955678,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 21:07:59.484815[Thread 0x00007fb3deb96a80]:21:07:59: Document loaded; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-12 21:07:59.526405[Thread 0x00007fb3deb96a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-12 21:07:59.605281[Thread 0x00007fb3deb96a80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2026-02-12 21:08:02.138728[Thread 0x00007fb3deb96a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-12 21:08:20.521003[Thread 0x00007fb30f1ff6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2026-02-12 21:08:20.529263[Thread 0x00007fb3deb96a80]:calc_exclude_triangles:Unable to create exclude triangles

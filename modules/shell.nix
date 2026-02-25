@@ -158,6 +158,7 @@
         plex = "fissh root@10.0.0.90";
         pi = "fissh pi@johnny";
         head = "fissh root@10.0.0.94";
+        nixi = "fissh Jester@10.0.0.174";
       };
       functions = {
         fissh = "SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv ";

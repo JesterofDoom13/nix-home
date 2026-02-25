@@ -1,0 +1,17 @@
+[warning]	2026-02-08 17:29:53.274830[Thread 0x00007f0480759a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-08 17:29:53.274960[Thread 0x00007f0480759a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-08 17:29:53.274964[Thread 0x00007f0480759a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-08 17:29:53.274967[Thread 0x00007f0480759a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-08 17:29:55.352862[Thread 0x00007f0480759a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-08 17:29:55.425909[Thread 0x00007f03a4ff86c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-08 17:29:56.079686[Thread 0x00007f0480759a80]:17:29:56: Navigation request to 'file:///nix/store/q1y678qjpcjrin1ch1x107ib3w0cgsy8-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-08 17:29:56.105675[Thread 0x00007f0480759a80]:17:29:56: Navigation complete; url='file:///nix/store/q1y678qjpcjrin1ch1x107ib3w0cgsy8-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-08 17:29:56.227846[Thread 0x00007f0480759a80]:17:29:56: Script message received; value = {"sequence_id":1770596996,"command":"get_login_info"}, handler = 
+[warning]	2026-02-08 17:29:56.228074[Thread 0x00007f0480759a80]:17:29:56: Script message received; value = {"sequence_id":1770596996,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-08 17:29:56.233702[Thread 0x00007f0480759a80]:17:29:56: Script message received; value = {"sequence_id":1770596996,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-08 17:29:56.233842[Thread 0x00007f0480759a80]:17:29:56: Document loaded; url='file:///nix/store/q1y678qjpcjrin1ch1x107ib3w0cgsy8-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-08 17:29:58.021589[Thread 0x00007f0480759a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-08 17:29:58.114676[Thread 0x00007f0480759a80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2026-02-08 17:29:59.964942[Thread 0x00007f0480759a80]:17:29:59: Script message received; value = {"sequence_id":1770597000,"command":"homepage_open_recentfile","data":{"path":"/var/home/Jester/.config/home-manager/assets/OrcaSlicer/log/dishwasher support bracket.3mf"}}, handler = 
+[error]	2026-02-08 17:29:59.966415[Thread 0x00007f0480759a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-08 17:30:00.218639[Thread 0x00007f0480759a80]:calc_exclude_triangles:Unable to create exclude triangles

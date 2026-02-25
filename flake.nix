@@ -23,6 +23,10 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    firefox-addons = {
+      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     ghostty.url = "github:ghostty-org/ghostty";
     suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
@@ -55,6 +59,7 @@
       nixpkgs,
       home-manager,
       nix-yazi-plugins,
+      zen-browser,
       nixgl,
       fenix,
       ...

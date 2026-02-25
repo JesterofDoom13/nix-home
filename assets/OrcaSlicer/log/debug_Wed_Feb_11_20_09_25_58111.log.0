@@ -1,0 +1,68 @@
+[warning]	2026-02-11 20:09:26.191639[Thread 0x00007fb868c77a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-11 20:09:26.191756[Thread 0x00007fb868c77a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-11 20:09:26.191759[Thread 0x00007fb868c77a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-11 20:09:26.191761[Thread 0x00007fb868c77a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-11 20:09:27.295490[Thread 0x00007fb868c77a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-11 20:09:27.347841[Thread 0x00007fb78effb6c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-11 20:09:27.814085[Thread 0x00007fb868c77a80]:20:09:27: Navigation request to 'file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-11 20:09:27.834488[Thread 0x00007fb868c77a80]:20:09:27: Navigation complete; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-11 20:09:27.912265[Thread 0x00007fb868c77a80]:20:09:27: Script message received; value = {"sequence_id":1770865768,"command":"get_login_info"}, handler = 
+[warning]	2026-02-11 20:09:27.912366[Thread 0x00007fb868c77a80]:20:09:27: Script message received; value = {"sequence_id":1770865768,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-11 20:09:27.918994[Thread 0x00007fb868c77a80]:20:09:27: Script message received; value = {"sequence_id":1770865768,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-11 20:09:27.919113[Thread 0x00007fb868c77a80]:20:09:27: Document loaded; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-11 20:09:29.372140[Thread 0x00007fb868c77a80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2026-02-11 20:09:34.442428[Thread 0x00007fb868c77a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-11 20:09:34.690751[Thread 0x00007fb868c77a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-11 20:09:34.971738[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 20:09:39.240254[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 20:09:43.739603[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 20:09:44.143944[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 20:09:47.719553[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 20:09:48.787550[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 20:10:29.882386[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-02-11 20:10:31.716262[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.733835[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.750761[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.767658[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.768347[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.768961[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.769557[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.770132[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 20:10:31.770690[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[error]	2026-02-11 20:10:32.601294[Thread 0x00007fb747fff6c0]:gcode path conflicts found between TZBMK3S-PinLong2Tune.stl and TZB lever v5 with hole.stl
+[warning]	2026-02-11 23:14:55.268460[Thread 0x00007fb868c77a80]:23:14:55: Script message received; value = {"sequence_id":1770876895,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 00:14:55.271167[Thread 0x00007fb868c77a80]:00:14:55: Script message received; value = {"sequence_id":1770880495,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 01:14:55.275246[Thread 0x00007fb868c77a80]:01:14:55: Script message received; value = {"sequence_id":1770884095,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 02:14:55.278072[Thread 0x00007fb868c77a80]:02:14:55: Script message received; value = {"sequence_id":1770887695,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 03:14:55.280110[Thread 0x00007fb868c77a80]:03:14:55: Script message received; value = {"sequence_id":1770891295,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 04:14:55.282642[Thread 0x00007fb868c77a80]:04:14:55: Script message received; value = {"sequence_id":1770894895,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2026-02-12 04:51:02.113401[Thread 0x00007fb868c77a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-12 04:51:07.131811[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-12 04:51:07.383134[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-12 04:51:07.408955[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-12 04:52:31.914665[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-12 04:52:36.749876[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-12 04:52:38.029338[Thread 0x00007fb868c77a80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-02-12 04:52:45.547838[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-12 05:14:55.284780[Thread 0x00007fb868c77a80]:05:14:55: Script message received; value = {"sequence_id":1770898495,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2026-02-12 05:36:12.328356[Thread 0x00007fb868c77a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-12 05:37:39.291664[Thread 0x00007fb78ebfa6c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[warning]	2026-02-12 05:37:39.331065[Thread 0x00007fb78fbfe6c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[warning]	2026-02-12 05:37:39.398202[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-12 05:39:16.920885[Thread 0x00007fb747fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-12 06:14:55.286768[Thread 0x00007fb868c77a80]:06:14:55: Script message received; value = {"sequence_id":1770902095,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 07:14:55.289313[Thread 0x00007fb868c77a80]:07:14:55: Script message received; value = {"sequence_id":1770905695,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 08:14:55.291393[Thread 0x00007fb868c77a80]:08:14:55: Script message received; value = {"sequence_id":1770909295,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 09:14:56.277329[Thread 0x00007fb868c77a80]:09:14:56: Script message received; value = {"sequence_id":1770912896,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 10:14:57.278278[Thread 0x00007fb868c77a80]:10:14:57: Script message received; value = {"sequence_id":1770916497,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 11:14:58.277295[Thread 0x00007fb868c77a80]:11:14:58: Script message received; value = {"sequence_id":1770920098,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 12:14:59.278343[Thread 0x00007fb868c77a80]:12:14:59: Script message received; value = {"sequence_id":1770923699,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 13:15:00.277498[Thread 0x00007fb868c77a80]:13:15:00: Script message received; value = {"sequence_id":1770927300,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 14:15:01.278262[Thread 0x00007fb868c77a80]:14:15:01: Script message received; value = {"sequence_id":1770930901,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 15:15:02.277249[Thread 0x00007fb868c77a80]:15:15:02: Script message received; value = {"sequence_id":1770934502,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 16:15:03.278214[Thread 0x00007fb868c77a80]:16:15:03: Script message received; value = {"sequence_id":1770938103,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 17:15:04.276141[Thread 0x00007fb868c77a80]:17:15:04: Script message received; value = {"sequence_id":1770941704,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 18:15:05.278472[Thread 0x00007fb868c77a80]:18:15:05: Script message received; value = {"sequence_id":1770945305,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 19:15:06.277409[Thread 0x00007fb868c77a80]:19:15:06: Script message received; value = {"sequence_id":1770948906,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-12 20:15:07.277461[Thread 0x00007fb868c77a80]:20:15:07: Script message received; value = {"sequence_id":1770952507,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2026-02-12 21:07:12.008980[Thread 0x00007fb868c77a80]:calc_exclude_triangles:Unable to create exclude triangles

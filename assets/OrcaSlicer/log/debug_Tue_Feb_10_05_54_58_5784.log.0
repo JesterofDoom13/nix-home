@@ -1,0 +1,41 @@
+[warning]	2026-02-10 05:54:59.674568[Thread 0x00007f5ad4580a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-10 05:54:59.674717[Thread 0x00007f5ad4580a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-10 05:54:59.674722[Thread 0x00007f5ad4580a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-10 05:54:59.674724[Thread 0x00007f5ad4580a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-10 05:55:01.412507[Thread 0x00007f5ad4580a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-10 05:55:01.467498[Thread 0x00007f58fcbf76c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-10 05:55:01.955984[Thread 0x00007f5ad4580a80]:05:55:01: Navigation request to 'file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-10 05:55:01.971286[Thread 0x00007f5ad4580a80]:05:55:01: Navigation complete; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-10 05:55:02.047805[Thread 0x00007f5ad4580a80]:05:55:02: Script message received; value = {"sequence_id":1770728102,"command":"get_login_info"}, handler = 
+[warning]	2026-02-10 05:55:02.047886[Thread 0x00007f5ad4580a80]:05:55:02: Script message received; value = {"sequence_id":1770728102,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-10 05:55:02.051765[Thread 0x00007f5ad4580a80]:05:55:02: Script message received; value = {"sequence_id":1770728102,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 05:55:03.446165[Thread 0x00007f5ad4580a80]:05:55:03: Document loaded; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-10 05:55:03.490310[Thread 0x00007f5ad4580a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-10 05:55:03.563973[Thread 0x00007f5ad4580a80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2026-02-10 06:55:02.051719[Thread 0x00007f5ad4580a80]:06:55:02: Script message received; value = {"sequence_id":1770731702,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 07:55:02.053588[Thread 0x00007f5ad4580a80]:07:55:02: Script message received; value = {"sequence_id":1770735302,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 08:55:02.055062[Thread 0x00007f5ad4580a80]:08:55:02: Script message received; value = {"sequence_id":1770738902,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 09:55:02.057708[Thread 0x00007f5ad4580a80]:09:55:02: Script message received; value = {"sequence_id":1770742502,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 10:55:02.059044[Thread 0x00007f5ad4580a80]:10:55:02: Script message received; value = {"sequence_id":1770746102,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 11:55:02.062787[Thread 0x00007f5ad4580a80]:11:55:02: Script message received; value = {"sequence_id":1770749702,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 12:55:02.065260[Thread 0x00007f5ad4580a80]:12:55:02: Script message received; value = {"sequence_id":1770753302,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 13:55:02.067639[Thread 0x00007f5ad4580a80]:13:55:02: Script message received; value = {"sequence_id":1770756902,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 14:55:02.070745[Thread 0x00007f5ad4580a80]:14:55:02: Script message received; value = {"sequence_id":1770760502,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-10 15:13:28.164908[Thread 0x00007f5ad4580a80]:15:13:28: Script message received; value = {"sequence_id":1770761608,"command":"get_web_shortcut","key_event":{"key":17,"ctrl":true,"shift":false,"cmd":false}}, handler = 
+[warning]	2026-02-10 15:13:28.454305[Thread 0x00007f5ad4580a80]:15:13:28: Script message received; value = {"sequence_id":1770761608,"command":"get_web_shortcut","key_event":{"key":78,"ctrl":true,"shift":false,"cmd":false}}, handler = 
+[error]	2026-02-10 15:13:28.474657[Thread 0x00007f5ad4580a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-10 15:13:42.958238[Thread 0x00007f5a205fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[warning]	2026-02-10 15:16:56.210603[Thread 0x00007f58fcff86c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[warning]	2026-02-10 15:16:56.345568[Thread 0x00007f58fcff86c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[warning]	2026-02-10 15:16:56.409719[Thread 0x00007f58fcff86c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[warning]	2026-02-10 15:16:59.001353[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.176625[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.243154[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.338396[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.396730[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.407137[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.415829[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.432353[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:16:59.432873[Thread 0x00007f58cd7fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-10 15:17:03.355745[Thread 0x00007f58fcbf76c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[error]	2026-02-10 15:17:05.552407[Thread 0x00007f58cd7fa6c0]:gcode path conflicts found between TZB3-Door.stl and TZB3-MMU2S Hat.stl

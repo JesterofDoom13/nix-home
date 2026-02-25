@@ -1,0 +1,40 @@
+[warning]	2026-02-11 15:04:47.558709[Thread 0x00007ffb9a24ca80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-11 15:04:47.558879[Thread 0x00007ffb9a24ca80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-11 15:04:47.558885[Thread 0x00007ffb9a24ca80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-11 15:04:47.558888[Thread 0x00007ffb9a24ca80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-11 15:04:49.651225[Thread 0x00007ffb9a24ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-11 15:04:49.718176[Thread 0x00007ffab5bf96c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-11 15:04:50.214946[Thread 0x00007ffb9a24ca80]:15:04:50: Navigation request to 'file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-11 15:04:50.233846[Thread 0x00007ffb9a24ca80]:15:04:50: Navigation complete; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-11 15:04:50.308573[Thread 0x00007ffb9a24ca80]:15:04:50: Script message received; value = {"sequence_id":1770847490,"command":"get_login_info"}, handler = 
+[warning]	2026-02-11 15:04:50.308693[Thread 0x00007ffb9a24ca80]:15:04:50: Script message received; value = {"sequence_id":1770847490,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-11 15:04:50.313405[Thread 0x00007ffb9a24ca80]:15:04:50: Script message received; value = {"sequence_id":1770847490,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-11 15:04:51.740097[Thread 0x00007ffb9a24ca80]:15:04:51: Document loaded; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-11 15:04:51.781992[Thread 0x00007ffb9a24ca80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-11 15:04:51.855502[Thread 0x00007ffb9a24ca80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2026-02-11 15:05:37.903306[Thread 0x00007ffb287fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[warning]	2026-02-11 15:06:04.857851[Thread 0x00007ffb287fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[warning]	2026-02-11 15:06:47.466467[Thread 0x00007ffb287fc6c0]:Arrange full params: {"min_obj_distance":0,"accuracy":1.000000,"parallel":1,"allow_rotations":0,"do_final_align":1,"allow_multi_materials_on_same_plate":1,"avoid_extrusion_cali_region":0,"is_seq_print":0,"bed_shrink_x":1.000000,"bed_shrink_y":1.000000,"brim_skirt_distance":0.000000,"clearance_height_to_rod":36.000000,"clearance_height_to_lid":140.000000,"clearance_radius":65.000000,"printable_height":210.000000,
+[error]	2026-02-11 15:06:59.315947[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:00.219053[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:00.513686[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:01.217976[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:01.975586[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:04.230483[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:04.727542[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:07.355995[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:08.599860[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:20.520421[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:20.889132[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:38.167919[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[error]	2026-02-11 15:07:38.287413[Thread 0x00007ffb9a24ca80]:tree_sel_change_delayedcan not find page with current selection 
+[warning]	2026-02-11 15:07:46.725470[Thread 0x00007ffb51fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 15:07:46.787657[Thread 0x00007ffb51fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 15:07:46.798480[Thread 0x00007ffb51fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 15:07:46.817455[Thread 0x00007ffb51fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 15:07:46.834685[Thread 0x00007ffb51fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 15:07:46.835211[Thread 0x00007ffb51fff6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-02-11 15:07:47.130431[Thread 0x00007ffab53f76c0]:Detected non-planar Voronoi diagram, input polygons will be rotated back and forth.
+[warning]	2026-02-11 16:04:50.311496[Thread 0x00007ffb9a24ca80]:16:04:50: Script message received; value = {"sequence_id":1770851090,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-11 17:04:50.313386[Thread 0x00007ffb9a24ca80]:17:04:50: Script message received; value = {"sequence_id":1770854690,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2026-02-11 17:10:26.041783[Thread 0x00007ffb9a24ca80]:calc_exclude_triangles:Unable to create exclude triangles

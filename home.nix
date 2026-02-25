@@ -14,7 +14,7 @@
   home = {
     username = user;
     homeDirectory = homeDir;
-    stateVersion = "25.05";
+    stateVersion = "25.11";
     shellAliases = {
       du = "dust";
       q = "exit";

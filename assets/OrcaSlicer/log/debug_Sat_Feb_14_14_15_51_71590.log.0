@@ -1,0 +1,24 @@
+[warning]	2026-02-14 14:15:53.140306[Thread 0x00007f8955179a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-14 14:15:53.140452[Thread 0x00007f8955179a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-14 14:15:53.140457[Thread 0x00007f8955179a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-14 14:15:53.140460[Thread 0x00007f8955179a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-14 14:15:54.835509[Thread 0x00007f8955179a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-14 14:15:54.907781[Thread 0x00007f887adfb6c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-14 14:15:55.441475[Thread 0x00007f8955179a80]:14:15:55: Navigation request to 'file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-14 14:15:55.458412[Thread 0x00007f8955179a80]:14:15:55: Navigation complete; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-14 14:15:55.585515[Thread 0x00007f8955179a80]:14:15:55: Script message received; value = {"sequence_id":1771103756,"command":"get_login_info"}, handler = 
+[warning]	2026-02-14 14:15:55.585650[Thread 0x00007f8955179a80]:14:15:55: Script message received; value = {"sequence_id":1771103756,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-14 14:15:55.593483[Thread 0x00007f8955179a80]:14:15:55: Script message received; value = {"sequence_id":1771103756,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-14 14:15:55.593606[Thread 0x00007f8955179a80]:14:15:55: Document loaded; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-14 14:15:57.392191[Thread 0x00007f8955179a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-14 14:15:57.486301[Thread 0x00007f8955179a80]:get_version, get_version not supported,return 00.00.00.00!
+[error]	2026-02-14 14:15:57.490793[Thread 0x00007f8800d1c6c0]:[Orca Updater]: status=0, error=curl:Could not resolve hostname:
+Could not resolve host: api.bambulab.com
+[Error 6], body=
+[error]	2026-02-14 14:15:57.500016[Thread 0x00007f86f7fff6c0]:HMSQuery: update hms info error = curl:Could not resolve hostname:
+Could not resolve host: e.bambulab.com
+[Error 6], body = , status = 0
+[error]	2026-02-14 14:15:57.510029[Thread 0x00007f86f7fff6c0]:HMSQuery: update hms info error = curl:Could not resolve hostname:
+Could not resolve host: e.bambulab.com
+[Error 6], body = , status = 0
+[error]	2026-02-14 14:53:08.815508[Thread 0x00007f8955179a80]:calc_exclude_triangles:Unable to create exclude triangles

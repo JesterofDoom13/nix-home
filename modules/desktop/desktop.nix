@@ -62,11 +62,19 @@ in
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
+    (pkgs.kodi.withPackages (
+      kodiPkgs: with kodiPkgs; [
+        plex-for-kodi
+      ]
+    ))
+    virt-viewer
     (config.lib.nixGL.wrap freecad)
+    (config.lib.nixGL.wrap google-chrome)
     solaar
     kando
+    kdePackages.skanlite
+    libreoffice
     flips
     cac-google-setup
   ];
-  programs.google-chrome.enable = true;
 }

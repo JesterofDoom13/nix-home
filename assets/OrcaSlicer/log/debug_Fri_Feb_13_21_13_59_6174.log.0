@@ -1,0 +1,13 @@
+[warning]	2026-02-13 21:14:00.689725[Thread 0x00007ff1c9acfa80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-13 21:14:00.689883[Thread 0x00007ff1c9acfa80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-13 21:14:00.689887[Thread 0x00007ff1c9acfa80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-13 21:14:00.689890[Thread 0x00007ff1c9acfa80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-13 21:14:02.447132[Thread 0x00007ff1c9acfa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-13 21:14:02.500393[Thread 0x00007ff0f53f76c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-13 21:14:02.980498[Thread 0x00007ff1c9acfa80]:21:14:02: Navigation request to 'file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-13 21:14:02.998251[Thread 0x00007ff1c9acfa80]:21:14:02: Navigation complete; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-13 21:14:04.469213[Thread 0x00007ff1c9acfa80]:21:14:04: Script message received; value = {"sequence_id":1771042443,"command":"get_login_info"}, handler = 
+[warning]	2026-02-13 21:14:04.469299[Thread 0x00007ff1c9acfa80]:21:14:04: Script message received; value = {"sequence_id":1771042443,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-13 21:14:04.474895[Thread 0x00007ff1c9acfa80]:21:14:04: Script message received; value = {"sequence_id":1771042443,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-13 21:14:04.474987[Thread 0x00007ff1c9acfa80]:21:14:04: Document loaded; url='file:///nix/store/6gir0hnm3p60zln1x3nlrfb8lrmhnpsn-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-13 21:14:04.514953[Thread 0x00007ff1c9acfa80]:calc_exclude_triangles:Unable to create exclude triangles

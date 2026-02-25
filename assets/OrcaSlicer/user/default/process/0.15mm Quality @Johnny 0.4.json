@@ -1,0 +1,15 @@
+{
+    "enable_support": "1",
+    "from": "User",
+    "hole_to_polyhole": "1",
+    "inherits": "0.15mm Quality @MK3S 0.4",
+    "is_custom_defined": "0",
+    "name": "0.15mm Quality @Johnny 0.4",
+    "precise_z_height": "1",
+    "print_settings_id": "0.15mm Quality @Johnny 0.4",
+    "skirt_loops": "0",
+    "support_style": "tree_slim",
+    "support_type": "tree(auto)",
+    "version": "2.3.1.10",
+    "wall_sequence": "inner wall/outer wall"
+}

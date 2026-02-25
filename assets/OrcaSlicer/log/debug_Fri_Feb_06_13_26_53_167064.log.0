@@ -1,0 +1,15 @@
+[warning]	2026-02-06 13:26:54.750326[Thread 0x00007facee792a80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-02-06 13:26:54.750454[Thread 0x00007facee792a80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-02-06 13:26:54.750458[Thread 0x00007facee792a80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-02-06 13:26:54.750461[Thread 0x00007facee792a80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-02-06 13:26:57.073895[Thread 0x00007facee792a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-06 13:26:57.146309[Thread 0x00007fac12ffc6c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-02-06 13:26:57.719964[Thread 0x00007facee792a80]:13:26:57: Navigation request to 'file:///nix/store/q1y678qjpcjrin1ch1x107ib3w0cgsy8-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-02-06 13:26:57.747448[Thread 0x00007facee792a80]:13:26:57: Navigation complete; url='file:///nix/store/q1y678qjpcjrin1ch1x107ib3w0cgsy8-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-02-06 13:26:57.868396[Thread 0x00007facee792a80]:13:26:57: Script message received; value = {"sequence_id":1770409618,"command":"get_login_info"}, handler = 
+[warning]	2026-02-06 13:26:57.868490[Thread 0x00007facee792a80]:13:26:57: Script message received; value = {"sequence_id":1770409618,"command":"get_recent_projects"}, handler = 
+[warning]	2026-02-06 13:26:57.873329[Thread 0x00007facee792a80]:13:26:57: Script message received; value = {"sequence_id":1770409618,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-02-06 13:26:57.873511[Thread 0x00007facee792a80]:13:26:57: Document loaded; url='file:///nix/store/q1y678qjpcjrin1ch1x107ib3w0cgsy8-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-02-06 13:26:59.605176[Thread 0x00007facee792a80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-02-06 13:26:59.726579[Thread 0x00007facee792a80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-02-06 13:26:59.738985[Thread 0x00007facee792a80]:get_version, get_version not supported,return 00.00.00.00!
