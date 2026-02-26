@@ -29,6 +29,7 @@
     };
     vimium-options.url = "github:uimataso/vimium-nixos";
     ghostty.url = "github:ghostty-org/ghostty";
+    pvetui.url = "github:devnullvoid/pvetui";
     suyu.url = "github:Noodlez1232/suyu-flake";
     nixgl.url = "github:nix-community/nixGL";
     nix-yazi-plugins = {
@@ -60,8 +61,10 @@
       nixpkgs,
       home-manager,
       nix-yazi-plugins,
+      pvetui,
       zen-browser,
       nixgl,
+
       fenix,
       ...
     }@inputs:

@@ -8,6 +8,7 @@
     # ./desktop/stylix.nix
     # ./desktop/zen.nix
     ./neovim.nix
+    ./pvetui.nix
     # ./rust.nix
     ./shell.nix
     ./tmux.nix
