@@ -125,13 +125,13 @@ cac-google-setup
 - [x] Start in a fresh install
 - [x] Get ghostty running
 - [x] Get nixCats-nvim set up
-- [ ] Have Zen-browser load all my settings
-  - [ ] Bookmarks
-  - [ ] Extensions
-  - [ ] Spaces
-    - [ ] Names
-      - [ ] Default
-      - [ ] Server
-      - [ ] 3D Printing
+- [x] Have Zen-browser load all my settings
+  - [x] Bookmarks
+  - [x] Extensions
+  - [x] Spaces
+    - [x] Names
+      - [x] Default (changed to nix)
+      - [x] Server
+      - [x] 3D Printing
       - [ ] Messaging
-  - [ ] Website pins in each Space.
+  - [x] Website pins in each Space.

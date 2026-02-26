@@ -32,7 +32,7 @@
       };
     };
     targets = {
-      zen-browser.profileNames = [ "" ];
+      zen-browser.profileNames = [ "default" ];
     };
   };
 }

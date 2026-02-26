@@ -68,7 +68,7 @@ in
       ]
     ))
     virt-viewer
-    (config.lib.nixGL.wrap freecad)
+    # (config.lib.nixGL.wrap freecad)
     (config.lib.nixGL.wrap google-chrome)
     solaar
     kando
