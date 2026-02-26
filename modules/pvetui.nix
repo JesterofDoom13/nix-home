@@ -1,7 +1,7 @@
-{ inputs, pkgs, ... }:
+{ inputs, system, ... }:
 {
   home.packages = [
-    inputs.pvetui.default.${pkgs.system}
+    inputs.pvetui.packages.${system}.default
   ];
   # programs.pvetui.enable = true;
 }

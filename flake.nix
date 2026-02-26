@@ -92,6 +92,7 @@
             user
             homeDir
             myStylix
+            system
             ;
         };
         modules = [
