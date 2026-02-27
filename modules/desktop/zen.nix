@@ -1,4 +1,14 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
+let
+  inherit (pkgs.stdenv.hostPlatform) system;
+  zen-pkg = inputs.zen-browser.packages.${system}.beta;
+  wrappedZen = config.lib.nixGL.wrap zen-pkg;
+in
 {
   imports = [
     inputs.zen-browser.homeModules.beta
@@ -24,6 +34,7 @@
     zen-browser = {
       suppressXdgMigrationWarning = true;
       enable = true;
+      package = wrappedZen;
       policies.SecurityDevices.CAC-Device = "${pkgs.opensc}/lib/opensc-pkcs11.so";
       profiles.default = rec {
         id = 0;
@@ -142,19 +153,24 @@
         spaces = {
           "Server" = {
             id = "572910e1-4468-4832-a869-0b3a93e2f165";
-            icon = "";
+            icon = "🛜";
             position = 1000;
             container = 0;
           };
           "3D Printing" = {
             id = "08be3ada-2398-4e63-bb8e-f8bf9caa8d10";
-            icon = "";
+            icon = "🖨️";
             position = 2000;
           };
           "Nix" = {
             id = "2441acc9-79b1-4afb-b582-ee88ce554ec0";
             icon = "❄️";
             position = 3000;
+          };
+          "Messanging" = {
+            id = "f09f2618-5c6e-4006-aead-8c71ecfebb09";
+            icon = "💬";
+            position = 4000;
           };
         };
         pins = {
@@ -183,6 +199,7 @@
             url = "http://docker:5001";
             position = 104;
           };
+
           ### 3D Printing
           "Johnny" = {
             workspace = spaces."3D Printing".id;
@@ -216,6 +233,20 @@
             workspace = spaces.Nix.id;
             url = "https://home-manager-options.extranix.com";
             position = 303;
+          };
+
+          ### Messages
+          "Messenger" = {
+            id = "c90b48d1-3830-4d17-89e2-bba58f5c7986";
+            workspace = spaces.Messanging.id;
+            url = "https://www.facebook.com/messages";
+            position = 401;
+          };
+          "Messages" = {
+            id = "47a4bfbc-bddc-44e7-a3f8-443f9cbd533c";
+            workspace = spaces.Messanging.id;
+            url = "https://messages.google.com/web";
+            position = 402;
           };
         };
       };

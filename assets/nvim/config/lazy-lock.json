@@ -1,9 +1,9 @@
 {
-  "LuaSnip": { "branch": "master", "commit": "3732756842a2f7e0e76a7b0487e9692072857277" },
-  "catppuccin": { "branch": "main", "commit": "ce8d176faa4643e026e597ae3c31db59b63cef09" },
+  "LuaSnip": { "branch": "master", "commit": "dae4f5aaa3574bd0c2b9dd20fb9542a02c10471c" },
+  "catppuccin": { "branch": "main", "commit": "0a5de4da015a175f416d6ef1eda84661623e0500" },
   "crates.nvim": { "branch": "main", "commit": "ac9fa498a9edb96dc3056724ff69d5f40b898453" },
-  "kanban.nvim": { "branch": "main", "commit": "75fb16591a165883e3b9a9480dedfb2286913d52" },
-  "mini.nvim": { "branch": "main", "commit": "43ec25063430196d36f5fff5758c9101775f3d57" },
-  "nvim-treesitter-textobjects": { "branch": "main", "commit": "28a3494c075ef0f353314f627546537e43c09592" },
-  "obsidian.nvim": { "branch": "main", "commit": "30d477c8f2c1c0575032c3022cd3baead19dca97" }
+  "kanban.nvim": { "branch": "main", "commit": "61194b45846ab919acfae7a92de8ed4dbbe5f06d" },
+  "mini.nvim": { "branch": "main", "commit": "a95dc67ecff78de138543a20c20f29f47111b122" },
+  "nvim-treesitter-textobjects": { "branch": "main", "commit": "a0e182ae21fda68c59d1f36c9ed45600aef50311" },
+  "obsidian.nvim": { "branch": "main", "commit": "20432a5ca03d99a9d5ad51d362e19d9b832e46f0" }
 }
