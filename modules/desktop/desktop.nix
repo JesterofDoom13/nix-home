@@ -8,6 +8,7 @@ let
     ${pkgs.nssTools}/bin/modutil -force -dbdir sql:$NSSDB -add cac-card\
       -libfile ${pkgs.opensc}/lib/opensc-pkcs11.so
   '';
+  # freecad101 = pkgs.freecad.overrideAttrs { version = "1.0.0"; };
 in
 {
   xdg.configFile = {

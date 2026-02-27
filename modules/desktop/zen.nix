@@ -171,17 +171,17 @@
             url = "http://10.0.0.54:6789";
             position = 102;
           };
+          "Plex" = {
+            workspace = spaces.Server.id;
+            id = "8e27e91c-b113-4779-bfd6-069c6a334c85";
+            url = "https://fastplex:32400/web/index.html";
+            position = 103;
+          };
           "dockge" = {
             workspace = spaces.Server.id;
             id = "fb316d70-2b5e-4c46-bf42-f4e82d635153";
             url = "http://docker:5001";
-            position = 103;
-          };
-          "Plex" = {
-            workspace = spaces.Server.id;
-            id = "8e27e91c-b113-4779-bfd6-069c6a334c85";
-            url = "http://fastplex:32400";
-            position = 103;
+            position = 104;
           };
           ### 3D Printing
           "Johnny" = {
