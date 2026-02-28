@@ -1,4 +1,9 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  pkgs-stable,
+  ...
+}:
 let
   cac-google-setup = pkgs.writeShellScriptBin "cac-google-setup" ''
     #!/bin/sh
@@ -69,7 +74,7 @@ in
       ]
     ))
     virt-viewer
-    # (config.lib.nixGL.wrap freecad)
+    (config.lib.nixGL.wrap pkgs-stable.freecad)
     (config.lib.nixGL.wrap google-chrome)
     solaar
     kando

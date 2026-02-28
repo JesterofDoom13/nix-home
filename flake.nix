@@ -3,16 +3,9 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    stable.url = "github:NixOS/nixpkgs/nixos-25.11";
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    fenix = {
-      url = "github:nix-community/fenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    plasma-manager = {
-      url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     stylix = {
@@ -59,13 +52,12 @@
     {
       self,
       nixpkgs,
+      stable,
       home-manager,
       nix-yazi-plugins,
       pvetui,
       zen-browser,
       nixgl,
-
-      fenix,
       ...
     }@inputs:
     let
@@ -74,12 +66,30 @@
       myStylix = "gruvbox-material-dark-hard";
       system = "x86_64-linux";
 
+      freecadFix = (
+        final: prev: {
+          freecad = prev.freecad.overrideAttrs (oldAttrs: {
+            postPatch = (oldAttrs.postPatch or "") + ''
+              echo "APPLYING BOOST 1.89 FIX..."
+              sed -i '1i set(Boost_SYSTEM_FOUND TRUE)\nset(Boost_FILESYSTEM_FOUND TRUE)\nset(Boost_FILE_FOUND TRUE)' cMake/FreeCAD_Helpers/SetupBoost.cmake
+              sed -i 's/system//g' cMake/FreeCAD_Helpers/SetupBoost.cmake
+              sed -i 's/filesystem//g' cMake/FreeCAD_Helpers/SetupBoost.cmake
+            '';
+          });
+        }
+      );
       pkgs = import nixpkgs {
         localSystem = system;
         config.allowUnfree = true;
         overlays = [
           nixgl.overlay
-          fenix.overlays.default
+        ];
+      };
+      pkgs-stable = import stable {
+        localSystem = system;
+        config.allowUnfree = true;
+        overlays = [
+          nixgl.overlay
         ];
       };
     in
@@ -89,6 +99,7 @@
         extraSpecialArgs = {
           inherit
             inputs
+            pkgs-stable
             user
             homeDir
             myStylix
@@ -97,7 +108,6 @@
         };
         modules = [
           ./home.nix
-          inputs.plasma-manager.homeModules.plasma-manager
         ];
       };
     };

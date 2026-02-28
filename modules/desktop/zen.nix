@@ -7,7 +7,7 @@
 let
   inherit (pkgs.stdenv.hostPlatform) system;
   zen-pkg = inputs.zen-browser.packages.${system}.beta;
-  wrappedZen = config.lib.nixGL.wrap zen-pkg;
+  wrappedZen = config.lib.nixGL.wrap zen-pkg; # all this is so I can see webGL in bazzite
 in
 {
   imports = [
@@ -45,6 +45,14 @@ in
         keyboardShortcuts = [
           {
             id = "zen-toggle-sidebar";
+            key = "s";
+            modifiers = {
+              control = true;
+              alt = true;
+            };
+          }
+          {
+            id = "zen-compact-mode-show-sidebar";
             key = "s";
             modifiers = {
               control = true;
@@ -153,7 +161,7 @@ in
         spaces = {
           "Server" = {
             id = "572910e1-4468-4832-a869-0b3a93e2f165";
-            icon = "🛜";
+            icon = "🌐";
             position = 1000;
             container = 0;
           };
