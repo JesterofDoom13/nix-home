@@ -164,18 +164,6 @@
         fissh = "SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv ";
       };
     };
-    # autofs = {
-    #   enable = true;
-    #   mounts = [
-    #     {
-    #       # Mapping to file declared later on.
-    #       map = "/etc/auto.fs";
-    #       mountPoint = "/mnt/bigprox";
-    #       options = [ "timeout=60" ];
-    #
-    #     }
-    #   ];
-    # };
     bat = {
       enable = true;
       extraPackages = with pkgs.bat-extras; [
@@ -185,6 +173,9 @@
     };
     btop = {
       enable = true;
+      settings = {
+        vim_keys = true;
+      };
     };
     eza = {
       enable = true;
@@ -194,8 +185,8 @@
     };
     direnv = {
       enable = true;
-      enableBashIntegration = true; # see note on other shells below
-      # enableFishIntegration = true;
+      enableBashIntegration = true;
+      # enableFishIntegration = true; # Doesn't eist
       nix-direnv.enable = true;
     };
     fzf = {

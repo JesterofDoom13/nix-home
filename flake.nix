@@ -2,14 +2,14 @@
   description = "Jester's 2025 Home Manager Configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    stable.url = "github:NixOS/nixpkgs/nixos-25.11";
+    unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     stylix = {
-      url = "github:nix-community/stylix";
+      url = "github:nix-community/stylix/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     zen-browser = {
@@ -52,7 +52,7 @@
     {
       self,
       nixpkgs,
-      stable,
+      unstable,
       home-manager,
       nix-yazi-plugins,
       pvetui,
@@ -65,19 +65,6 @@
       homeDir = "/home/${user}";
       myStylix = "gruvbox-material-dark-hard";
       system = "x86_64-linux";
-
-      freecadFix = (
-        final: prev: {
-          freecad = prev.freecad.overrideAttrs (oldAttrs: {
-            postPatch = (oldAttrs.postPatch or "") + ''
-              echo "APPLYING BOOST 1.89 FIX..."
-              sed -i '1i set(Boost_SYSTEM_FOUND TRUE)\nset(Boost_FILESYSTEM_FOUND TRUE)\nset(Boost_FILE_FOUND TRUE)' cMake/FreeCAD_Helpers/SetupBoost.cmake
-              sed -i 's/system//g' cMake/FreeCAD_Helpers/SetupBoost.cmake
-              sed -i 's/filesystem//g' cMake/FreeCAD_Helpers/SetupBoost.cmake
-            '';
-          });
-        }
-      );
       pkgs = import nixpkgs {
         localSystem = system;
         config.allowUnfree = true;
@@ -85,7 +72,7 @@
           nixgl.overlay
         ];
       };
-      pkgs-stable = import stable {
+      pkgs-unstable = import unstable {
         localSystem = system;
         config.allowUnfree = true;
         overlays = [
@@ -99,7 +86,7 @@
         extraSpecialArgs = {
           inherit
             inputs
-            pkgs-stable
+            pkgs-unstable
             user
             homeDir
             myStylix

@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   ...
 }:
 let
@@ -74,7 +74,7 @@ in
       ]
     ))
     virt-viewer
-    (config.lib.nixGL.wrap pkgs-stable.freecad)
+    (config.lib.nixGL.wrap freecad)
     (config.lib.nixGL.wrap google-chrome)
     solaar
     kando

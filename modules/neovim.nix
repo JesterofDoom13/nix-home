@@ -53,7 +53,7 @@ let
           tectonic
         ];
         node = with pkgs; [ nodejs_24 ];
-        perl = with pkgs; [ perl5Packages.NeovimExt ];
+        perl = with pkgs; [ perl540Packages.NeovimExt ];
         python = with pkgs; [
           black
           isort
