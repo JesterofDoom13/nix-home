@@ -29,6 +29,11 @@
       url = "github:lordkekz/nix-yazi-plugins";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ### nix-index-database -- For use with comma and nix-index integration on command not found.
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     ### For NixCats --- NEOVIM
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
@@ -54,9 +59,6 @@
       nixpkgs,
       unstable,
       home-manager,
-      nix-yazi-plugins,
-      pvetui,
-      zen-browser,
       nixgl,
       ...
     }@inputs:

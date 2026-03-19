@@ -1,0 +1,36 @@
+[warning]	2026-03-04 11:01:37.206942[Thread 0x00007f9d9ce1da80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-03-04 11:01:37.207077[Thread 0x00007f9d9ce1da80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-03-04 11:01:37.207081[Thread 0x00007f9d9ce1da80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-03-04 11:01:37.207083[Thread 0x00007f9d9ce1da80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-03-04 11:01:38.564664[Thread 0x00007f9d9ce1da80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-03-04 11:01:38.621978[Thread 0x00007f9c98bf86c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-03-04 11:01:39.149207[Thread 0x00007f9d9ce1da80]:11:01:39: Navigation request to 'file:///nix/store/wczpg71synr6ik2ljv79i5w83bskx9ah-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-03-04 11:01:39.173628[Thread 0x00007f9d9ce1da80]:11:01:39: Navigation complete; url='file:///nix/store/wczpg71synr6ik2ljv79i5w83bskx9ah-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[warning]	2026-03-04 11:01:40.675244[Thread 0x00007f9d9ce1da80]:11:01:40: Script message received; value = {"sequence_id":1772647299,"command":"get_login_info"}, handler = 
+[warning]	2026-03-04 11:01:40.675352[Thread 0x00007f9d9ce1da80]:11:01:40: Script message received; value = {"sequence_id":1772647299,"command":"get_recent_projects"}, handler = 
+[warning]	2026-03-04 11:01:40.681940[Thread 0x00007f9d9ce1da80]:11:01:40: Script message received; value = {"sequence_id":1772647299,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 11:01:40.682063[Thread 0x00007f9d9ce1da80]:11:01:40: Document loaded; url='file:///nix/store/wczpg71synr6ik2ljv79i5w83bskx9ah-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-03-04 11:01:40.728789[Thread 0x00007f9d9ce1da80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-03-04 11:01:40.812878[Thread 0x00007f9d9ce1da80]:get_version, get_version not supported,return 00.00.00.00!
+[warning]	2026-03-04 11:01:48.761006[Thread 0x00007f9d9ce1da80]:11:01:48: Script message received; value = {"sequence_id":1772647309,"command":"homepage_newproject"}, handler = 
+[error]	2026-03-04 11:01:48.778734[Thread 0x00007f9d9ce1da80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-03-04 11:02:15.256241[Thread 0x00007f9c997fa6c0]:SupportSpotsGenerator does not currently handle different materials properly, only first will be used
+[warning]	2026-03-04 12:01:39.260181[Thread 0x00007f9d9ce1da80]:12:01:39: Script message received; value = {"sequence_id":1772650899,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 13:01:39.261884[Thread 0x00007f9d9ce1da80]:13:01:39: Script message received; value = {"sequence_id":1772654499,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 14:01:39.264522[Thread 0x00007f9d9ce1da80]:14:01:39: Script message received; value = {"sequence_id":1772658099,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 15:01:39.267239[Thread 0x00007f9d9ce1da80]:15:01:39: Script message received; value = {"sequence_id":1772661699,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 16:01:39.268674[Thread 0x00007f9d9ce1da80]:16:01:39: Script message received; value = {"sequence_id":1772665299,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 17:01:39.353872[Thread 0x00007f9d9ce1da80]:17:01:39: Script message received; value = {"sequence_id":1772668899,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 18:01:39.415385[Thread 0x00007f9d9ce1da80]:18:01:39: Script message received; value = {"sequence_id":1772672499,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 19:01:39.392819[Thread 0x00007f9d9ce1da80]:19:01:39: Script message received; value = {"sequence_id":1772676099,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 20:01:39.395665[Thread 0x00007f9d9ce1da80]:20:01:39: Script message received; value = {"sequence_id":1772679699,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 21:01:39.397980[Thread 0x00007f9d9ce1da80]:21:01:39: Script message received; value = {"sequence_id":1772683299,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 22:01:40.035065[Thread 0x00007f9d9ce1da80]:22:01:40: Script message received; value = {"sequence_id":1772686900,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 23:01:41.002689[Thread 0x00007f9d9ce1da80]:23:01:41: Script message received; value = {"sequence_id":1772690501,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-05 00:01:42.002260[Thread 0x00007f9d9ce1da80]:00:01:42: Script message received; value = {"sequence_id":1772694102,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-05 01:01:43.003022[Thread 0x00007f9d9ce1da80]:01:01:43: Script message received; value = {"sequence_id":1772697703,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-05 02:01:44.002088[Thread 0x00007f9d9ce1da80]:02:01:44: Script message received; value = {"sequence_id":1772701304,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-05 03:01:45.003438[Thread 0x00007f9d9ce1da80]:03:01:45: Script message received; value = {"sequence_id":1772704905,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-05 04:01:46.001344[Thread 0x00007f9d9ce1da80]:04:01:46: Script message received; value = {"sequence_id":1772708506,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-05 05:01:47.131315[Thread 0x00007f9d9ce1da80]:05:01:47: Script message received; value = {"sequence_id":1772712107,"command":"modelmall_model_advise_get"}, handler = 
+[error]	2026-03-05 05:28:53.554108[Thread 0x00007f9d9ce1da80]:calc_exclude_triangles:Unable to create exclude triangles

@@ -1,5 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
+  imports = [
+    inputs.nix-index-database.homeModules.nix-index
+  ];
   programs = {
     bash = {
       enable = true;
@@ -158,7 +161,7 @@
         plex = "fissh root@10.0.0.90";
         pi = "fissh pi@johnny";
         head = "fissh root@10.0.0.94";
-        nixi = "fissh Jester@10.0.0.174";
+        nixi = "fissh Jester@10.0.0.175";
       };
       functions = {
         fissh = "SSH_PREFER_FISH=1 ssh -o SendEnv=SSH_PREFER_FISH $argv ";
@@ -185,9 +188,11 @@
     };
     direnv = {
       enable = true;
+      silent = true;
       enableBashIntegration = true;
       # enableFishIntegration = true; # Doesn't eist
       nix-direnv.enable = true;
+
     };
     fzf = {
       enable = true;
@@ -205,6 +210,12 @@
         extraArgs = "--keep-since 2w";
       };
     };
+    nix-index = {
+      enable = true;
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+    };
+    nix-index-database.comma.enable = true;
     ripgrep = {
       enable = true;
       arguments = [

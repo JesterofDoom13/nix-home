@@ -68,13 +68,13 @@ return {
 					kanban = {
 						name = "kanban",
 						module = "kanban.fn.cmp.blink.cmp",
-						score_offset = 15, -- optional: bump priority
+						score_offset = -10, -- optional: bump priorityb
 						opts = {}, -- reserved for future options
 					},
 					emoji = {
 						module = "blink-emoji",
 						name = "Emoji",
-						score_offset = 15, -- Tune by preference
+						score_offset = -5, -- Tune by preference
 						opts = {
 							insert = true, -- Insert emoji (default) or complete its name
 							---@type string|table|fun():table
@@ -94,7 +94,7 @@ return {
 					nerdfont = {
 						module = "blink-nerdfont",
 						name = "Nerd Fonts",
-						score_offset = 15, -- Tune by preference
+						score_offset = -15, -- Tune by preference
 						opts = {
 							insert = true, -- Insert nerdfont icon (default) or complete its name
 							trigger = ":", -- Customize the trigger. Defaults to ":"

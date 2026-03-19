@@ -1,7 +1,6 @@
 {
   config,
   pkgs,
-  pkgs-unstable,
   ...
 }:
 let
@@ -68,6 +67,7 @@ in
   home.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code
+    limo
     (pkgs.kodi.withPackages (
       kodiPkgs: with kodiPkgs; [
         plex-for-kodi

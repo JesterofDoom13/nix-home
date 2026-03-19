@@ -32,7 +32,6 @@ in
   };
   programs = {
     zen-browser = {
-      suppressXdgMigrationWarning = true;
       enable = true;
       package = wrappedZen;
       policies.SecurityDevices.CAC-Device = "${pkgs.opensc}/lib/opensc-pkcs11.so";

@@ -1,0 +1,15 @@
+[warning]	2026-03-04 06:01:48.739452[Thread 0x00007f366d41aa80]:Preset already present, not loading: Prusa MK3S 0.4 nozzle
+[warning]	2026-03-04 06:01:48.739592[Thread 0x00007f366d41aa80]:Preset already present, not loading: Prusa MK3S 0.6 nozzle
+[warning]	2026-03-04 06:01:48.739596[Thread 0x00007f366d41aa80]:Preset already present, not loading: Prusa MK3S 0.8 nozzle
+[warning]	2026-03-04 06:01:48.739599[Thread 0x00007f366d41aa80]:Preset already present, not loading: Prusa MK3S 0.25 nozzle
+[error]	2026-03-04 06:01:50.302332[Thread 0x00007f366d41aa80]:calc_exclude_triangles:Unable to create exclude triangles
+[error]	2026-03-04 06:01:50.359699[Thread 0x00007f3569ffb6c0]:Unable to open the file/home/Jester/Downloads/ptfe-tube-cut-jig-sample-setup.3mf
+[warning]	2026-03-04 06:01:50.900888[Thread 0x00007f366d41aa80]:06:01:50: Navigation request to 'file:///nix/store/wczpg71synr6ik2ljv79i5w83bskx9ah-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US' (target='')
+[warning]	2026-03-04 06:01:50.922449[Thread 0x00007f366d41aa80]:06:01:50: Navigation complete; url='file:///nix/store/wczpg71synr6ik2ljv79i5w83bskx9ah-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-03-04 06:01:52.550532[Thread 0x00007f366d41aa80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-03-04 06:01:52.654414[Thread 0x00007f366d41aa80]:06:01:52: Script message received; value = {"sequence_id":1772629311,"command":"get_login_info"}, handler = 
+[warning]	2026-03-04 06:01:52.654532[Thread 0x00007f366d41aa80]:06:01:52: Script message received; value = {"sequence_id":1772629311,"command":"get_recent_projects"}, handler = 
+[warning]	2026-03-04 06:01:52.664240[Thread 0x00007f366d41aa80]:06:01:52: Script message received; value = {"sequence_id":1772629311,"command":"modelmall_model_advise_get"}, handler = 
+[warning]	2026-03-04 06:01:52.664398[Thread 0x00007f366d41aa80]:06:01:52: Document loaded; url='file:///nix/store/wczpg71synr6ik2ljv79i5w83bskx9ah-orca-slicer-2.3.1/share/OrcaSlicer/web/homepage/index.html?lang=en_US'
+[error]	2026-03-04 06:01:52.708349[Thread 0x00007f366d41aa80]:calc_exclude_triangles:Unable to create exclude triangles
+[warning]	2026-03-04 06:01:52.720519[Thread 0x00007f366d41aa80]:get_version, get_version not supported,return 00.00.00.00!
