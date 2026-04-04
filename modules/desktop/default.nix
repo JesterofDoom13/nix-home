@@ -6,6 +6,8 @@
     ./stylix.nix
     ./zen.nix
     ./desktop.nix
+    ./gaming.nix
+    # ./niri.nix
   ];
 
 }

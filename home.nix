@@ -19,6 +19,7 @@
       du = "dust";
       q = "exit";
       rsg = "systemctl --user daemon-reload && systemctl --user restart app-ghostty-service.service";
+      mfesp = "nix flake init -t my-flakes && direnv allow";
     };
     sessionVariables.EDITOR = "nvim";
     sessionVariables.VISUAL = "nvim";
@@ -30,6 +31,7 @@
   home.packages = with pkgs; [
     wget
     coreutils
+    nix-ld
   ];
   services.home-manager.autoUpgrade = {
     enable = true;

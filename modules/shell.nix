@@ -1,4 +1,37 @@
 { pkgs, inputs, ... }:
+let
+  mf = pkgs.writeShellScriptBin "mf" ''
+    FLAKE_URL="''${1:-$HOME/.local/my-flakes/}"
+
+    template_list=$(${pkgs.nix}/bin/nix flake show "$FLAKE_URL" --json 2>/dev/null | ${pkgs.jq}/bin/jq -r '
+      .templates | to_entries[] | "\(.key)\t\(.value.description)"
+    ')
+
+    if [[ -z "$template_list" ]]; then
+      echo "No templates found in flake: $FLAKE_URL" >&2
+      exit 1
+    fi
+
+    selection=$(echo "$template_list" | ${pkgs.fzf}/bin/fzf \
+      --height=40% \
+      --cycle \
+      --bind='ctrl-p:up,ctrl-n:down' \
+      --delimiter=$'\t' \
+      --with-nth=1 \
+      --preview='echo {2}' \
+      --preview-window='bottom:3:wrap' \
+      --prompt="Select Template > ")
+
+    if [[ -n "$selection" ]]; then
+      template_name=$(echo "$selection" | cut -f1)
+      echo "Initializing template: $template_name..."
+      ${pkgs.nix}/bin/nix flake init -t "$FLAKE_URL#$template_name"
+      ${pkgs.direnv} allow
+    else
+      echo "No template selected."
+    fi
+  '';
+in
 {
   imports = [
     inputs.nix-index-database.homeModules.nix-index
@@ -157,6 +190,7 @@
         dock = "fissh root@10.0.0.6";
         cad = "fissh root@10.0.0.154";
         klip = "fissh klip@10.0.0.161";
+        ob = "fissh root@10.0.0.218";
         prox = "fissh root@bigprox";
         plex = "fissh root@10.0.0.90";
         pi = "fissh pi@johnny";
@@ -236,6 +270,7 @@
 
   home = {
     packages = with pkgs; [
+      mf
       # Development
       gcc
       git

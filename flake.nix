@@ -8,10 +8,23 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixgl.url = "github:nix-community/nixGL";
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     stylix = {
       url = "github:nix-community/stylix/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ghostty.url = "github:ghostty-org/ghostty";
+    pvetui.url = "github:devnullvoid/pvetui";
+    nix-yazi-plugins = {
+      url = "github:lordkekz/nix-yazi-plugins";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    ### Zen Browser and extras
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -20,15 +33,8 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    vimium-options.url = "github:uimataso/vimium-nixos";
-    ghostty.url = "github:ghostty-org/ghostty";
-    pvetui.url = "github:devnullvoid/pvetui";
-    suyu.url = "github:Noodlez1232/suyu-flake";
-    nixgl.url = "github:nix-community/nixGL";
-    nix-yazi-plugins = {
-      url = "github:lordkekz/nix-yazi-plugins";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    vimium-options.url = "github:uimataso/vimium-nixos"; # For outputting my vvimium-c config to load after install
+
     ### nix-index-database -- For use with comma and nix-index integration on command not found.
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
@@ -37,12 +43,12 @@
 
     ### For NixCats --- NEOVIM
     nixCats.url = "github:BirdeeHub/nixCats-nvim";
-    # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
-    # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
     plugins-obsidian-nvim = {
       url = "github:obsidian-nvim/obsidian.nvim";
       flake = false;
     };
+    # Have to add this to nvim/default.nix under nvimFlakeOutputs = nvimFlake.outputs {
+    # and in the nvim/flake.nix under optionalPlugins minus the "plugins-"
     plugins-kanban-nvim = {
       url = "github:arakkkkk/kanban.nvim";
       flake = false;
@@ -59,6 +65,7 @@
       nixpkgs,
       unstable,
       home-manager,
+      niri,
       nixgl,
       ...
     }@inputs:
@@ -70,6 +77,9 @@
       pkgs = import nixpkgs {
         localSystem = system;
         config.allowUnfree = true;
+        config.permittedInsecurePackages = [
+          "nexusmods-app-unfree-0.21.1"
+        ];
         overlays = [
           nixgl.overlay
         ];
@@ -90,14 +100,29 @@
             inputs
             pkgs-unstable
             user
+            niri
             homeDir
             myStylix
             system
             ;
         };
         modules = [
+          niri.homeModules.niri
           ./home.nix
         ];
+      };
+      devShells.${system}.default = pkgs.mkShell {
+        buildInputs = with pkgs; [
+          mod-organizer
+          qt6.qtbase
+          qt6.qtwayland
+          lz4
+          zlib
+        ];
+        shellHook = ''
+          echo "MO2 dev environment ready."
+          echo "Run: ModOrganizer2"
+        '';
       };
     };
 }
